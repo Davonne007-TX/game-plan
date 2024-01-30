@@ -1,5 +1,6 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { useCallback } from "react";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import Home from "./components/Home";
 import Hooks from "./components/hooks";
 import HookOne from "./components/HookOne";
@@ -9,13 +10,25 @@ import Lists from "./components/more-examples/Lists";
 import MoreUseState from "./components/MoreUseState";
 
 function App() {
+  const navigate = useNavigate();
+  //useCallback
+  const backToHooks = useCallback(() => {
+    navigate("/hooks");
+  }, [navigate]);
+
   return (
     <>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="hooks" element={<Hooks />} />
-        <Route path="/hookOne" element={<HookOne />} />
-        <Route path="/hookTwo" element={<HookTwo />} />
+        <Route
+          path="/hookOne"
+          element={<HookOne backToHooks={backToHooks} />}
+        />
+        <Route
+          path="/hookTwo"
+          element={<HookTwo backToHooks={backToHooks} />}
+        />
         <Route path="/moreUseCallback" element={<MoreUseCallback />} />
         <Route path="/moreUseState" element={<MoreUseState />} />
         <Route path="/lists" element={<Lists />} />

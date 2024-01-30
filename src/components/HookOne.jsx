@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "./Header";
 import ReuseableButton from "./ReuseableButton";
 
-export default function hookOne() {
+export default function hookOne({ backToHooks }) {
   const [count, setCount] = useState(0);
 
   const increment = () => {
@@ -51,6 +51,7 @@ export default function hookOne() {
         <div className="mt-10 flex gap-10">
           <ReuseableButton label="More useState" onClick={moreUseState} />
           <ReuseableButton onClick={nextHook} label="Next Hook" />
+          <ReuseableButton onClick={backToHooks} label="Back To Hooks" />
         </div>
       </div>
     </>

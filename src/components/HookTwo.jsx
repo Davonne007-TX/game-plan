@@ -3,9 +3,10 @@ import Header from "./Header";
 import { useCallback, useState } from "react";
 import ReuseableButton from "./ReuseableButton";
 
-export default function HookTwo() {
-  const [inputValue, setInputValue] = useState("");
+export default function HookTwo({ backToHooks }) {
+  const [inputValue, setInputValue] = useState(""); //set the state for the input, as an empty string
 
+  //a function that takes an event, that sets the states function to the target value
   const handleChange = (e) => {
     setInputValue(e.target.value);
   };
@@ -47,7 +48,7 @@ export default function HookTwo() {
         </button>
 
         <div className="flex flex-col gap-10 mt-10">
-          <ReuseableButton onClick={goBack} label="Go Back" />
+          <ReuseableButton onClick={backToHooks} label="Go Back" />
           <ReuseableButton
             className="mt-10 bg-black p-2 text-white rounded-full hover:text-pink-600 font-mono"
             onClick={more}
