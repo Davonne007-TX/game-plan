@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import Header from "./Header";
-import ReuseableButton from "./ReuseableButton";
+import Header from "../Header";
+import ReuseableButton from "../ReuseableButton";
 
 const movies = [
   "The Wizard of Oz",
