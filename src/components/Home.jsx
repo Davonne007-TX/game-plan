@@ -18,10 +18,23 @@ export default function Home() {
               repos
             </li>
             <p>- see if you can understand</p>
+            <li>LinkedIn</li> ✔ done
             <li>Corner Store Project</li>
-            <li>Star Wars API Project ✔ almost done </li>
-            <li>Finish Pokemon ✔ almost done</li>
+            <li>Star Wars API Project ✔ done can make changes </li>
+            <li>Finish Pokemon ✔ done can make changes</li>
           </div>
+
+          <section className="mt-20">
+            <p>Whats left Davonne?</p>
+            <ol>
+              <li> - Finish Portfolio</li>
+              <li> - Errors on Capstone for Portfolio</li>
+              <li> - See what projects to put on Portfolio</li>
+              <li> - Look at Strangers things, can you fix anything</li>
+              <li>**** Leetcode...! You need to start like yesterday</li>
+              <li> - Restart Corner Store</li>
+            </ol>
+          </section>
 
           <p className="mt-20 text-center">By February 12th</p>
         </ol>
