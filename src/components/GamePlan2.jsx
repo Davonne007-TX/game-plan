@@ -16,7 +16,7 @@ export default function GamePlan2() {
         <li>What projects should be on Portfolio?</li>
         <li>Errors on Projects</li>
         <li>Getting projects on Portfolio</li>
-        <button onClick={gamePlan1} className="mt-40">
+        <button onClick={gamePlan1} className="mt-40 pink-hover">
           Back
         </button>
       </div>

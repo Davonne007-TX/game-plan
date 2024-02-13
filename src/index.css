@@ -7,5 +7,5 @@
 }
 
 .pink-hover {
-  @apply hover:text-pink-400;
+  @apply hover:text-pink-400 cursor-pointer;
 }

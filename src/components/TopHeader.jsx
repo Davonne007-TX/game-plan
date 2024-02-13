@@ -9,7 +9,7 @@ export default function TopHeader() {
 
   return (
     <section className="flex flex-col lg:flex-row m-10 justify-between items-center gap-20 font-sixty text-white">
-      <h1 className="text-xl cursor-pointer pink-hover" onClick={home}>
+      <h1 className="text-xl pink-hover" onClick={home}>
         You Got This...!
       </h1>
       <nav className="flex flex-col md:flex-row lg:flex-row gap-10 text-sm">
