@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         lobster: "'Lobster', cursive",
         sixty: "'Sixtyfour', sans-serif",
+        gloria: "'Gloria Hallelujah', cursive",
       },
     },
   },

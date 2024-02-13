@@ -8,6 +8,7 @@ import HookTwo from "./components/HookTwo";
 import MoreUseCallback from "./components/MoreUseCallback";
 import Lists from "./components/more-examples/Lists";
 import MoreUseState from "./components/MoreUseState";
+import Toggle from "./components/more-examples/Toggle";
 
 function App() {
   const navigate = useNavigate();
@@ -32,6 +33,7 @@ function App() {
         <Route path="/moreUseCallback" element={<MoreUseCallback />} />
         <Route path="/moreUseState" element={<MoreUseState />} />
         <Route path="/lists" element={<Lists />} />
+        <Route path="/toggle" element={<Toggle />} />
       </Routes>
     </>
   );

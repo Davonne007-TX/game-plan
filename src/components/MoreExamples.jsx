@@ -12,6 +12,9 @@ export default function MoreExamples() {
               Lists
             </Link>
           </li>
+          <li>
+            <Link to="/toggle">Toggle Icon</Link>
+          </li>
         </ol>
       </section>
     </>
