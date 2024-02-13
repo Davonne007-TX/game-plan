@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 :root {
-  background-color: lightcoral;
+  background-color: black;
+}
+
+.pink-hover {
+  @apply hover:text-pink-400;
 }

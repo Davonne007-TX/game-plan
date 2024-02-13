@@ -1,47 +1,21 @@
-import { Link } from "react-router-dom";
-import Gif from "./Gif";
-import MoreExamples from "./MoreExamples";
+import React from "react";
 
 export default function Home() {
   return (
-    <div>
-      <h1 className="text-center mt-10 text-4xl font-lobster">Game Plan</h1>
-      <section className="flex justify-center items-center mt-20 font-serif">
-        <ol className="text-xl list-decimal font-serif">
-          <div className="flex flex-col gap-5">
-            <li>React common Hooks 🫨 - - ✔ in progress</li>
-            <p className="ml-5">- with examples</p>
-            <li>Coding questions 😵</li>
-            <p>- on letCode and codewars</p>
-            <li>
-              Look at other code, see how they do it --- ✔ looking at other
-              repos
-            </li>
-            <p>- see if you can understand</p>
-            <li>LinkedIn</li> ✔ done
-            <li>Star Wars API Project ✔ done can make changes </li>
-            <li>Finish Pokemon ✔ done can make changes</li>
-          </div>
-
-          <section className="mt-20">
-            <p>Whats left Davonne?</p>
-            <ol>
-              <li> - Finish Portfolio - almost done</li>
-              <li>- Post Pokemon ✔ done</li>
-              <li> - Errors on Capstone for Portfolio ✔ done</li>
-              <li> - See what projects to put on Portfolio</li>
-              <li> - Look at Strangers things, can you fix anything</li>
-              <li>**** Leetcode...! You need to start like yesterday</li>
-              <li> - Restart Corner Store with Tailwind</li>
-            </ol>
-          </section>
-
-          <p className="mt-20 text-center">By February 14th</p>
-        </ol>
-      </section>
-
-      <Gif />
-      <MoreExamples />
+    <div className="flex flex-col justify-center items-center">
+      <iframe
+        src="https://giphy.com/embed/RbDKaczqWovIugyJmW"
+        width="700"
+        height="700"
+        frameBorder="0"
+        className="giphy-embed"
+        allowFullScreen
+      ></iframe>
+      <p>
+        <a href="https://giphy.com/gifs/looneytunesworldofmayhem-world-of-mayhem-looney-tunes-ltwom-RbDKaczqWovIugyJmW">
+          via GIPHY
+        </a>
+      </p>
     </div>
   );
 }

@@ -9,6 +9,9 @@ import MoreUseCallback from "./components/MoreUseCallback";
 import Lists from "./components/more-examples/Lists";
 import MoreUseState from "./components/MoreUseState";
 import Toggle from "./components/more-examples/Toggle";
+import GamePlan2 from "./components/GamePlan2";
+import GamePlan1 from "./components/GamePlan1";
+import TopHeader from "./components/TopHeader";
 
 function App() {
   const navigate = useNavigate();
@@ -19,8 +22,11 @@ function App() {
 
   return (
     <>
+      <TopHeader />
+
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/gamePlan1" element={<GamePlan1 />} />
         <Route path="hooks" element={<Hooks />} />
         <Route
           path="/hookOne"
@@ -34,6 +40,7 @@ function App() {
         <Route path="/moreUseState" element={<MoreUseState />} />
         <Route path="/lists" element={<Lists />} />
         <Route path="/toggle" element={<Toggle />} />
+        <Route path="/gamePlan2" element={<GamePlan2 />} />
       </Routes>
     </>
   );
