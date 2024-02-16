@@ -46,6 +46,7 @@ export default function Home() {
 
       <Gif />
       <MoreExamples />
+
       <div className="my-12 text-center text-4xl font-mono">
         <Link to="/gamePlan2" className="hover:text-pink-400">
           Next Game Plan
