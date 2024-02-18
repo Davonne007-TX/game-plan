@@ -16,7 +16,7 @@ export default function GamePlan2() {
         <li>What projects should be on Portfolio?</li>
         <li>Major Errors on Projects</li>
         <li>Getting projects on Portfolio</li>
-        <li>Need to do coding problems!!!!!</li>
+        <li>Leetcode, codewars, and practice problems</li>
         <p className="text-center mt-10">By: February 29</p>
         <br />
         <hr />
@@ -24,7 +24,6 @@ export default function GamePlan2() {
         <section className="mt-10">
           <h2>Upcoming Projects</h2>
           <li>Corner Store</li>
-          <li>Louies Services</li>
           <li>Giselda Hair Dresser</li>
           <li>Bussiness Website? Transend Tech</li>
           <br />
