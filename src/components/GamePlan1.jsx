@@ -34,9 +34,7 @@ export default function Home() {
               </li>
               <li> - See what projects to put on Portfolio --in progress</li>
               <li> - Look at Strangers things, can you fix anything</li>
-              <li>
-                **** Leetcode and codewars...! You need to start like yesterday
-              </li>
+              <li>**** Leetcode, codewars, practice problems...!</li>
             </ol>
           </section>
 
