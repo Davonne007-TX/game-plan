@@ -15,6 +15,9 @@ export default function MoreExamples() {
           <li>
             <Link to="/toggle">Toggle Icon</Link>
           </li>
+          <li>
+            <Link to="/pizzaHut">Pizza Hut</Link>
+          </li>
         </ol>
       </section>
     </>

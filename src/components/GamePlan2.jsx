@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import ReuseableButton from "./ReuseableButton";
 
 export default function GamePlan2() {
@@ -55,12 +55,19 @@ export default function GamePlan2() {
           </ul>
         </section>
 
-        <div className="flex justify-center items-center ">
+        <div className="flex justify-center items-center gap-20 ">
           <ReuseableButton
             onClick={gamePlan1}
             className="mt-28 rounded-full pink-hover p-2 bg-white text-green-500 mb-20"
             label="Back"
           />
+
+          <Link to="/hooks">
+            <ReuseableButton
+              label="Hooks"
+              className="mt-10 bg-white rounded-full p-2 text-pink-500 hover:text-green-500"
+            />
+          </Link>
         </div>
       </div>
     </section>

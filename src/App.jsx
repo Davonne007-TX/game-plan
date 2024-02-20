@@ -12,6 +12,7 @@ import Toggle from "./components/more-examples/Toggle";
 import GamePlan2 from "./components/GamePlan2";
 import GamePlan1 from "./components/GamePlan1";
 import TopHeader from "./components/TopHeader";
+import ForFun from "./components/more-examples/ForFun";
 
 function App() {
   const navigate = useNavigate();
@@ -40,6 +41,7 @@ function App() {
         <Route path="/moreUseState" element={<MoreUseState />} />
         <Route path="/lists" element={<Lists />} />
         <Route path="/toggle" element={<Toggle />} />
+        <Route path="/pizzaHut" element={<ForFun />} />
         <Route path="/gamePlan2" element={<GamePlan2 />} />
       </Routes>
     </>
