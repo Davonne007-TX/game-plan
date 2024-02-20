@@ -38,7 +38,7 @@ export default function HookTwo({ backToHooks }) {
           className="p-2 outline-none border-2 border-black"
         />
 
-        <p>You typed: {inputValue}</p>
+        <p className="text-pink-300 mt-10">You typed: {inputValue}</p>
 
         <button
           onClick={handleClick}
@@ -48,9 +48,13 @@ export default function HookTwo({ backToHooks }) {
         </button>
 
         <div className="flex flex-col gap-10 mt-10">
-          <ReuseableButton onClick={backToHooks} label="Go Back" />
           <ReuseableButton
-            className="mt-10 bg-black p-2 text-white rounded-full hover:text-pink-600 font-mono"
+            onClick={backToHooks}
+            label="Go Back"
+            className=" bg-pink-200 p-2 text-black rounded-full hover:text-pink-600 font-mono"
+          />
+          <ReuseableButton
+            className="mt-10 bg-pink-200 p-2 text-black rounded-full hover:text-pink-600 font-mono"
             onClick={more}
             label="More useCallBack"
           />

@@ -12,6 +12,7 @@ export default function TopHeader() {
       <h1 className="text-xl pink-hover" onClick={home}>
         You Got This...!
       </h1>
+
       <nav className="flex flex-col md:flex-row lg:flex-row gap-10 text-sm">
         <Link to="/gamePlan1" className="pink-hover">
           #1

@@ -7,10 +7,10 @@ export default function Hooks({ backToHooks }) {
     <>
       <Header children={"Hooks"} />
       <section className="flex flex-col justify-center items-center mt-20 gap-10 font-sans text-2xl">
-        <li className="hover:text-white">
+        <li className="text-white hover:text-blue-300">
           <Link to="/hookOne">useState</Link>
         </li>
-        <li className="hover:text-white">
+        <li className="text-white hover:text-blue-300">
           <Link to="/hookTwo">useCallBack</Link>
         </li>
 

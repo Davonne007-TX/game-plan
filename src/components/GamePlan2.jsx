@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import ReuseableButton from "./ReuseableButton";
 
 export default function GamePlan2() {
   const navigate = useNavigate();
@@ -13,11 +14,23 @@ export default function GamePlan2() {
       <div className="flex flex-col ml-20 mt-10 text-2xl font-gloria">
         <li>Responsive Styles on Capstone - - like now</li>
         <li>Post Capstone - - By February 21st</li>
-        <li>What projects should be on Portfolio?</li>
+        <li>What projects should be on Portfolio? ✔ done </li>
         <li>Major Errors on Projects</li>
-        <li>Getting projects on Portfolio</li>
+        <li>Post Starwars ✔ done</li>
+        <li>Getting projects on Portfolio ✔ done</li>
         <li>Leetcode, codewars, and practice problems</li>
         <p className="text-center mt-10">By: February 29</p>
+
+        <div className="font-serif">
+          <p>Now</p>
+          <li>Working on responsiveness on payment on Captone</li>
+          <li>Practice Problems</li>
+          <li>Post Capstone</li>
+          <li>
+            Work on Resume for portfolio, should I put resume on portfolio?
+          </li>
+          <li>Finish and post portfolio</li>
+        </div>
         <br />
         <hr />
 
@@ -42,9 +55,13 @@ export default function GamePlan2() {
           </ul>
         </section>
 
-        <button onClick={gamePlan1} className="mt-28 pink-hover">
-          Back
-        </button>
+        <div className="flex justify-center items-center ">
+          <ReuseableButton
+            onClick={gamePlan1}
+            className="mt-28 rounded-full pink-hover p-2 bg-white text-green-500 mb-20"
+            label="Back"
+          />
+        </div>
       </div>
     </section>
   );
