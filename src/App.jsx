@@ -14,6 +14,7 @@ import GamePlan1 from "./components/GamePlan1";
 import GamePlan3 from "./components/GamePlan3";
 import TopHeader from "./components/TopHeader";
 import ForFun from "./components/more-examples/ForFun";
+import Random from "./components/more-examples/Random";
 
 function App() {
   const navigate = useNavigate();
@@ -43,6 +44,7 @@ function App() {
         <Route path="/lists" element={<Lists />} />
         <Route path="/toggle" element={<Toggle />} />
         <Route path="/pizzaHut" element={<ForFun />} />
+        <Route path="/random" element={<Random />} />
         <Route path="/gamePlan2" element={<GamePlan2 />} />
         <Route path="/gamePlan3" element={<GamePlan3 />} />
       </Routes>

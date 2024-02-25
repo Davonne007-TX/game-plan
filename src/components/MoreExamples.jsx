@@ -18,6 +18,9 @@ export default function MoreExamples() {
           <li>
             <Link to="/pizzaHut">Pizza Hut</Link>
           </li>
+          <li>
+            <Link to="/random">Random</Link>
+          </li>
         </ol>
       </section>
     </>

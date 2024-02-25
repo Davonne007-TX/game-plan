@@ -8,6 +8,7 @@ export default {
         sixty: "'Sixtyfour', sans-serif",
         gloria: "'Gloria Hallelujah', cursive",
         pizza: "'Philosopher', sans-serif",
+        anton: "'Anton', sans-serif",
       },
       colors: {
         pizzaHut: "#ED1C24",
