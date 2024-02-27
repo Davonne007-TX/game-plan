@@ -12,13 +12,13 @@ export default function GamePlan2() {
     <section className="mt-20 text-white">
       <h1 className="text-5xl text-center font-mono">Game Plan #2</h1>
       <div className="flex flex-col ml-20 mt-10 text-2xl font-gloria">
-        <li>Responsive Styles on Capstone - - like now</li>
-        <li>Post Capstone - - By February 21st</li>
+        <li>Responsive Styles on Capstone - - almost done</li>
+        <li>Post Capstone - tbd</li>
         <li>What projects should be on Portfolio? ✔ done </li>
-        <li>Major Errors on Projects</li>
+        <li>Major Errors on Projects ✔ done</li>
         <li>Post Starwars ✔ done</li>
         <li>Getting projects on Portfolio ✔ done</li>
-        <li>Leetcode, codewars, and practice problems</li>
+        <li>Leetcode, codewars, and practice problems - always</li>
         <p className="text-center mt-10">By: February 29</p>
 
         <div className="font-serif">
@@ -43,29 +43,18 @@ export default function GamePlan2() {
         </section>
 
         <hr />
-        <section>
-          <h3 className="mt-10">Thoughts - Questions</h3>
-          <ul>
-            <li>- Projects under company name</li>
-            <li>- Are we working on projects alone and if we need help ask?</li>
-            <li>
-              - Group Projects: split up the work, compensated based on size of
-              contribution, what ticket you did
-            </li>
-          </ul>
-        </section>
 
         <div className="flex justify-center items-center gap-20 ">
           <ReuseableButton
             onClick={gamePlan1}
-            className="mt-28 rounded-full pink-hover p-2 bg-white text-green-500 mb-20"
+            className="mt-20 rounded-full pink-hover p-2 bg-white text-green-500 mb-20"
             label="Back"
           />
 
           <Link to="/hooks">
             <ReuseableButton
               label="Hooks"
-              className="mt-10 bg-white rounded-full p-2 text-pink-500 hover:text-green-500"
+              className="bg-white rounded-full p-2 text-pink-500 hover:text-green-500"
             />
           </Link>
         </div>
