@@ -30,10 +30,6 @@ export default function GamePlan3() {
         </p>
       </div>
       <hr />
-
-      <section className="text-white mt-20 ml-10">
-        <p>Yeah still in progress</p>
-      </section>
     </>
   );
 }

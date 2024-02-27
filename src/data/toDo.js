@@ -14,7 +14,7 @@ const thingsToDo = [
   },
   {
     id: 5,
-    toDo: "LeetCode, coding problems",
+    toDo: "Javascript, coding problems",
   },
   {
     id: 6,
