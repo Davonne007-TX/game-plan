@@ -33,12 +33,12 @@ export default function MoreUseState() {
     <>
       <Header children={"More useState Hook"} />
       <div className="flex flex-col gap-10 justify-center items-center mt-20 font-lobster text-3xl">
-        <p>
+        <p className="text-white">
           Pick a Color:
           <select
             value={color}
             onChange={(e) => setColor(e.target.value)}
-            className="rounded w-full mt-5 border-4 border-pink-800 outline-none"
+            className="rounded-full w-full mt-5 border-4 border-pink-400 outline-none"
           >
             <option value="black">Select</option>
             <option value="blue">Blue</option>

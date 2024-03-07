@@ -1,7 +1,15 @@
 import React from "react";
 import toDoData from "../data/toDo.js";
+import ReuseableButton from "./ReuseableButton.jsx";
+import { useNavigate } from "react-router-dom";
 
 export default function GamePlan3() {
+  const navigate = useNavigate();
+
+  const backToTwo = () => {
+    navigate("/gamePlan2");
+  };
+
   return (
     <>
       <h1 className="font-mono text-pink-700 text-center text-5xl">
@@ -29,7 +37,11 @@ export default function GamePlan3() {
           </a>
         </p>
       </div>
-      <hr />
+
+      <div className="flex justify-center items-center gap-20">
+        <ReuseableButton label="Back" onClick={backToTwo} />
+        <ReuseableButton label="Next Plan" />
+      </div>
     </>
   );
 }

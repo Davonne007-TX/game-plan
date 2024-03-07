@@ -12,6 +12,7 @@ import Toggle from "./components/more-examples/Toggle";
 import GamePlan2 from "./components/GamePlan2";
 import GamePlan1 from "./components/GamePlan1";
 import GamePlan3 from "./components/GamePlan3";
+import GamePlan4 from "./components/GamePlan4";
 import TopHeader from "./components/TopHeader";
 import ForFun from "./components/more-examples/ForFun";
 import Random from "./components/more-examples/Random";
@@ -47,6 +48,7 @@ function App() {
         <Route path="/random" element={<Random />} />
         <Route path="/gamePlan2" element={<GamePlan2 />} />
         <Route path="/gamePlan3" element={<GamePlan3 />} />
+        <Route path="/gamePlan4" element={<GamePlan4 />} />
       </Routes>
     </>
   );

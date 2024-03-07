@@ -1,5 +1,5 @@
 /*
-    What I would like to go over
+    What an independent contractor entails: 
    
     -   Internal Agreements:
         Draft internal agreements that outline how projects will be distributed,

@@ -23,6 +23,9 @@ export default function TopHeader() {
         <Link to="/gamePlan3" className="pink-hover">
           #3
         </Link>
+        <Link to="/gamePlan4" className="pink-hover">
+          #4
+        </Link>
       </nav>
     </section>
   );

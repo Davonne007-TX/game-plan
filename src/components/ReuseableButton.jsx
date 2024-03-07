@@ -1,6 +1,9 @@
-export default function ReuseableButton({ onClick, label, className }) {
+export default function ReuseableButton({ onClick, label }) {
   return (
-    <button onClick={onClick} className={className}>
+    <button
+      onClick={onClick}
+      className="bg-white rounded-full p-2 hover:text-pink-400 font-lobster text-2xl"
+    >
       {label}
     </button>
   );

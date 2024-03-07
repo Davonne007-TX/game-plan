@@ -37,15 +37,17 @@ export default function hookOne({ backToHooks }) {
 
         <div className="mt-10">
           <iframe
-            src="https://giphy.com/embed/d31vMsyGddYZzVBK"
+            src="https://giphy.com/embed/xT5LMINTLCSOGdIyEo"
             width="480"
-            height="338"
+            height="270"
             frameBorder="0"
+            class="giphy-embed"
             allowFullScreen
-            className="rounded"
           ></iframe>
           <p>
-            <a href="https://giphy.com/gifs/southparkgifs-d31vMsyGddYZzVBK"></a>
+            <a href="https://giphy.com/gifs/thesimpsons-xT5LMINTLCSOGdIyEo">
+              via GIPHY
+            </a>
           </p>
         </div>
         <div className="mt-10 flex gap-10">

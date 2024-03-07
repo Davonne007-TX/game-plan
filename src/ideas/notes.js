@@ -6,7 +6,10 @@ console.log(gamePlan);
      - weather app
      - e commerce
      - slack clone
+     - mcdonalds
      - netflix clone
+
+    
     
     Listen to Professionals
       - podcast
