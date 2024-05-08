@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="text-white">
       <h1 className="text-center mt-10 text-4xl font-lobster">Game Plan#1</h1>
-      <section className="flex justify-center items-center mt-20 font-serif">
+      <section className="flex-time mt-20 font-serif">
         <ol className="text-xl list-decimal font-serif">
           <div className="flex flex-col gap-5">
             <li>React common Hooks 🫨 - - ✔ in progress</li>

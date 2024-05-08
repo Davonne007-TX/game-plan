@@ -1,6 +1,7 @@
 import "./App.css";
 import { useCallback } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
+import TopHeader from "./components/TopHeader";
 import Home from "./components/Home";
 import Hooks from "./components/hooks";
 import HookOne from "./components/HookOne";
@@ -13,7 +14,10 @@ import GamePlan2 from "./components/GamePlan2";
 import GamePlan1 from "./components/GamePlan1";
 import GamePlan3 from "./components/GamePlan3";
 import GamePlan4 from "./components/GamePlan4";
-import TopHeader from "./components/TopHeader";
+import GamePlan5 from "./components/GamePlan5";
+import GamePlan6 from "./components/GamePlan6";
+import GamePlan7 from "./components/GamePlan7";
+import GamePlan8 from "./components/GamePlan8";
 import ForFun from "./components/more-examples/ForFun";
 import Random from "./components/more-examples/Random";
 
@@ -49,6 +53,10 @@ function App() {
         <Route path="/gamePlan2" element={<GamePlan2 />} />
         <Route path="/gamePlan3" element={<GamePlan3 />} />
         <Route path="/gamePlan4" element={<GamePlan4 />} />
+        <Route path="/gamePlan5" element={<GamePlan5 />} />
+        <Route path="/gamePlan6" element={<GamePlan6 />} />
+        <Route path="/gamePlan7" element={<GamePlan7 />} />
+        <Route path="/gamePlan8" element={<GamePlan8 />} />
       </Routes>
     </>
   );

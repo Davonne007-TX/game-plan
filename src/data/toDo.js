@@ -31,3 +31,6 @@ const thingsToDo = [
 ];
 
 export default thingsToDo;
+
+//so this is an array with objects
+//objects have key value pairs

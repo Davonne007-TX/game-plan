@@ -9,3 +9,7 @@
 .pink-hover {
   @apply hover:text-pink-400 cursor-pointer;
 }
+
+.flex-time {
+  @apply flex flex-col justify-center items-center;
+}

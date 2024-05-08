@@ -6,6 +6,11 @@ import { useNavigate } from "react-router-dom";
 export default function GamePlan3() {
   const navigate = useNavigate();
 
+  //functional declarations, instead of arrow functions
+  function gamePlan4() {
+    navigate("/gamePlan4");
+  }
+
   const backToTwo = () => {
     navigate("/gamePlan2");
   };
@@ -40,7 +45,7 @@ export default function GamePlan3() {
 
       <div className="flex justify-center items-center gap-20">
         <ReuseableButton label="Back" onClick={backToTwo} />
-        <ReuseableButton label="Next Plan" />
+        <ReuseableButton label="Next Plan" onClick={gamePlan4} />
       </div>
     </>
   );

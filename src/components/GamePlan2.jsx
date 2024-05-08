@@ -16,7 +16,7 @@ export default function GamePlan2() {
     <>
       <section className="mt-20 text-white">
         <h1 className="text-5xl text-center font-mono">Game Plan #2</h1>
-        <div className="flex flex-col ml-20 mt-10 text-2xl font-gloria">
+        <section className="flex flex-col ml-20 mt-10 text-2xl font-gloria">
           <li>Responsive Styles on Capstone - - almost done</li>
           <li>Post Capstone - tbd</li>
           <li>What projects should be on Portfolio? ✔ done </li>
@@ -36,7 +36,7 @@ export default function GamePlan2() {
           </section>
 
           <hr />
-        </div>
+        </section>
       </section>
 
       <div className="flex justify-center items-center gap-20 mt-12">
