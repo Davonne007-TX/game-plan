@@ -26,7 +26,7 @@ export default function TopHeader() {
 
       <nav className="flex flex-col md:flex-row lg:flex-row gap-10 text-sm">
         {gamePlan.map((plan, id) => (
-          <li key={id} className="list-none">
+          <li className="list-none" key={id}>
             <Link to={plan.link}>{plan.text}</Link>
           </li>
         ))}
