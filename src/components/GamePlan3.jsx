@@ -20,7 +20,7 @@ export default function GamePlan3() {
       <h1 className="font-mono text-pink-700 text-center text-5xl">
         Game Plan #3
       </h1>
-      <div className="flex justify-center items-center mt-20 mb-10 gap-5 ml-10 font-gloria text-xl">
+      <main className="flex justify-center items-center mt-20 mb-10 gap-5 ml-10 font-gloria text-xl">
         <div className="flex flex-col gap-5">
           {toDoData.map((id) => (
             <li key="id" className="text-white">
@@ -41,7 +41,7 @@ export default function GamePlan3() {
             via GIPHY
           </a>
         </p>
-      </div>
+      </main>
 
       <div className="flex justify-center items-center gap-20">
         <ReuseableButton label="Back" onClick={backToTwo} />

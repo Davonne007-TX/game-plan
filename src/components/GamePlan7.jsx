@@ -2,7 +2,7 @@ export default function GamePlan7() {
   return (
     <>
       <main className="flex flex-col justify-center items-center text-white">
-        <h1 className="text-pink-200 text-4xl font-serif">Game Plan #7</h1>
+        <h1 className="text-orange-200 text-4xl font-serif">Game Plan #7</h1>
         <section className="flex flex-col justify-center items-center md:max-w-3xl lg:max-w-5xl mt-10 font-bold">
           <h2 className="text-3xl mb-10"> Javascript Javascript Javascript</h2>
           <iframe
