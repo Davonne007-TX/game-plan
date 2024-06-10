@@ -3,10 +3,12 @@ export default function Goals() {
   const toDoList = [
     { toDo: "UI React Projects" },
     { toDo: "JavaScript Fundamentals" },
-    { toDo: "JavaScript Logic" },
+    { toDo: "JavaScript Questions" },
     { toDo: "React Docs" },
+    { toDo: "The Bigger Picture" },
     { toDo: "React Hooks" },
     { toDo: "Component life cycle" },
+    { toDo: "State Management" },
     { toDo: "UI concepts/ fundamentals" },
   ];
 

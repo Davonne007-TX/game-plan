@@ -18,6 +18,7 @@ import GamePlan5 from "./components/GamePlan5";
 import GamePlan6 from "./components/GamePlan6";
 import GamePlan7 from "./components/GamePlan7";
 import GamePlan8 from "./components/GamePlan8";
+import GamePlan9 from "./components/GamePlan9";
 import ForFun from "./components/more-examples/ForFun";
 import Random from "./components/more-examples/Random";
 
@@ -57,6 +58,7 @@ function App() {
         <Route path="/gamePlan6" element={<GamePlan6 />} />
         <Route path="/gamePlan7" element={<GamePlan7 />} />
         <Route path="/gamePlan8" element={<GamePlan8 />} />
+        <Route path="/gamePlan9" element={<GamePlan9 />} />
       </Routes>
     </>
   );

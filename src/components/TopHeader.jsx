@@ -11,6 +11,7 @@ export default function TopHeader() {
     { id: 6, text: "#6", link: "/gamePlan6" },
     { id: 7, text: "#7", link: "/gamePlan7" },
     { id: 8, text: "#8", link: "/gamePlan8" },
+    { id: 9, text: "#9", link: "/gamePlan9" },
   ];
 
   const navigate = useNavigate();
@@ -21,10 +22,11 @@ export default function TopHeader() {
   return (
     <section className="flex flex-col lg:flex-row m-10 justify-between items-center gap-20 font-sixty text-white">
       <h1 className="text-xl pink-hover" onClick={home}>
-        You Got This...!
+        You Got This D..!
       </h1>
 
       <nav className="flex flex-col md:flex-row lg:flex-row gap-10 text-sm">
+        <p className="text-pink-400">Game Plans:</p>
         {gamePlan.map((plan, id) => (
           <li className="list-none" key={id}>
             <Link to={plan.link}>{plan.text}</Link>

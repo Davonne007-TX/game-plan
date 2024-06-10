@@ -19,7 +19,7 @@ export default function GamePlan7() {
             </a>
           </p>
 
-          <p className="text-2xl font-thin mt-10">
+          <p className="text-2xl font-thin mt-10 max-w-xs md:max-w-3xl lg:max-w-4xl">
             This is the focus right now. I know JavaScript is a powerful
             language. I want to stick to what I am good at. And I excel in
             Frontend Development. I want to be really good at what I do. So the
