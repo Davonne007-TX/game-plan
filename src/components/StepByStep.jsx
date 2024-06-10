@@ -3,6 +3,7 @@ export default function StepByStep() {
     <>
       <h2 className="text-2xl text-pink-400 font-sixty">Step By Step:</h2>
       <ul className="text-xl mb-10">
+        <li>UI Projects</li>
         <li>JavaScript Basics</li>
         <li>JavaScript Questions</li>
         <li>React Scrimba</li>
