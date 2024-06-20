@@ -2,7 +2,7 @@ export default function GamePlan10() {
   return (
     <section className="flex-time text-white font-bold">
       <h1 className="text-3xl mb-10">Game Plan #10</h1>
-      <p>So much to do</p>
+      <p className="text-2xl">So much to do..!</p>
       <iframe
         src="https://giphy.com/embed/mheYSVOu2jk3K"
         width="480"
