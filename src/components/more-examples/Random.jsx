@@ -4,20 +4,18 @@ import NikeShoe from "./NikeShoe";
 export default function Random() {
   return (
     <>
-      <section section className="bg-white h-screen p-40">
-        <div className="ml-40">
-          <div className="flex flex-col lg:flex-row">
-            <h1 className="text-7xl font-anton">Nike</h1>
-            <img
-              src="/images/nike.png"
-              className="w-10 h-10 lg:w-30 lg:h-20 ml-10"
-            />
-            <NavBar />
-          </div>
-        </div>
+      <main section className="bg-white min-h-screen ">
+        <header className="flex flex-col lg:flex-row p-10">
+          <h1 className="text-7xl font-anton">Nikey</h1>
+          <img
+            src="/images/nike.png"
+            className="w-10 h-10 lg:w-30 lg:h-20 ml-10"
+          />
+          <NavBar />
+        </header>
 
         <NikeShoe />
-      </section>
+      </main>
     </>
   );
 }

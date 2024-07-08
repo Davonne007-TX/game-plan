@@ -30,7 +30,7 @@ export default function TopHeader() {
       <nav className="flex flex-col md:flex-row lg:flex-row gap-10 text-sm">
         <p className="text-pink-400">Game Plans:</p>
         {gamePlan.map((plan, id) => (
-          <li className="list-none" key={id}>
+          <li className="list-none hover:text-pink-400" key={id}>
             <Link to={plan.link}>{plan.text}</Link>
           </li>
         ))}

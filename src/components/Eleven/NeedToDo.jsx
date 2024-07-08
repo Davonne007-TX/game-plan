@@ -2,7 +2,7 @@ export default function NeedToDo() {
   const needToDo = [
     { toDo: "Github Home Page", id: 0 },
     { toDo: "Finish and Deploy Portfolio", id: 1 },
-    { toDo: "Update UI Projects To Solve Problems", id: 2 },
+    { toDo: "Update UI Projects To Solve Problems / Home Page", id: 2 },
     { toDo: "Update Resume", id: 3 },
     { toDo: "Harder Questions on JavaScript" },
     { toDo: "More Complex Designs, Replicate inspirations" },

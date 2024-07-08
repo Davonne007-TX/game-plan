@@ -24,13 +24,13 @@ export default function Lists() {
   return (
     <>
       <Header children={"Show me a list"} />
-      <div className="flex flex-col justify-center items-center h-screen font-lobster text-3xl">
+      <section className="flex flex-col justify-center items-center h-screen font-lobster text-3xl">
         <p className="text-5xl">My Favorite Movies:</p> <br />
-        <ul>{listItems}</ul>
-        <div className="mt-10">
+        <ul className="text-purple-800">{listItems}</ul>
+        <section className="mt-10">
           <ReuseableButton label="Go Back" onClick={goBack} className="mt-20" />
-        </div>
-      </div>
+        </section>
+      </section>
     </>
   );
 }
