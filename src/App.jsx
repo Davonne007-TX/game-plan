@@ -22,6 +22,7 @@ import GamePlan9 from "./components/GamePlan9";
 import ForFun from "./components/more-examples/ForFun";
 import Random from "./components/more-examples/Random";
 import GamePlan10 from "./components/GamePlan10";
+import GamePlan11 from "./components/GamePlan11";
 
 function App() {
   const navigate = useNavigate();
@@ -61,6 +62,7 @@ function App() {
         <Route path="/gamePlan8" element={<GamePlan8 />} />
         <Route path="/gamePlan9" element={<GamePlan9 />} />
         <Route path="/gamePlan10" element={<GamePlan10 />} />
+        <Route path="/gamePlan11" element={<GamePlan11 />} />
       </Routes>
     </>
   );

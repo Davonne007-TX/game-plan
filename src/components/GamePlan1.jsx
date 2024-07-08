@@ -4,7 +4,7 @@ import MoreExamples from "./MoreExamples";
 
 export default function Home() {
   return (
-    <div className="text-white">
+    <main className="text-white">
       <h1 className="text-center mt-10 text-4xl font-lobster">Game Plan#1</h1>
       <section className="flex-time mt-20 font-serif">
         <ol className="text-xl list-decimal font-serif">
@@ -50,6 +50,6 @@ export default function Home() {
           Next Game Plan
         </Link>
       </div>
-    </div>
+    </main>
   );
 }
