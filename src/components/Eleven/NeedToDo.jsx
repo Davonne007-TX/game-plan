@@ -5,6 +5,7 @@ export default function NeedToDo() {
     { toDo: "Update UI Projects To Solve Problems", id: 2 },
     { toDo: "Update Resume", id: 3 },
     { toDo: "Harder Questions on JavaScript" },
+    { toDo: "More Complex Designs, Replicate inspirations" },
   ];
 
   return (

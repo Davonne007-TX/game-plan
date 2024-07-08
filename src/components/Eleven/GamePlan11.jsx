@@ -1,4 +1,5 @@
 import NeedToDo from "./NeedToDo";
+import After from "./After";
 
 export default function GamePlan11() {
   const thingsIveDone = [
@@ -10,7 +11,7 @@ export default function GamePlan11() {
 
   return (
     <>
-      <main className="flex-time bg-fuchsia-50">
+      <main className="flex-time bg-fuchsia-50 p-4">
         <section className="flex flex-col gap-4 text-2xl">
           <h1 className="text-black font-bold text-3xl mt-10 text-center">
             Game Plan #11
@@ -22,6 +23,7 @@ export default function GamePlan11() {
           ))}
 
           <NeedToDo />
+          <After />
         </section>
       </main>
     </>
