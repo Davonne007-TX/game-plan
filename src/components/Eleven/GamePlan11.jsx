@@ -1,3 +1,5 @@
+import NeedToDo from "./NeedToDo";
+
 export default function GamePlan11() {
   const thingsIveDone = [
     { task: "UI projects", id: 0 },
@@ -18,6 +20,8 @@ export default function GamePlan11() {
           {thingsIveDone.map((done, id) => (
             <li key={id}>{done.task}</li>
           ))}
+
+          <NeedToDo />
         </section>
       </main>
     </>

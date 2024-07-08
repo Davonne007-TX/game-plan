@@ -22,7 +22,7 @@ import GamePlan9 from "./components/GamePlan9";
 import ForFun from "./components/more-examples/ForFun";
 import Random from "./components/more-examples/Random";
 import GamePlan10 from "./components/GamePlan10";
-import GamePlan11 from "./components/GamePlan11";
+import GamePlan11 from "./components/Eleven/GamePlan11";
 
 function App() {
   const navigate = useNavigate();
