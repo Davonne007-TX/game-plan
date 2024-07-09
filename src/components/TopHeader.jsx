@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function TopHeader() {
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+
   const gamePlan = [
     { id: 1, text: "#1", link: "/gamePlan1" },
     { id: 2, text: "#2", link: "/gamePlan2" },
@@ -21,16 +23,32 @@ export default function TopHeader() {
     navigate("/");
   };
 
-  return (
-    <section className="flex flex-col lg:flex-row m-10 justify-between items-center gap-20 font-sixty text-white">
-      <h1 className="text-xl pink-hover" onClick={home}>
-        You Got This D..!
-      </h1>
+  const toggleNavBar = () => {
+    setIsMobileNavOpen(!isMobileNavOpen);
+  };
 
-      <nav className="flex flex-col md:flex-row lg:flex-row gap-10 text-sm">
+  return (
+    <section className="flex flex-col lg:flex-row m-10 md:justify-between lg:justify-between items-center lg:gap-20 font-sixty text-white">
+      <section className="flex gap-20 md:gap-96 lg:gap-96">
+        <h1 className="text-sm md:text-lg lg:text-xl pink-hover" onClick={home}>
+          You Got This D..!
+        </h1>
+        <button
+          className=" lg:hidden text-xl hover:text-pink-400"
+          onClick={toggleNavBar}
+        >
+          ☰
+        </button>
+      </section>
+
+      <nav
+        className={`flex flex-col md:ml-auto md:flex-col lg:flex-row bg-pink-200 p-3 md:p-4 lg:p-4 rounded-3xl gap-10 text-sm mt-10 md:mt-10 ${
+          isMobileNavOpen ? "flex" : "hidden"
+        } lg:flex`}
+      >
         <p className="text-pink-400">Game Plans:</p>
         {gamePlan.map((plan, id) => (
-          <li className="list-none hover:text-pink-400" key={id}>
+          <li className="list-none hover:text-pink-400 text-black" key={id}>
             <Link to={plan.link}>{plan.text}</Link>
           </li>
         ))}
