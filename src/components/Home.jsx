@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Home() {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <main className="flex flex-col justify-center items-center">
       <iframe
         src="https://giphy.com/embed/RbDKaczqWovIugyJmW"
         width="700"
@@ -16,6 +16,6 @@ export default function Home() {
           via GIPHY
         </a>
       </p>
-    </div>
+    </main>
   );
 }
