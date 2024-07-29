@@ -21,6 +21,10 @@ export default function MoreExamples() {
           <li>
             <Link to="/random">Random</Link>
           </li>
+          <li>
+            <Link to="/weDidIt">We Did It</Link>
+          </li>
+    
         </ol>
       </section>
     </>

@@ -21,8 +21,10 @@ import GamePlan8 from "./components/GamePlan8";
 import GamePlan9 from "./components/GamePlan9";
 import ForFun from "./components/more-examples/ForFun";
 import Random from "./components/more-examples/Random";
+import WeDidIt from "./components/more-examples/WeDidIt";
 import GamePlan10 from "./components/GamePlan10";
 import GamePlan11 from "./components/Eleven/GamePlan11";
+import GamePlan12 from "./components/Twelve/GamePlan12";
 
 function App() {
   const navigate = useNavigate();
@@ -51,11 +53,12 @@ function App() {
         <Route path="/moreUseState" element={<MoreUseState />} />
         <Route path="/lists" element={<Lists />} />
         <Route path="/toggle" element={<Toggle />} />
-        <Route path="/pizzaHut" element={<ForFun />} />
+        <Route path="/pizzaHut" element={<ForFun />} />s
         <Route path="/random" element={<Random />} />
+        <Route path="/weDidIt" element={<WeDidIt />} />
         <Route path="/gamePlan2" element={<GamePlan2 />} />
-        <Route path="/gamePlan3" element={<GamePlan3 />} />
-        <Route path="/gamePlan4" element={<GamePlan4 />} />
+        <Route path="/gamePlan3" element={<GamePlan3 />} />s
+        <Route path="/gamePlan4" element={<GamePlan4 />} />s
         <Route path="/gamePlan5" element={<GamePlan5 />} />
         <Route path="/gamePlan6" element={<GamePlan6 />} />
         <Route path="/gamePlan7" element={<GamePlan7 />} />
@@ -63,6 +66,7 @@ function App() {
         <Route path="/gamePlan9" element={<GamePlan9 />} />
         <Route path="/gamePlan10" element={<GamePlan10 />} />
         <Route path="/gamePlan11" element={<GamePlan11 />} />
+        <Route path="/gamePlan12" element={<GamePlan12 />} />
       </Routes>
     </>
   );
