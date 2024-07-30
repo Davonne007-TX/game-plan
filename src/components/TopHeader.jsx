@@ -43,7 +43,7 @@ export default function TopHeader() {
       </section>
 
       <nav
-        className={`flex flex-col md:ml-auto md:flex-col lg:flex-row bg-pink-200 p-3 md:p-4 lg:p-4 rounded-3xl gap-10 text-sm mt-10 md:mt-10 ${
+        className={`flex flex-col font-bold md:ml-auto md:flex-col lg:flex-row bg-pink-200 p-3 md:p-4 lg:p-4 rounded-3xl gap-10 text-sm mt-10 md:mt-10 ${
           isMobileNavOpen ? "flex" : "hidden"
         } lg:flex`}
       >
