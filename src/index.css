@@ -8,7 +8,7 @@
 }
 
 .pink-hover {
-  @apply hover:text-pink-400 cursor-pointer;
+  @apply hover:text-pink-500 cursor-pointer;
 }
 
 .flex-time {
