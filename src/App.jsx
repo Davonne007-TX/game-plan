@@ -4,8 +4,8 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import TopHeader from "./components/TopHeader";
 import Home from "./components/Home";
 import Hooks from "./components/hooks";
-import HookOne from "./components/HookOne";
-import HookTwo from "./components/HookTwo";
+import HookUseState from "./components/HookUseState";
+import HookUseCallBack from "./components/HookUseCallBack";
 import MoreUseCallback from "./components/MoreUseCallback";
 import Lists from "./components/more-examples/Lists";
 import MoreUseState from "./components/MoreUseState";
@@ -42,12 +42,12 @@ function App() {
         <Route path="/gamePlan1" element={<GamePlan1 />} />
         <Route path="hooks" element={<Hooks />} />
         <Route
-          path="/hookOne"
-          element={<HookOne backToHooks={backToHooks} />}
+          path="/hookUseState"
+          element={<HookUseState backToHooks={backToHooks} />}
         />
         <Route
-          path="/hookTwo"
-          element={<HookTwo backToHooks={backToHooks} />}
+          path="/hookUseCallBack"
+          element={<HookUseCallBack backToHooks={backToHooks} />}
         />
         <Route path="/moreUseCallback" element={<MoreUseCallback />} />
         <Route path="/moreUseState" element={<MoreUseState />} />

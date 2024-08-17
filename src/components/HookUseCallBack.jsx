@@ -3,7 +3,7 @@ import Header from "./Header";
 import { useCallback, useState } from "react";
 import ReuseableButton from "./ReuseableButton";
 
-export default function HookTwo({ backToHooks }) {
+export default function hookUseCallback({ backToHooks }) {
   const [inputValue, setInputValue] = useState(""); //set the state for the input, as an empty string
 
   //a function that takes an event, that sets the states function to the target value
@@ -19,7 +19,7 @@ export default function HookTwo({ backToHooks }) {
   const navigate = useNavigate();
 
   const goBack = () => {
-    navigate("/hookOne");
+    navigate("/hookUseState");
   };
 
   const more = () => {

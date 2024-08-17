@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Header from "./Header";
 import ReuseableButton from "./ReuseableButton";
 
-export default function hookOne({ backToHooks }) {
+export default function HookUseState ({ backToHooks }) {
   const [count, setCount] = useState(0);
 
   const increment = () => {
@@ -18,7 +18,7 @@ export default function hookOne({ backToHooks }) {
   const navigate = useNavigate();
 
   const nextHook = () => {
-    navigate("/hookTwo");
+    navigate("/hookUseCallback");
   };
 
   const moreUseState = () => {
@@ -27,21 +27,21 @@ export default function hookOne({ backToHooks }) {
 
   return (
     <>
-      <Header children={"useState hook"} />
-      <div className="flex justify-center items-center flex-col mt-10 font-mono text-2xl ">
-        <p>The count is {count}</p>
-        <div className="flex flex-col gap-10 mt-10">
+      <Header/>
+      <section className="flex justify-center items-center flex-col mt-10 font-lobster text-lg md:text-lg lg:text-2xl ">
+        <p className="text-pink-400 text-3xl">The count is {count}</p>
+       <section className="flex gap-10 mt-10">
           <ReuseableButton onClick={increment} label="Increment Count" />
           <ReuseableButton onClick={decrement} label="Decrement Count" />
-        </div>
+        </section>
 
-        <div className="mt-10">
+        <section className="mt-10">
           <iframe
             src="https://giphy.com/embed/xT5LMINTLCSOGdIyEo"
             width="480"
             height="270"
             frameBorder="0"
-            class="giphy-embed"
+            className="giphy-embed"
             allowFullScreen
           ></iframe>
           <p>
@@ -49,13 +49,13 @@ export default function hookOne({ backToHooks }) {
               via GIPHY
             </a>
           </p>
-        </div>
-        <div className="mt-10 flex gap-10">
+        </section>
+        <section className="mt-10 flex gap-10">
           <ReuseableButton label="More useState" onClick={moreUseState} />
           <ReuseableButton onClick={nextHook} label="Next Hook" />
           <ReuseableButton onClick={backToHooks} label="Back To Hooks" />
-        </div>
-      </div>
+        </section>
+      </section>
     </>
   );
 }
