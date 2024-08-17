@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import Header from "../Header";
+// import Header from "../Header";
 import ReuseableButton from "../ReuseableButton";
 
 const movies = [
@@ -23,7 +23,7 @@ export default function Lists() {
 
   return (
     <>
-      <Header children={"Show me a list"} />
+      {/* <Header children={"Show me a list"} /> */}
       <section className="flex flex-col justify-center items-center h-screen font-lobster text-3xl">
         <p className="text-5xl">My Favorite Movies:</p> <br />
         <ul className="text-purple-800">{listItems}</ul>

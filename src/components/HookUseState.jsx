@@ -1,6 +1,5 @@
-import { useState, useCallback } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Header from "./Header";
 import ReuseableButton from "./ReuseableButton";
 
 export default function HookUseState ({ backToHooks }) {
@@ -27,7 +26,6 @@ export default function HookUseState ({ backToHooks }) {
 
   return (
     <>
-      <Header/>
       <section className="flex justify-center items-center flex-col mt-10 font-lobster text-lg md:text-lg lg:text-2xl ">
         <p className="text-pink-400 text-3xl">The count is {count}</p>
        <section className="flex gap-10 mt-10">

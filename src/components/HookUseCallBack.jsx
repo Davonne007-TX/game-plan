@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import Header from "./Header";
 import { useCallback, useState } from "react";
 import ReuseableButton from "./ReuseableButton";
 
@@ -28,9 +27,7 @@ export default function hookUseCallback({ backToHooks }) {
 
   return (
     <>
-      <Header children={"useCallback"} />
-
-      <div className="flex flex-col justify-center items-center font-lobster mt-10">
+      <section className="flex flex-col justify-center items-center font-lobster mt-10">
         <input
           value={inputValue}
           onChange={handleChange}
@@ -47,7 +44,7 @@ export default function hookUseCallback({ backToHooks }) {
           Click and check console.log to see
         </button>
 
-        <div className="flex flex-col gap-10 mt-10">
+        <section className="flex flex-col gap-10 mt-10">
           <ReuseableButton
             onClick={backToHooks}
             label="Go Back"
@@ -58,8 +55,8 @@ export default function hookUseCallback({ backToHooks }) {
             onClick={more}
             label="More useCallBack"
           />
-        </div>
-      </div>
+        </section>
+      </section>
     </>
   );
 }

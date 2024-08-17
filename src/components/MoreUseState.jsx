@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import Header from "./Header";
 import Clock from "./Clock";
 import ReuseableButton from "./ReuseableButton";
 import { useNavigate } from "react-router-dom";
 
-function useTime() {
+function useTime() { 
   const [time, setTime] = useState(() => new Date()); //set the state for a new Date()
+  
   useEffect(() => {
     const id = setInterval(() => {
       setTime(new Date());
@@ -21,7 +21,7 @@ export default function MoreUseState() {
 
   const navigate = useNavigate();
   function goBack() {
-    navigate("/hookOne");
+    navigate("/hookUseState");
   }
 
   //one way to do a handel change through a function or you can do a callback function within the onChange event
@@ -31,9 +31,8 @@ export default function MoreUseState() {
 
   return (
     <>
-      <Header children={"More useState Hook"} />
-      <div className="flex flex-col gap-10 justify-center items-center mt-20 font-lobster text-3xl">
-        <p className="text-white">
+      <section className="flex flex-col gap-10 justify-center items-center mt-20 font-lobster text-3xl">
+        <p className="text-black">
           Pick a Color:
           <select
             value={color}
@@ -51,7 +50,7 @@ export default function MoreUseState() {
         </p>
         <Clock color={color} time={time.toLocaleTimeString()} />
         <ReuseableButton label="Go Back" onClick={goBack} />
-      </div>
+      </section>
     </>
   );
 }

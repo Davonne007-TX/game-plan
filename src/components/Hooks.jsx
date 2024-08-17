@@ -1,11 +1,11 @@
-import Header from "./Header";
+// import Header from "./Header";
 import { Link } from "react-router-dom";
 import Image from "./Image";
 
-export default function Hooks({ backToHooks }) {
+export default function Hooks() {
   return (
     <>
-      <Header children={"Hooks"} />
+      {/* <Header children={"Hooks"} /> */}
       <section className="flex flex-col justify-center items-center mt-20 gap-10 font-sans text-2xl">
         <li className="text-white hover:text-blue-300">
           <Link to="/hookUseState">useState</Link>

@@ -24,7 +24,7 @@ export default function MoreUseCallback() {
 
   return (
     <>
-      <div className="flex flex-col h-screen justify-center items-center font-sixty text-white text-5xl">
+      <section className="flex flex-col h-screen justify-center items-center font-sixty text-white text-5xl">
         <p>Count:{count}</p>
         <button onClick={handleClick} className="bg-black p-4 rounded mt-10">
           Click this button
@@ -32,10 +32,10 @@ export default function MoreUseCallback() {
         <button onClick={clearCount} className="mt-20">
           Clear Count
         </button>
-        <div className="mt-20">
+        <section className="mt-20">
           <ReuseableButton onClick={goBack} label="Go Back"></ReuseableButton>
-        </div>
-      </div>
+        </section>
+      </section>
     </>
   );
 }
