@@ -1,12 +1,13 @@
 export default function GamePlan12() {
     const toDo = [
-        {task: "JavaScript Problem Solving"}, 
-        {task: "React Concepts, How it works"},
-        {task: "React Hooks"},
-        {task: "Bigger Picture"},
-        {task: "More Javascript, / Typescript"},
-        {task: "Express.js, SQL, PostreSQL"},
-        { task: "What is Java"},
+        { task: "JavaScript Problem Solving"}, 
+        { task: "React Concepts, How it works"},
+        { task: "React Hooks"},
+        { task: "Bigger Picture"},
+        { task: "More Javascript, / Typescript"},
+        { task: "Express.js, SQL, PostreSQL"},
+        { task: "What is Java?"},
+        { task: "What is GraphQL?"}
     ]
 
   return (

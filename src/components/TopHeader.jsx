@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function TopHeader() {
+
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
   const gamePlan = [
@@ -28,6 +29,7 @@ export default function TopHeader() {
     setIsMobileNavOpen(!isMobileNavOpen);
   };
 
+
   return (
     <header className="flex flex-col lg:flex-row m-10 md:justify-between lg:justify-between items-center lg:gap-20 font-sixty text-white">
       <section className="flex gap-20 md:gap-96 lg:gap-96">
@@ -49,7 +51,7 @@ export default function TopHeader() {
       >
         <p className="text-pink-400">Game Plans:</p>
         {gamePlan.map((plan, id) => (
-          <li className="list-none hover:text-pink-400 text-black" key={id}>
+          <li className="list-none hover:text-pink-400 text-black" key={id} onClick={toggleNavBar}>
             <Link to={plan.link}>{plan.text}</Link>
           </li>
         ))}
