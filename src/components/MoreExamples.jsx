@@ -24,7 +24,9 @@ export default function MoreExamples() {
           <li>
             <Link to="/weDidIt">We Did It</Link>
           </li>
-    
+          <li>
+            <Link to="/productSearch">React Docs Product Search</Link>
+          </li>
         </ol>
       </section>
     </>
