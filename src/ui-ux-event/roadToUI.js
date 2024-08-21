@@ -112,7 +112,7 @@ Product Design:
    - intersection of usability
   - product design
    - strategic 
-   - skillnical
+   - skill
    
   Titles: Companies miss understand this, look at the job description
   - connection of all different things 
@@ -173,7 +173,7 @@ Design Engineer : Love this role, not very common
  - have a foundation knowledge of all ux, ui, product design. You can do it all but try to specialize. 
   
 
-** Figma, is it..! but a couple years ago it was sketch. Dolla? 
+** Figma, is it..! but a couple years ago it was sketch.  
 - get basics of Figma
 - focus on visual skills
 - how do you combine skills yourself, training your eye, how you put things together

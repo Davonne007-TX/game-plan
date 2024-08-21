@@ -1,7 +1,6 @@
 /*
     - X Space "The Hunt of getting a Job in skill"
        - Shawn Charles, Lawerence Lockheart, Shashi 
-eranceL
         - you can talk the talk but can you code
         - data structures and algorithms 
         - take home questions for interviews, 2 days only
@@ -35,12 +34,9 @@ eranceL
        
     - it depends how best you network
     
-    - ???
+     -  WHat is big O?  backend, data structures
 
-
-     - - WHat is big O?  backend, data structures
-
-     - 
+   
 
          
         
