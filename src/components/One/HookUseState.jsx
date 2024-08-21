@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import ReuseableButton from "./ReuseableButton";
+import ReuseableButton from "../ReuseableButton";
 
 export default function HookUseState({ backToHooks }) {
   const [count, setCount] = useState(0);

@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import Clock from "./Clock";
-import ReuseableButton from "./ReuseableButton";
+import ReuseableButton from "../ReuseableButton";
 import { useNavigate } from "react-router-dom";
 
-function useTime() { 
+function useTime() {
   const [time, setTime] = useState(() => new Date()); //set the state for a new Date()
-  
+
   useEffect(() => {
     const id = setInterval(() => {
       setTime(new Date());

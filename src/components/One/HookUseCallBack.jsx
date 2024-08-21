@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useCallback, useState } from "react";
-import ReuseableButton from "./ReuseableButton";
+import ReuseableButton from "../ReuseableButton";
 
 export default function hookUseCallback({ backToHooks }) {
   const [inputValue, setInputValue] = useState(""); //set the state for the input, as an empty string

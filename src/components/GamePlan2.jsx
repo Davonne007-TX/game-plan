@@ -28,16 +28,8 @@ export default function GamePlan2() {
           <li>Leetcode, codewars, and practice problems - always</li>
           <p className="text-center mt-10">By: February 29</p>
           <br />
-          <hr />
-
-          <hr />
         </section>
       </section>
-
-      <div className="flex justify-center items-center gap-20 mt-12">
-        <ReuseableButton label="Back" onClick={gamePlan1} />
-        <ReuseableButton label="Next Plan" onClick={gamePlan4} />
-      </div>
     </>
   );
 }

@@ -1,6 +1,6 @@
 // import Header from "./Header";
 import { Link } from "react-router-dom";
-import Image from "./Image";
+import Image from "../Image";
 
 export default function Hooks() {
   return (
