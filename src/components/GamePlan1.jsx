@@ -5,7 +5,9 @@ import MoreExamples from "./MoreExamples";
 export default function Home() {
   return (
     <main className="text-white">
-      <h1 className="text-center mt-10 text-4xl font-lobster">Game Plan#1</h1>
+      <h1 className="text-center mt-10 text-3xl md:text-3xl lg:text-4xl font-lobster">
+        Game Plan#1
+      </h1>
       <section className="flex-time mt-20 font-serif">
         <ol className="text-xl list-decimal font-serif">
           <div className="flex flex-col gap-5">

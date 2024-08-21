@@ -13,7 +13,7 @@ export default function GamePlan11() {
     <>
       <main className="flex-time bg-fuchsia-50 p-4">
         <section className="flex flex-col gap-4 text-2xl">
-          <h1 className="text-black font-bold text-3xl mt-10 text-center">
+          <h1 className="text-black font-bold text-2xl md:text-3xl lg:text-4xl mt-10 text-center">
             Game Plan #11
           </h1>
           <p>So I have all these game plans but what have you actually done?</p>

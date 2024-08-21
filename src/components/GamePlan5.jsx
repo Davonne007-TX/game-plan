@@ -4,7 +4,9 @@ export default function GamePlan5() {
   return (
     <>
       <main className="flex-time ml-auto mr-auto max-w-md lg:max-w-5xl">
-        <h1 className="text-pink-400 text-5xl mb-10">Game Plan #5</h1>
+        <h1 className="text-pink-400 text-2xl md:text-3xl lg:text-4xl mb-10">
+          Game Plan #5
+        </h1>
         <article className="flex flex-col max-w-sm lg:max-w-5xl gap-10 text-white mr-auto ml-10 text-xl font-mono">
           <p>Well heres the story.</p>
           <p>

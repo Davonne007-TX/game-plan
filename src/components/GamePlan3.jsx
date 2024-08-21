@@ -17,7 +17,7 @@ export default function GamePlan3() {
 
   return (
     <>
-      <h1 className="font-mono text-pink-700 text-center text-5xl">
+      <h1 className="font-mono text-pink-700 text-center text-3xl md:text-3xl lg:text-4xl">
         Game Plan #3
       </h1>
       <main className="flex flex-col lg:flex-row justify-center items-center mt-20 mb-10 gap-5 ml-10 font-gloria text-xl">

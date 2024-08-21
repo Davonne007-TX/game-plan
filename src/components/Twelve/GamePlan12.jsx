@@ -13,7 +13,9 @@ export default function GamePlan12() {
   return (
     <>
       <section className="flex-time text-white gap-4">
-        <h2 className="text-pink-500 font-bold text-3xl">Game Plan 12</h2>
+        <h2 className="text-pink-500 font-bold text-2xl md:text-3xl lg:text-4xl">
+          Game Plan 12
+        </h2>
 
         <p className="text-3xl font-lobster mt-10 md:mt-20 lg:mt-10">
           Keep Going. You know what to do.

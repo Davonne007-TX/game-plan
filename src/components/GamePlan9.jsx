@@ -3,7 +3,7 @@ import StepByStep from "./StepByStep";
 export default function GamePlan9() {
   return (
     <>
-      <h1 className="text-pink-400 text-3xl flex-time font-sixty">
+      <h1 className="text-pink-400 text-2xl md:text-3xl lg:text-4xl flex-time font-sixty">
         Game Plan #9
       </h1>
       <section className="flex flex-col justify-center items-center text-white mt-20  m-0 ">
