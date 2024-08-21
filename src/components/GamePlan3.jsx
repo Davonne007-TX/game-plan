@@ -18,7 +18,7 @@ export default function GamePlan3() {
 
         <iframe
           src="https://giphy.com/embed/SScSc0nO2tezJNQc21"
-          width="380"
+          width="280"
           height="480"
           frameBorder="0"
           allowFullScreen

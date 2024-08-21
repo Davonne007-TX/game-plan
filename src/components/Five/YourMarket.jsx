@@ -14,7 +14,7 @@ export default function YourMarket() {
     <section className="flex flex-col md:flex-col lg:flex-row">
       <iframe
         src="https://giphy.com/embed/26tk0twwe5dWifoHe"
-        width="380"
+        width="300"
         height="362"
         alt="via GIPHY"
         frameBorder="0"

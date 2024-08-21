@@ -14,13 +14,13 @@ export default function GamePlan6() {
 
   return (
     <>
-      <main className="flex-time font-pizza m-auto max-w-sm md:max-w-3xl lg:max-w-7xl p-8 rounded-2xl bg-neutral-100 ">
-        <h1 className="text-blue-500 text-3xl md:text-3xl lg:text-3x mb-8">
+      <main className="flex-time font-pizza m-auto max-w-xs md:max-w-3xl lg:max-w-7xl p-8 rounded-2xl bg-neutral-100 ">
+        <h1 className="text-blue-500 text-3xl md:text-3xl lg:text-4xl mb-8">
           Game Plan #6
         </h1>
         <iframe
           src="https://giphy.com/embed/cuXiQJBhJeH5u"
-          width="340"
+          width="280"
           height="332"
           frameBorder="0"
           className="giphy-embed"
