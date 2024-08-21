@@ -18,7 +18,7 @@ export default function GamePlan2() {
         <h1 className="text-5xl text-center font-mono">Game Plan #2</h1>
         <section className="flex flex-col ml-20 mt-10 text-2xl font-gloria">
           <li>Responsive Styles on Capstone - - almost done</li>
-          <li>Post Capstone - tbd</li>
+          <li>Post Capstone - ✔ done</li>
           <li>What projects should be on Portfolio? ✔ done </li>
           <li>Major Errors on Projects ✔ done</li>
           <li>Post Starwars ✔ done</li>
@@ -27,13 +27,6 @@ export default function GamePlan2() {
           <p className="text-center mt-10">By: February 29</p>
           <br />
           <hr />
-
-          <section className="mt-10">
-            <h2>Upcoming Projects</h2>
-            <li>Corner Store</li>
-            <li>Giselda Hair Dresser</li>
-            <br />
-          </section>
 
           <hr />
         </section>

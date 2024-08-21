@@ -20,18 +20,18 @@ export default function GamePlan3() {
       <h1 className="font-mono text-pink-700 text-center text-5xl">
         Game Plan #3
       </h1>
-      <main className="flex justify-center items-center mt-20 mb-10 gap-5 ml-10 font-gloria text-xl">
-        <div className="flex flex-col gap-5">
-          {toDoData.map((id) => (
-            <li key="id" className="text-white">
-              {id.toDo}
+      <main className="flex flex-col lg:flex-row justify-center items-center mt-20 mb-10 gap-5 ml-10 font-gloria text-xl">
+        <section className="flex flex-col gap-5">
+          {toDoData.map((inProgress) => (
+            <li key={inProgress.id} className="text-white">
+              {inProgress.toDo}
             </li>
           ))}
-        </div>
+        </section>
 
         <iframe
           src="https://giphy.com/embed/SScSc0nO2tezJNQc21"
-          width="480"
+          width="380"
           height="480"
           frameBorder="0"
           allowFullScreen

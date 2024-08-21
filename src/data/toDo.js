@@ -10,7 +10,7 @@ const thingsToDo = [
   },
   {
     id: 4,
-    toDo: "Post Portfolio",
+    toDo: "Post Portfolio 👀 ",
   },
   {
     id: 5,
@@ -19,14 +19,6 @@ const thingsToDo = [
   {
     id: 6,
     toDo: "UI Design and UX principles",
-  },
-  {
-    id: 7,
-    toDo: "What is Next.js",
-  },
-  {
-    id: 8,
-    toDo: "Youtube Project with Next.js",
   },
 ];
 

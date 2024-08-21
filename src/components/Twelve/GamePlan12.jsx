@@ -26,7 +26,6 @@ export default function GamePlan12() {
             {doNow.task}
           </li>
         ))}
-
         <NextLevel />
         <HigherThinking />
       </section>

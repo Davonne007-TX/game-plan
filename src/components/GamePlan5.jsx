@@ -1,19 +1,11 @@
-export default function GamePlan5() {
-  const commonTech = [
-    { skill: "Next.js" },
-    { skill: "Typescript" },
-    { skill: "Java" },
-    { skill: "GraphQL" },
-    { skill: "Javascript" },
-    { skill: "Redux" },
-    { skill: "Angular" },
-  ];
+import YourMarket from "./YourMarket";
 
+export default function GamePlan5() {
   return (
     <>
-      <main className="flex-time ml-auto mr-auto max-w-3xl lg:max-w-5xl">
+      <main className="flex-time ml-auto mr-auto max-w-md lg:max-w-5xl">
         <h1 className="text-pink-400 text-5xl mb-10">Game Plan #5</h1>
-        <article className="flex flex-col gap-10 text-white mr-auto ml-10 text-xl font-mono">
+        <article className="flex flex-col max-w-sm lg:max-w-5xl gap-10 text-white mr-auto ml-10 text-xl font-mono">
           <p>Well heres the story.</p>
           <p>
             I am having trouble with my coding journey. I am having trouble
@@ -44,34 +36,7 @@ export default function GamePlan5() {
             this, keep going, you got this far already.
           </p>
 
-          <section className="flex flex-row">
-            <iframe
-              src="https://giphy.com/embed/26tk0twwe5dWifoHe"
-              width="480"
-              height="362"
-              alt="via GIPHY"
-              frameBorder="0"
-              className="giphy-embed mt-8"
-              allowFullScreen
-            ></iframe>
-            <p>
-              <a
-                href="https://giphy.com/gifs/season-17-the-simpsons-17x13-26tk0twwe5dWifoHe"
-                className="text-transparent"
-              >
-                via GIPHY
-              </a>
-            </p>
-
-            <section className="mt-20 mb-20 lg:mt-10 maw-w-4xl text-md">
-              <h2>What do you see in your market?</h2>
-              {commonTech.map((tech, index) => (
-                <li key={index} className="mt-4">
-                  {tech.skill}
-                </li>
-              ))}
-            </section>
-          </section>
+          <YourMarket />
         </article>
       </main>
     </>

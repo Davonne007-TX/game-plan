@@ -7,9 +7,6 @@ export default function StepByStep() {
         <li>JavaScript Basics</li>
         <li>JavaScript Questions</li>
         <li>React Scrimba</li>
-        <li>AWS</li>
-        <li>What is Next.js?</li>
-        <li>TypeScript Basics</li>
       </ul>
     </>
   );
