@@ -1,7 +1,7 @@
 import FilterableProductTable from "./FilterableProductTable";
 
 //an array of objects
-const products = [
+const PRODUCTS = [
   { category: "Fruits", price: "$3.00", stocked: true, name: "Strawberries" },
   { category: "Fruits", price: "$5.00", stocked: true, name: "Pineapple" },
   { category: "Fruits", price: "$2.00", stocked: false, name: "Blueberries" },
@@ -21,7 +21,7 @@ export default function ThinkingInReact() {
           <h2 className="font-bold mb-4 text-2xl">
             Fruits and Veggies Inventory
           </h2>
-          <FilterableProductTable />
+          <FilterableProductTable products={PRODUCTS} />
         </section>
       </main>
     </>
