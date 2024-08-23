@@ -20,13 +20,13 @@ export default function ProductsTable({ products }) {
   });
 
   return (
-    <table className="text-white flex">
-      <thread>
+    <table>
+      <thead>
         <tr>
           <th>Name</th>
           <th>Price</th>
         </tr>
-      </thread>
+      </thead>
       <tbody>{rows}</tbody>
     </table>
   );
