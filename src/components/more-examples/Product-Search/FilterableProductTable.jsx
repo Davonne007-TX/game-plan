@@ -13,7 +13,7 @@ export default function FilterableProductTable({ products }) {
           filterText={filterText}
           inStockOnly={inStockOnly}
           onFilterTextChange={setFilterText}
-          onInStickOnlyChange={setInStockOnly}
+          onInStockOnlyChange={setInStockOnly}
         />
 
         <ProductsTable

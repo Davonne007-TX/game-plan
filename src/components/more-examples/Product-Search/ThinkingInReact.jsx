@@ -14,11 +14,11 @@ export default function ThinkingInReact() {
   return (
     <>
       <main className="flex-time text-white">
-        <h1 className="text-green-600 font-bold text-2xl text-center">
+        <h1 className="text-purple-300 font-bold text-2xl text-center">
           Thinking in React
         </h1>
         <section className="flex-time mt-20">
-          <h2 className="font-bold mb-4 text-2xl">
+          <h2 className="font-bold mb-4 text-2xl text-purple-300 ">
             Fruits and Veggies Inventory
           </h2>
           <FilterableProductTable products={PRODUCTS} />
