@@ -17,7 +17,7 @@ export default function ThinkingInReact() {
         <h1 className="text-green-600 font-bold text-2xl text-center">
           Thinking in React
         </h1>
-        <section className="mt-20">
+        <section className="flex-time mt-20">
           <h2 className="font-bold mb-4 text-2xl">
             Fruits and Veggies Inventory
           </h2>

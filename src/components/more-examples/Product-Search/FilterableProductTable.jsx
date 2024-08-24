@@ -8,8 +8,13 @@ export default function FilterableProductTable({ products }) {
 
   return (
     <>
-      <main>
-        <SearchBar filterText={filterText} inStockOnly={inStockOnly} />
+      <main className="flex-time">
+        <SearchBar
+          filterText={filterText}
+          inStockOnly={inStockOnly}
+          onFilterTextChange={setFilterText}
+          onInStickOnlyChange={setInStockOnly}
+        />
 
         <ProductsTable
           products={products}
