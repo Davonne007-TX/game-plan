@@ -5,7 +5,7 @@ export default function SearchBar({
   onInStockOnlyChange,
 }) {
   return (
-    <form className="text-white">
+    <form className="text-white flex-time p-4">
       <input
         type="text"
         value={filterText}

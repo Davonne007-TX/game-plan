@@ -9,7 +9,6 @@ export default function ProductsTable({ products, filterText, inStockOnly }) {
     if (product.name.toLowerCase().indexOf(filterText.toLowerCase()) === -1) {
       return;
     }
-
     if (inStockOnly && !product.stocked) {
       return;
     }
@@ -25,8 +24,13 @@ export default function ProductsTable({ products, filterText, inStockOnly }) {
     lastCategory = product.category;
   });
 
+  //if no products are found
+  if (rows.length === 0) {
+    return <p className="text-purple-200">No fruits or veggies found</p>;
+  }
+
   return (
-    <table>
+    <table className="mb-10">
       <thead>
         <tr>
           <th>Name</th>
