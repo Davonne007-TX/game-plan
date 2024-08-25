@@ -1,6 +1,5 @@
 import FilterableProductTable from "./FilterableProductTable";
 
-//an array of objects
 const PRODUCTS = [
   { category: "Fruits", price: "$3.00", stocked: true, name: "Cherries" },
   { category: "Fruits", price: "$5.00", stocked: true, name: "Oranges" },
