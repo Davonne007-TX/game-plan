@@ -8,6 +8,7 @@ export default function SearchBar({
     <form className="text-white flex-time p-4">
       <input
         type="text"
+        name="searchInput"
         value={filterText}
         placeholder="Search..."
         className="p-2 rounded-full text-black outline-none flex-time"
@@ -17,6 +18,7 @@ export default function SearchBar({
       <label>
         <input
           type="checkbox"
+          name="inStock"
           checked={inStockOnly}
           onChange={(e) => onInStockOnlyChange(e.target.checked)}
         />{" "}
