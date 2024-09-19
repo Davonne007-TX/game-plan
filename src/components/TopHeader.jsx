@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function TopHeader() {
-
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
   const gamePlan = [
@@ -17,7 +16,8 @@ export default function TopHeader() {
     { id: 9, text: "#9", link: "/gamePlan9" },
     { id: 10, text: "#10", link: "/gamePlan10" },
     { id: 11, text: "#11", link: "/gamePlan11" },
-     {id: 12, text: "#12", link: "/gamePlan12"},
+    { id: 12, text: "#12", link: "/gamePlan12" },
+    { id: 13, text: "#13", link: "/gamePlan13" },
   ];
 
   const navigate = useNavigate();
@@ -29,12 +29,11 @@ export default function TopHeader() {
     setIsMobileNavOpen(!isMobileNavOpen);
   };
 
-
   return (
     <header className="flex flex-col lg:flex-row m-10 md:justify-between lg:justify-between items-center lg:gap-20 font-sixty text-white">
       <section className="flex gap-20 md:gap-96 lg:gap-96">
         <h1 className="text-sm md:text-lg lg:text-xl pink-hover" onClick={home}>
-        D's Game Plan
+          D's Game Plan
         </h1>
         <button
           className=" lg:hidden text-xl hover:text-pink-400"
@@ -51,7 +50,11 @@ export default function TopHeader() {
       >
         <p className="text-pink-400">Game Plans:</p>
         {gamePlan.map((plan, id) => (
-          <li className="list-none hover:text-pink-400 text-black" key={id} onClick={toggleNavBar}>
+          <li
+            className="list-none hover:text-pink-400 text-black"
+            key={id}
+            onClick={toggleNavBar}
+          >
             <Link to={plan.link}>{plan.text}</Link>
           </li>
         ))}

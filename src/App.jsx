@@ -26,6 +26,9 @@ import GamePlan9 from "./components/Nine/GamePlan9";
 import GamePlan10 from "./components/GamePlan10";
 import GamePlan11 from "./components/Eleven/GamePlan11";
 import GamePlan12 from "./components/Twelve/GamePlan12";
+import GamePlan13 from "./components/Thirteen/GamePlan13";
+
+//Note to self; lazy load components
 
 function App() {
   const navigate = useNavigate();
@@ -69,6 +72,7 @@ function App() {
         <Route path="/gamePlan10" element={<GamePlan10 />} />
         <Route path="/gamePlan11" element={<GamePlan11 />} />
         <Route path="/gamePlan12" element={<GamePlan12 />} />
+        <Route path="/gamePlan13" element={<GamePlan13 />} />
       </Routes>
     </>
   );
