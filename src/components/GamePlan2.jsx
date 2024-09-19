@@ -26,7 +26,6 @@ export default function GamePlan2() {
           <li>Post Starwars ✔ done</li>
           <li>Getting projects on Portfolio ✔ done</li>
           <li>Leetcode, codewars, and practice problems - always</li>
-          <p className="text-center mt-10">By: February 29</p>
           <br />
         </section>
       </section>

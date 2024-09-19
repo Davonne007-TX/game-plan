@@ -24,7 +24,7 @@ export default function GamePlan7() {
             </a>
           </p>
 
-          <section className="flex flex-col gap-8 max-w-xs md:max-w-3xl lg:max-w-4xl text-xl lg:text-2xl font-thin mt-10 ">
+          <section className="flex flex-col gap-8 max-w-xs md:max-w-3xl lg:max-w-4xl text-xl lg:text-2xl font-thin mt-10 mb-10 ">
             <p>
               This is the focus right now. I know JavaScript is a powerful
               language. I want to stick to what I am good at. And I excel in

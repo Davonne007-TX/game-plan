@@ -17,7 +17,7 @@ export default function GamePlan12() {
           Game Plan 12
         </h2>
 
-        <p className="text-3xl font-lobster mt-10 md:mt-20 lg:mt-10">
+        <p className="text-2xl md:text-3xl font-lobster mt-10 md:mt-20 lg:mt-10">
           Keep Going. You know what to do.
         </p>
         {toDo.map((doNow) => (

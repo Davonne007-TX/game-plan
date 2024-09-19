@@ -10,7 +10,7 @@ export default function HigherThinking() {
 
   return (
     <>
-      <section className="flex-time gap-4">
+      <section className="flex-time gap-4 mb-10">
         <p className="text-3xl font-lobster mt-10 md:mt-20 lg:mt-10">
           Higher Level Thinking
         </p>

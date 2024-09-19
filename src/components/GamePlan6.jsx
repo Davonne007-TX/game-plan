@@ -14,7 +14,7 @@ export default function GamePlan6() {
 
   return (
     <>
-      <main className="flex-time font-pizza m-auto max-w-xs md:max-w-3xl lg:max-w-7xl p-8 rounded-2xl bg-neutral-100 ">
+      <main className="flex-time font-pizza m-auto max-w-xs md:max-w-3xl lg:max-w-7xl p-8 rounded-2xl bg-neutral-100 mb-10 ">
         <h1 className="text-blue-500 text-3xl md:text-3xl lg:text-4xl mb-8">
           Game Plan #6
         </h1>

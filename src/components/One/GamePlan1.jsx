@@ -40,7 +40,6 @@ export default function Home() {
                 <li>**** Leetcode, codewars, practice problems...!</li>
               </ol>
             </section>
-            <p className="mt-20 text-center">By February 14th</p>
           </ol>
         </section>
       </section>
