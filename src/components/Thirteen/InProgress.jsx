@@ -6,7 +6,7 @@ export default function InProgress() {
     { inProgress: "React Documentation", id: 3 },
   ];
   return (
-    <section className="mt-20">
+    <section className="mt-10">
       <p className="font-bold">In Progress</p>
       {rightNow.map((now) => (
         <li key={now.id}>{now.inProgress}</li>

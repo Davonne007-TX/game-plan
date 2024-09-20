@@ -5,7 +5,7 @@ export default function GamePlan13() {
 
   return (
     <>
-      <main className="flex-time ml-10 md:ml-0  text-white text-lg md:text-2xl font-lobster">
+      <main className="flex-time ml-10 md:ml-0 text-white text-lg md:text-2xl">
         <section>
           <h2 className="font-bold text-2xl md:text-3xl lg:text-4x mb-10">
             Game Plan #13
