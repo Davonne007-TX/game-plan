@@ -33,7 +33,7 @@ export default function ToDo() {
       <h1 className=" font-bold text-2xl md:text-3xl lg:text-4x font-gloria">
         To-Do-List
       </h1>
-      <p>Brought to you by Danny Thompson and ThisDotLabs</p>
+      <p>Brought to you by Danny Thompson and @ThisDotMedia</p>
 
       <section className="mt-20 bg-pink max-w-5xl text-xl">
         <input
@@ -45,10 +45,10 @@ export default function ToDo() {
         <Button
           buttonText={"Add To Do"}
           onClick={addToDo}
-          className="mt-4 md:mt-0 ml-4"
+          className="mt-4 md:mt-0 ml-4 bg-pink-400"
         />
 
-        <ul className="text-white">
+        <ul className="text-white bg-pink-400 p-2 mt-10 rounded-lg">
           {toDoList.map((toDo) => (
             <ItemToDo
               key={toDo.id}

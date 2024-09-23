@@ -3,9 +3,9 @@ import Button from "../../Button";
 export default function ItemToDo({ toDo, toDoAccomplished, deleteToDo }) {
   return (
     <>
-      <section className="mt-10 ml-4">
+      <section className="mt-10">
         <li
-          className={`text-white flex gap-4 text-2xl ${
+          className={`text-white text-2xl flex justify-between ${
             toDo.completed ? "completed" : " "
           }`}
         >
@@ -13,7 +13,7 @@ export default function ItemToDo({ toDo, toDoAccomplished, deleteToDo }) {
           <Button
             onClick={() => deleteToDo(toDo.id)}
             buttonText={"Delete"}
-            className="text-lg mb-4"
+            className="text-lg mb-4 bg-white text-pink-400"
           />
         </li>
       </section>
