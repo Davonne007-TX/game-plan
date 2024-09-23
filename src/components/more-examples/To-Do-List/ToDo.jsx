@@ -30,12 +30,14 @@ export default function ToDo() {
 
   return (
     <main className="flex-time text-white gap-2 font-serif text-center">
-      <h1 className=" font-bold text-2xl md:text-3xl lg:text-4x font-gloria">
+      <h1 className=" font-bold text-2xl md:text-4xl lg:text-4xl font-gloria">
         To-Do-List
       </h1>
-      <p>Brought to you by Danny Thompson and @ThisDotMedia</p>
+      <p className="text-lg">
+        Brought to you by Danny Thompson and @ThisDotMedia
+      </p>
 
-      <section className="mt-20 bg-pink max-w-5xl text-xl">
+      <section className="mt-20 max-w-5xl text-xl">
         <input
           className="rounded-full w-80 md:w-96 p-4 text-black outline-none border-4 border-pink-400"
           placeholder="Add items to, to do list..."
@@ -48,7 +50,11 @@ export default function ToDo() {
           className="mt-4 md:mt-0 ml-4 bg-pink-400"
         />
 
-        <ul className="text-white bg-pink-400 p-2 mt-10 rounded-lg">
+        <ul
+          className={`text-white p-2 mt-10 rounded-lg ${
+            toDoList.length === 0 ? "" : "bg-pink-400"
+          }`}
+        >
           {toDoList.map((toDo) => (
             <ItemToDo
               key={toDo.id}
