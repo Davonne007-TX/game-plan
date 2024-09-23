@@ -15,6 +15,7 @@ import ForFun from "./components/more-examples/ForFun";
 import Random from "./components/more-examples/Random";
 import WeDidIt from "./components/more-examples/WeDidIt";
 import ThinkingInReact from "./components/more-examples/Product-Search/ThinkingInReact";
+import ToDo from "./components/more-examples/To-Do-List/toDo";
 import GamePlan2 from "./components/GamePlan2";
 import GamePlan3 from "./components/GamePlan3";
 import GamePlan4 from "./components/GamePlan4";
@@ -61,6 +62,7 @@ function App() {
         <Route path="/random" element={<Random />} />
         <Route path="/weDidIt" element={<WeDidIt />} />
         <Route path="/productSearch" element={<ThinkingInReact />} />
+        <Route path="/toDo" element={<ToDo />} />
         <Route path="/gamePlan2" element={<GamePlan2 />} />
         <Route path="/gamePlan3" element={<GamePlan3 />} />s
         <Route path="/gamePlan4" element={<GamePlan4 />} />s

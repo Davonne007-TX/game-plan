@@ -5,7 +5,7 @@ export default function MoreExamples() {
     <>
       <hr />
       <section className="flex flex-col font-lobster ml-20 mt-10">
-        <h2 className="text-3xl text-center mb-10">Other examples</h2>
+        <h2 className="text-3xl text-center mb-10">Side Projects</h2>
         <ol className="list-disc text-2xl mb-10">
           <li className="hover:text-underline">
             <Link to="/lists" className="hover:underline">
@@ -27,8 +27,13 @@ export default function MoreExamples() {
           <li>
             <Link to="/productSearch">React Docs Product Search</Link>
           </li>
+          <li>
+            <Link to="/toDo">To-do-list</Link>
+          </li>
         </ol>
       </section>
     </>
   );
 }
+
+//note to self, make this easier to read with mapping over it instead
