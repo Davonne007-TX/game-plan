@@ -35,14 +35,18 @@ export default function ToDo() {
       </h1>
       <p>Brought to you by Danny Thompson and ThisDotLabs</p>
 
-      <section className="mt-20 bg-pink max-w-5xl">
+      <section className="mt-20 bg-pink max-w-5xl text-xl">
         <input
-          className="rounded-full w-80 md:w-96 p-3 text-black outline-none border-4 border-pink-400"
-          placeholder="Add To Do"
+          className="rounded-full w-80 md:w-96 p-4 text-black outline-none border-4 border-pink-400"
+          placeholder="Add items to, to do list..."
           value={toDo}
           onChange={(e) => setToDo(e.target.value)}
         />
-        <Button buttonText={"Add To Do"} onClick={addToDo} />
+        <Button
+          buttonText={"Add To Do"}
+          onClick={addToDo}
+          className="mt-4 md:mt-0 ml-4"
+        />
 
         <ul className="text-white">
           {toDoList.map((toDo) => (
