@@ -2,10 +2,15 @@ import { useState } from "react";
 import ItemToDo from "./ItemToDo";
 
 export default function ToDo() {
-  const [task, setTask] = useState();
-  const [toDoList, setToDoList] = useState();
+  const [toDo, setToDo] = useState();
+  const [toDoList, setToDoList] = useState([]);
 
-  //add task
+  const addToDo = () => {
+    if (toDo.trim() === "") return;
+    const newToDo = { id: Date.now(), text: toDo, completed: false };
+    setToDoList([...toDoList, newToDo]);
+    setToDo("");
+  };
 
   return (
     <main className="flex-time text-white gap-2 font-serif">
