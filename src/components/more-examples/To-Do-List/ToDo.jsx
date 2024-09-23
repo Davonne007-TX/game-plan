@@ -52,7 +52,9 @@ export default function ToDo() {
 
         <ul
           className={`text-white p-2 mt-10 rounded-lg ${
-            toDoList.length === 0 ? "" : "bg-pink-400"
+            toDoList.length === 0
+              ? ""
+              : "bg-pink-400 max-w-xs md:max-w-5xl ml-auto mr-auto"
           }`}
         >
           {toDoList.map((toDo) => (
