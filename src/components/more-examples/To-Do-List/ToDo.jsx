@@ -5,11 +5,26 @@ export default function ToDo() {
   const [toDo, setToDo] = useState();
   const [toDoList, setToDoList] = useState([]);
 
+  //add to, to do list
   const addToDo = () => {
     if (toDo.trim() === "") return;
     const newToDo = { id: Date.now(), text: toDo, completed: false };
     setToDoList([...toDoList, newToDo]);
     setToDo("");
+  };
+
+  //when the to do is complete
+  const toDoAccomplihsed = (id) => {
+    setToDoList(
+      toDoList.map((toDo) =>
+        toDo.id === id ? { ...toDo, completed: !toDo.completed } : true
+      )
+    );
+  };
+
+  //delete to do item
+  const deleteToDo = (id) => {
+    setToDoList(toDoList.filter((toDo) => toDo.id !== id));
   };
 
   return (
