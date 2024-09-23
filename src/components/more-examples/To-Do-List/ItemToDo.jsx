@@ -1,7 +1,10 @@
-export default function ItemToDo() {
+export default function ItemToDo({ toDo, toDoAccomplished, deleteToDo }) {
   return (
     <>
-      <h1>test</h1>
+      <li className={`text-white ${toDo.completed ? "completed" : " "}`}>
+        <span onClick={() => toDoAccomplished(toDo.id)}>{toDo.text}</span>
+        <button onClick={() => deleteToDo(toDo.id)}>Delete</button>
+      </li>
     </>
   );
 }
