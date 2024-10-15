@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function MoreExamples() {
   const mySideProjects = [
-    { id: 1, text: "Lists", link: "/links" },
+    { id: 1, text: "Lists", link: "/lists" },
     { id: 2, text: "Toggle Icon", link: "/toggle" },
     { id: 3, text: "Pizza Hut", link: "/pizzaHut" },
     { id: 4, text: "Nike Landing Page", link: "/random" },
@@ -17,10 +17,12 @@ export default function MoreExamples() {
       <hr />
       <section className="flex flex-col font-lobster ml-20 mt-10">
         <h2 className="text-3xl text-center mb-10">Side Projects</h2>
+        {mySideProjects.map((project) => (
+          <li key={project.id} className="text-2xl mb-4 hover:text-pink-400">
+            <Link to={project.link}>{project.text}</Link>
+          </li>
+        ))}
       </section>
     </>
   );
 }
-
-//note to self, make this easier to read with mapping over it instead
-//you got it..! 10.15.24
