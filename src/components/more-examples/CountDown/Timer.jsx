@@ -35,7 +35,7 @@ export default function Timer() {
   }, [countDownStarted, eventName]);
 
   return (
-    <main className="max-w-sm md:max-w-4xl bg-gradient-to-r font-serif font-thin text-md md:text-lg lg:text-xl from-pink-200 to-pink-500 p-8 rounded-xl ml-auto mr-auto">
+    <main className="max-w-sm md:max-w-3xl lg:max-w-4xl bg-gradient-to-r font-serif font-thin text-md md:text-lg lg:text-xl from-pink-200 to-pink-500 p-8 rounded-xl ml-auto mr-auto">
       <Header />
 
       <h2 className="text-2xl mb-2 mt-4">
