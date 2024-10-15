@@ -11,7 +11,7 @@ export default function Timer() {
     if (countDownStarted && eventDate) {
       const countDownInterval = setInterval(() => {
         const currentTime = new Date().getTime();
-        const eventTime = new Date(eventTime).getTime();
+        const eventTime = new Date(eventDate).getTime();
         let remainingTime = eventTime - currentTime;
 
         if (remainingTime <= 0) {
@@ -34,8 +34,30 @@ export default function Timer() {
   }, [countDownStarted, eventName]);
 
   return (
-    <section>
+    <main className="max-w-7xl bg-gradient-to-r from-pink-400 to-white p-8 rounded-xl ml-auto mr-auto">
       <Header />
-    </section>
+
+      <h2>{countDownStarted ? eventName : "Countdown Timer"}</h2>
+      <form>
+        <label> Event Name:</label>
+        <input
+          name="title"
+          type="text"
+          placeholder="Enter Event Name"
+          value={eventName}
+          onChange={(e) => setEventName(e.target.value)}
+        />
+        <label>Event Date:</label>
+        <input
+          name="event-date"
+          type="text"
+          value={eventDate}
+          onChange={(e) => setEventDate(e.target.value)}
+          onClick={(e) => (e.target.type = "date")}
+        />
+
+        <button>Start Countdown</button>
+      </form>
+    </main>
   );
 }
