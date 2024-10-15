@@ -26,6 +26,13 @@ export default function Timer() {
     }
   }, [countDownStarted, eventDate, timeRemaining]);
 
+  //
+  useEffect(() => {
+    if (countDownStarted) {
+      document.title = eventName;
+    }
+  }, [countDownStarted, eventName]);
+
   return (
     <section>
       <Header />
