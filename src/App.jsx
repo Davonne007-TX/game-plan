@@ -16,6 +16,7 @@ import Random from "./components/more-examples/Random";
 import WeDidIt from "./components/more-examples/WeDidIt";
 import ThinkingInReact from "./components/more-examples/Product-Search/ThinkingInReact";
 import ToDo from "./components/more-examples/To-Do-List/toDo";
+import CountDownTimer from "./components/more-examples/CountDown/CountDownTimer";
 import GamePlan2 from "./components/GamePlan2";
 import GamePlan3 from "./components/GamePlan3";
 import GamePlan4 from "./components/GamePlan4";
@@ -29,7 +30,7 @@ import GamePlan11 from "./components/Eleven/GamePlan11";
 import GamePlan12 from "./components/Twelve/GamePlan12";
 import GamePlan13 from "./components/Thirteen/GamePlan13";
 
-//Note to self; lazy load components
+//Note to self; lazy load components and images
 
 function App() {
   const navigate = useNavigate();
@@ -63,6 +64,7 @@ function App() {
         <Route path="/weDidIt" element={<WeDidIt />} />
         <Route path="/productSearch" element={<ThinkingInReact />} />
         <Route path="/toDo" element={<ToDo />} />
+        <Route path="/countDown" element={<CountDownTimer />} />
         <Route path="/gamePlan2" element={<GamePlan2 />} />
         <Route path="/gamePlan3" element={<GamePlan3 />} />s
         <Route path="/gamePlan4" element={<GamePlan4 />} />s

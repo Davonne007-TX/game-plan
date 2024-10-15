@@ -30,6 +30,7 @@ export default function MoreExamples() {
           <li>
             <Link to="/toDo">To-do-list</Link>
           </li>
+          <Link to="/countDown">Countdown Timer</Link>
         </ol>
       </section>
     </>
