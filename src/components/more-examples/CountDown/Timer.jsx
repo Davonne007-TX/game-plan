@@ -46,8 +46,26 @@ export default function Timer() {
   const handleStopCountDown = () => {
     setCountDownStarted(false);
     setTimeRemaining(0);
-    localStorage.clear();
   };
+
+  const handleResetCountDown = () => {
+    setCountDownStarted(false);
+    setEventDate("");
+    setEventName("");
+    setTimeRemaining(0);
+    localStorage.removeItem("Event Date:");
+    localStorage.removeItem("Event Name:");
+  };
+
+  //
+  //   const formatDate = (date) => {
+  //     const options = {
+  //       month: "long",
+  //       day: "numberic",
+  //       year: "numberic",
+  //     };
+  //     return new Date(date).toDateString("en-US", options);
+  //   };
 
   return (
     <main className="max-w-sm md:max-w-3xl lg:max-w-4xl bg-gradient-to-r font-serif font-thin text-md md:text-lg lg:text-xl from-pink-200 to-pink-500 p-8 rounded-xl ml-auto mr-auto">
@@ -77,16 +95,21 @@ export default function Timer() {
           className="p-2 rounded-xl"
         />
 
-        <section className="flex justify-center items-center gap-40 mt-10">
+        <section className="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-20 mt-4 md:mt-10">
           <Button
             buttonText="Start Countdown"
             className="bg-white w-60 h-10 mt-2 text-sm md:text-md lg:text-lg hover:text-pink-500"
             onClick={handleSetCountDown}
           />
           <Button
-            buttonText="Reset"
+            buttonText="Stop"
             className="bg-white w-60 h-10 mt-2 text-sm md:text-md lg:text-lg hover:text-pink-500"
             onClick={handleStopCountDown}
+          />
+          <Button
+            buttonText="Reset"
+            className="bg-white w-60 h-10 mt-2 text-sm md:text-md lg:text-lg hover:text-pink-500"
+            onClick={handleResetCountDown}
           />
         </section>
       </form>
