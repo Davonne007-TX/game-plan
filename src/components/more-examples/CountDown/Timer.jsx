@@ -42,6 +42,13 @@ export default function Timer() {
     localStorage.setItem("Event Name:", eventName);
   };
 
+  //
+  const handleStopCountDown = () => {
+    setCountDownStarted(false);
+    setTimeRemaining(0);
+    localStorage.clear();
+  };
+
   return (
     <main className="max-w-sm md:max-w-3xl lg:max-w-4xl bg-gradient-to-r font-serif font-thin text-md md:text-lg lg:text-xl from-pink-200 to-pink-500 p-8 rounded-xl ml-auto mr-auto">
       <Header />
@@ -63,6 +70,7 @@ export default function Timer() {
         <input
           name="event-date"
           type="text"
+          placeholder="Enter Event Date"
           value={eventDate}
           onChange={(e) => setEventDate(e.target.value)}
           onClick={(e) => (e.target.type = "date")}
@@ -73,6 +81,11 @@ export default function Timer() {
           buttonText="Start Countdown"
           className="bg-white w-40 h-10 mt-2 text-sm md:text-md lg:text-lg hover:text-pink-500"
           onClick={handleSetCountDown}
+        />
+        <Button
+          buttonText="Reset"
+          className="bg-white w-40 h-10 mt-2 text-sm md:text-md lg:text-lg hover:text-pink-500"
+          onClick={handleStopCountDown}
         />
       </form>
     </main>
