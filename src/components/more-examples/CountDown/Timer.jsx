@@ -77,16 +77,18 @@ export default function Timer() {
           className="p-2 rounded-xl"
         />
 
-        <Button
-          buttonText="Start Countdown"
-          className="bg-white w-40 h-10 mt-2 text-sm md:text-md lg:text-lg hover:text-pink-500"
-          onClick={handleSetCountDown}
-        />
-        <Button
-          buttonText="Reset"
-          className="bg-white w-40 h-10 mt-2 text-sm md:text-md lg:text-lg hover:text-pink-500"
-          onClick={handleStopCountDown}
-        />
+        <section className="flex justify-center items-center gap-40 mt-10">
+          <Button
+            buttonText="Start Countdown"
+            className="bg-white w-60 h-10 mt-2 text-sm md:text-md lg:text-lg hover:text-pink-500"
+            onClick={handleSetCountDown}
+          />
+          <Button
+            buttonText="Reset"
+            className="bg-white w-60 h-10 mt-2 text-sm md:text-md lg:text-lg hover:text-pink-500"
+            onClick={handleStopCountDown}
+          />
+        </section>
       </form>
     </main>
   );
