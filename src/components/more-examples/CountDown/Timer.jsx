@@ -72,22 +72,25 @@ export default function Timer() {
     const days = Math.floor(time / (1000 * 60 * 60 * 24));
 
     return (
-      <section>
+      <section className="flex flex-col md:flex-row justify-center items-center text-lg md:text-3xl lg:text-4xl font-bold font-alton gap-8 md:gap-20 mt-10">
         <div>
-          {days.toString().padStart(2, 0)}
+          {days.toString().padStart(2, 0)} <br />
           <span>Days</span>
         </div>
 
         <div>
           {hours.toString().padStart(2, "0")}
+          <br />
           <span>Hours</span>
         </div>
         <div>
           {minutes.toString().padStart(2, "0")}
+          <br />
           <span>Minutes</span>
         </div>
         <div>
           {seconds.toString().padStart(2, "0")}
+          <br />
           <span>Seconds</span>
         </div>
       </section>
@@ -97,10 +100,10 @@ export default function Timer() {
     <main className="max-w-sm md:max-w-3xl lg:max-w-4xl bg-gradient-to-r font-serif font-thin text-md md:text-lg lg:text-xl from-pink-200 to-pink-500 p-8 rounded-xl ml-auto mr-auto">
       <Header />
 
-      <h2 className="text-2xl mb-2 mt-4">
+      <h2 className="text-2xl mb-2 mt-8">
         {countDownStarted ? eventName : "Its Almost Time For..."}
       </h2>
-      <p className="mt-8">
+      <p className="mt-4">
         Created On: {countDownStarted && formatDate(eventDate)}
       </p>
 
