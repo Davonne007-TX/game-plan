@@ -3,10 +3,10 @@ import { useState, useEffect } from "react";
 import Button from "../../Button";
 
 export default function Timer() {
-  const [eventName, setEventName] = useState(""); //stores the name of the event
-  const [eventDate, setEventDate] = useState(""); //stores the date of the event for the countdown timer
-  const [countDownStarted, setCountDownStarted] = useState(""); //tracks whether the countdown timer has started
-  const [timeRemaining, setTimeRemaining] = useState(0); //shows the time remaining in milliseconds
+  const [eventName, setEventName] = useState("");
+  const [eventDate, setEventDate] = useState("");
+  const [countDownStarted, setCountDownStarted] = useState(false);
+  const [timeRemaining, setTimeRemaining] = useState(0);
 
   useEffect(() => {
     if (countDownStarted && eventDate) {
@@ -33,6 +33,14 @@ export default function Timer() {
       document.title = eventName;
     }
   }, [countDownStarted, eventName]);
+
+  //
+  const handleSetCountDown = (e) => {
+    e.preventDefault();
+    setCountDownStarted(true);
+    localStorage.setItem("Event Date:", eventDate);
+    localStorage.setItem("Event Name:", eventName);
+  };
 
   return (
     <main className="max-w-sm md:max-w-3xl lg:max-w-4xl bg-gradient-to-r font-serif font-thin text-md md:text-lg lg:text-xl from-pink-200 to-pink-500 p-8 rounded-xl ml-auto mr-auto">
@@ -64,6 +72,7 @@ export default function Timer() {
         <Button
           buttonText="Start Countdown"
           className="bg-white w-40 h-10 mt-2 text-sm md:text-md lg:text-lg hover:text-pink-500"
+          onClick={handleSetCountDown}
         />
       </form>
     </main>
