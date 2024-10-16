@@ -58,61 +58,96 @@ export default function Timer() {
   };
 
   //
-  //   const formatDate = (date) => {
-  //     const options = {
-  //       month: "long",
-  //       day: "numberic",
-  //       year: "numberic",
-  //     };
-  //     return new Date(date).toDateString("en-US", options);
-  //   };
+  const formatDate = (date) => {
+    const options = { month: "long", day: "numeric", year: "numeric" };
+    return new Date(date).toLocaleDateString("en-US", options);
+  };
 
+  //
+
+  const formatTime = (time) => {
+    const seconds = Math.floor((time / 1000) % 60);
+    const minutes = Math.floor((time / (1000 * 60)) % 60);
+    const hours = Math.floor((time / (1000 * 60 * 60)) % 24);
+    const days = Math.floor(time / (1000 * 60 * 60 * 24));
+
+    return (
+      <section>
+        <div>
+          {days.toString().padStart(2, 0)}
+          <span>Days</span>
+        </div>
+
+        <div>
+          {hours.toString().padStart(2, "0")}
+          <span>Hours</span>
+        </div>
+        <div>
+          {minutes.toString().padStart(2, "0")}
+          <span>Minutes</span>
+        </div>
+        <div>
+          {seconds.toString().padStart(2, "0")}
+          <span>Seconds</span>
+        </div>
+      </section>
+    );
+  };
   return (
     <main className="max-w-sm md:max-w-3xl lg:max-w-4xl bg-gradient-to-r font-serif font-thin text-md md:text-lg lg:text-xl from-pink-200 to-pink-500 p-8 rounded-xl ml-auto mr-auto">
       <Header />
 
       <h2 className="text-2xl mb-2 mt-4">
-        {countDownStarted ? eventName : "Countdown Begins"}
+        {countDownStarted ? eventName : "Its Almost Time For..."}
       </h2>
-      <form className="flex flex-col gap-2">
-        <label> Event Name:</label>
-        <input
-          name="title"
-          type="text"
-          placeholder="Enter Event Name"
-          value={eventName}
-          onChange={(e) => setEventName(e.target.value)}
-          className="p-2 rounded-xl"
-        />
-        <label>Event Date:</label>
-        <input
-          name="event-date"
-          type="text"
-          placeholder="Enter Event Date"
-          value={eventDate}
-          onChange={(e) => setEventDate(e.target.value)}
-          onClick={(e) => (e.target.type = "date")}
-          className="p-2 rounded-xl"
-        />
+      <p className="mt-8">
+        Created On: {countDownStarted && formatDate(eventDate)}
+      </p>
 
-        <section className="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-20 mt-4 md:mt-10">
+      {!countDownStarted ? (
+        <form className="flex flex-col gap-2 ">
+          <label> Event Name:</label>
+          <input
+            name="title"
+            type="text"
+            placeholder="Enter Event Name"
+            value={eventName}
+            onChange={(e) => setEventName(e.target.value)}
+            className="p-2 rounded-xl"
+          />
+          <label>Event Date:</label>
+          <input
+            name="event-date"
+            type="text"
+            placeholder="Enter Event Date"
+            value={eventDate}
+            onChange={(e) => setEventDate(e.target.value)}
+            onClick={(e) => (e.target.type = "date")}
+            className="p-2 rounded-xl"
+          />
           <Button
             buttonText="Start Countdown"
             className="bg-white w-60 h-10 mt-2 text-sm md:text-md lg:text-lg hover:text-pink-500"
             onClick={handleSetCountDown}
           />
-          <Button
-            buttonText="Stop"
-            className="bg-white w-60 h-10 mt-2 text-sm md:text-md lg:text-lg hover:text-pink-500"
-            onClick={handleStopCountDown}
-          />
-          <Button
-            buttonText="Reset"
-            className="bg-white w-60 h-10 mt-2 text-sm md:text-md lg:text-lg hover:text-pink-500"
-            onClick={handleResetCountDown}
-          />
-        </section>
-      </form>
+        </form>
+      ) : (
+        <>
+          {formatTime(timeRemaining)}
+          <section className="flex justify-center items-center mt-10 gap-10">
+            <Button
+              buttonText="Stop"
+              onClick={handleStopCountDown}
+              className="countdown-bts "
+            />
+            <Button
+              buttonText="Reset"
+              onClick={handleResetCountDown}
+              className="countdown-bts "
+            />
+          </section>
+        </>
+      )}
     </main>
   );
 }

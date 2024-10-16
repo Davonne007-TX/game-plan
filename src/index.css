@@ -13,3 +13,8 @@
 .flex-time {
   @apply flex flex-col justify-center items-center;
 }
+
+/*countdown timer*/
+.countdown-bts {
+  @apply bg-white w-60 h-10 mt-2 text-sm md:text-lg lg:text-2xl hover:text-pink-500;
+}
