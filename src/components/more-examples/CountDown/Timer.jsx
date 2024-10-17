@@ -46,6 +46,8 @@ export default function Timer() {
   const handleStopCountDown = () => {
     setCountDownStarted(false);
     setTimeRemaining(0);
+    setEventName("");
+    setEventDate("");
   };
 
   const handleResetCountDown = () => {
@@ -59,8 +61,10 @@ export default function Timer() {
 
   //
   const formatDate = (date) => {
+    const [year, month, day] = date.split("-");
+    const localDate = new Date(year, month - 1, day);
     const options = { month: "long", day: "numeric", year: "numeric" };
-    return new Date(date).toLocaleDateString("en-US", options);
+    return localDate.toLocaleDateString("en-US", options);
   };
 
   //
@@ -72,9 +76,9 @@ export default function Timer() {
     const days = Math.floor(time / (1000 * 60 * 60 * 24));
 
     return (
-      <section className="flex flex-col md:flex-row justify-center items-center text-lg md:text-3xl lg:text-4xl font-bold font-alton gap-8 md:gap-20 mt-10">
+      <section className="flex flex-col md:flex-row justify-center items-center text-lg md:text-2xl lg:text-3xl font-bold font-alton gap-8 md:gap-20 mt-10">
         <div>
-          {days.toString().padStart(2, 0)} <br />
+          {days.toString().padStart(2, "0")} <br />
           <span>Days</span>
         </div>
 
@@ -97,15 +101,13 @@ export default function Timer() {
     );
   };
   return (
-    <main className="max-w-sm md:max-w-3xl lg:max-w-4xl bg-gradient-to-r font-serif font-thin text-md md:text-lg lg:text-xl from-pink-200 to-pink-500 p-8 rounded-xl ml-auto mr-auto">
+    <main className="max-w-sm md:max-w-2xl lg:max-w-3xl bg-gradient-to-r font-serif font-thin text-md md:text-lg lg:text-xl from-pink-200 to-pink-500 p-8 rounded-xl ml-auto mr-auto">
       <Header />
 
       <h2 className="text-2xl mb-2 mt-8">
         {countDownStarted ? eventName : "Its Almost Time For..."}
       </h2>
-      <p className="mt-4">
-        Created On: {countDownStarted && formatDate(eventDate)}
-      </p>
+      <p className="mt-4">{countDownStarted && formatDate(eventDate)}</p>
 
       {!countDownStarted ? (
         <form className="flex flex-col gap-2 ">
@@ -121,11 +123,10 @@ export default function Timer() {
           <label>Event Date:</label>
           <input
             name="event-date"
-            type="text"
+            type="date"
             placeholder="Enter Event Date"
             value={eventDate}
             onChange={(e) => setEventDate(e.target.value)}
-            onClick={(e) => (e.target.type = "date")}
             className="p-2 rounded-xl"
           />
           <Button
