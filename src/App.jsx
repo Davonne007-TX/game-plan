@@ -17,6 +17,7 @@ import WeDidIt from "./components/more-examples/WeDidIt";
 import ThinkingInReact from "./components/more-examples/Product-Search/ThinkingInReact";
 import ToDo from "./components/more-examples/To-Do-List/toDo";
 import Timer from "./components/more-examples/CountDown/Timer";
+import WebCard from "./components/more-examples/Web-Card/WebCard";
 import GamePlan2 from "./components/GamePlan2";
 import GamePlan3 from "./components/GamePlan3";
 import GamePlan4 from "./components/GamePlan4";
@@ -65,6 +66,7 @@ function App() {
         <Route path="/productSearch" element={<ThinkingInReact />} />
         <Route path="/toDo" element={<ToDo />} />
         <Route path="/countDown" element={<Timer />} />
+        <Route path="/webCard" element={<WebCard />} />
         <Route path="/gamePlan2" element={<GamePlan2 />} />
         <Route path="/gamePlan3" element={<GamePlan3 />} />s
         <Route path="/gamePlan4" element={<GamePlan4 />} />s

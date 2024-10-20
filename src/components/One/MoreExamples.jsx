@@ -10,6 +10,7 @@ export default function MoreExamples() {
     { id: 6, text: "React Docs Product Search", link: "/productSearch" },
     { id: 7, text: "To Do List: This Dot Media", link: "/toDo" },
     { id: 8, text: "Count Down Time: Free Code Camp", link: "/countDown" },
+    { id: 9, text: "UI Horizontal Web Card", link: "/webCard" },
   ];
 
   return (
