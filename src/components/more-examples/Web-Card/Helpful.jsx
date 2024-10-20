@@ -4,15 +4,15 @@ export default function Helpful() {
   return (
     <>
       <section>
-        <p>Experienced with:</p>
+        <p>Experienced with</p>
 
-        <section className="flex gap-4 mt-4">
+        <section className="flex flex-col md:flex-row gap-4 mt-4">
           <Button
             buttonText={"React.js"}
             className={"bg-pink-300 rounded-full "}
           />
           <Button
-            buttonText={"Express.js/Node"}
+            buttonText={"Express.js/PostgreSQL"}
             className={"bg-pink-300  rounded-full"}
           />
           <Button
