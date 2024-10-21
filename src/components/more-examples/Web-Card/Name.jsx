@@ -1,4 +1,4 @@
-export default function Name({ name, title }) {
+export default function Name({ name }) {
   return (
     <section className="flex flex-col font-bold">
       <h2 className="text-3xl font-lobster">{name}</h2>

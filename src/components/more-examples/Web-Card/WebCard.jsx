@@ -23,5 +23,3 @@ export default function WebCard() {
     </main>
   );
 }
-
-//note to self, make common styles with @apply
