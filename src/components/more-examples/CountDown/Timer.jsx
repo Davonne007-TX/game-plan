@@ -50,6 +50,7 @@ export default function Timer() {
     setEventDate("");
   };
 
+  //
   const handleResetCountDown = () => {
     setCountDownStarted(false);
     setEventDate("");
@@ -68,7 +69,6 @@ export default function Timer() {
   };
 
   //
-
   const formatTime = (time) => {
     const seconds = Math.floor((time / 1000) % 60);
     const minutes = Math.floor((time / (1000 * 60)) % 60);
@@ -100,6 +100,7 @@ export default function Timer() {
       </section>
     );
   };
+
   return (
     <main className="max-w-sm md:max-w-2xl lg:max-w-3xl bg-gradient-to-r font-serif font-thin text-md md:text-lg lg:text-xl from-pink-200 to-pink-500 p-8 rounded-xl ml-auto mr-auto">
       <Header />
@@ -107,7 +108,7 @@ export default function Timer() {
       <h2 className="text-2xl mb-2 mt-8">
         {countDownStarted ? eventName : "Its Almost Time For..."}
       </h2>
-      <p className="mt-4">{countDownStarted && formatDate(eventDate)}</p>
+      <p className="mt-4"> {countDownStarted && formatDate(eventDate)}</p>
 
       {!countDownStarted ? (
         <form className="flex flex-col gap-2 ">
