@@ -1,9 +1,9 @@
 export default function InProgress() {
   const rightNow = [
     { inProgress: "Javascript Problem Solving", id: 0 },
-    { inProgress: "Building Frontend Projects", id: 1 },
-    { inProgress: "Learning TypeScript", id: 2 },
-    { inProgress: "React Documentation", id: 3 },
+    { inProgress: "Building Frontend Projects in React", id: 1 },
+    { inProgress: "Typescript", id: 2 },
+    { inProgress: "What is Java?", id: 3 },
   ];
   return (
     <section className="mt-10">
@@ -14,6 +14,3 @@ export default function InProgress() {
     </section>
   );
 }
-
-
- 
