@@ -1,9 +1,9 @@
 export default function InProgress() {
   const rightNow = [
-    { inProgress: "Javascript Problem Solving", id: 0 },
-    { inProgress: "Building Frontend Projects in React", id: 1 },
-    { inProgress: "Typescript", id: 2 },
-    { inProgress: "What is Java?", id: 3 },
+    { inProgress: "Javascript Problem Solving", id: 1 },
+    { inProgress: "Building Frontend Projects in React", id: 2 },
+    { inProgress: "Typescript", id: 3 },
+    { inProgress: "What is Java?", id: 4 },
   ];
   return (
     <section className="mt-10">
