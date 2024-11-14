@@ -13,9 +13,9 @@ export default function GamePlan13() {
           <p>
             Working on the same things from Game Plan 12 in regards to the first
             section.
-          </p>
-          <p>With the emphasis on Typescript, JavaScript and React.</p>
-
+          </p>{" "}
+          <br />
+          <p>With the emphasis on Typescript, JavaScript and React.js</p>
           <InProgress />
         </section>
 
