@@ -5,7 +5,7 @@ function GamePlan14() {
     <>
       <h2 className="text-green-600 text-center font-bold text-2xl md:text-3xl lg:text-4xl mb-10  ">
         Game Plan 14 <br />
-        <span className="text-lg font-mono">
+        <span className="text-xl font-mono">
           Listening To The Programming Podcast <br />
           Brought to you by: Leon Noel and Danny Thompson
         </span>

@@ -3,8 +3,20 @@ export default function Podcast1() {
     { point: "Make tutorials your own", id: 1 },
     { point: "What is your local market?", id: 2 },
     { point: "Soft skills can also get you the first job", id: 3 },
-    { point: "Play The Game" },
-    { point: "" },
+    { point: "Play the Game, The game exist", id: 4 },
+    { point: "Stand out in the market", id: 5 },
+    {
+      point: "Build Your Network,",
+      id: 6,
+    },
+    {
+      point: "Local community to lean on, on job search",
+      id: 7,
+    },
+    { point: "Network, network, network", id: 8 },
+    { point: "Invest in Your Growth", id: 9 },
+    { point: "Learn How To Play The Game", id: 10 },
+    { point: "Setup LinkedIn, Know your story" },
     { point: "" },
     { point: "" },
     { point: "" },
@@ -14,7 +26,7 @@ export default function Podcast1() {
   ];
   return (
     <>
-      <section className="text-white ml-20">
+      <section className="text-white flex flex-col justify-center items-center m-0">
         <h2 className="font-bold text-3xl font-mono">
           The Programming Podcast Key Takeaways
         </h2>
