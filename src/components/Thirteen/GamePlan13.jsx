@@ -7,7 +7,7 @@ export default function GamePlan13() {
     <>
       <main className="max-w-xs md:max-w-2xl ml-auto mr-auto text-white text-lg md:text-2xl">
         <section className="flex flex-col gap-2 font-serif">
-          <h2 className="font-bold text-2xl md:text-3xl lg:text-4x mb-10 font-mono">
+          <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl mb-10 font-mono">
             Game Plan #13
           </h2>
           <p>

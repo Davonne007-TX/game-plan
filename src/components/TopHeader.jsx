@@ -18,6 +18,7 @@ export default function TopHeader() {
     { id: 11, text: "#11", link: "/gamePlan11" },
     { id: 12, text: "#12", link: "/gamePlan12" },
     { id: 13, text: "#13", link: "/gamePlan13" },
+    { id: 14, text: "#14", link: "/gamePlan14" },
   ];
 
   const navigate = useNavigate();

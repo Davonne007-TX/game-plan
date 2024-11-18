@@ -30,6 +30,7 @@ import GamePlan10 from "./components/GamePlan10";
 import GamePlan11 from "./components/Eleven/GamePlan11";
 import GamePlan12 from "./components/Twelve/GamePlan12";
 import GamePlan13 from "./components/Thirteen/GamePlan13";
+import GamePlan14 from "./components/Fourteen/GamePlan14";
 
 //Note to self; lazy load components and images
 
@@ -79,6 +80,7 @@ function App() {
         <Route path="/gamePlan11" element={<GamePlan11 />} />
         <Route path="/gamePlan12" element={<GamePlan12 />} />
         <Route path="/gamePlan13" element={<GamePlan13 />} />
+        <Route path="/gamePlan14" element={<GamePlan14 />} />
       </Routes>
     </>
   );
