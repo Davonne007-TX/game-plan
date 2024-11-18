@@ -33,7 +33,7 @@ export default function Podcast1() {
     },
     {
       point:
-        "Make first and second point on Resume a home run so recruiters keep reading, Peak their curiosity ",
+        "Make first and second point on Resume a home run so recruiters keep reading, Peak their curiosity, Expand Your Value ",
       id: 20,
     },
   ];
