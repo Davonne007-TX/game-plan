@@ -44,7 +44,7 @@ export default function Podcast1() {
           The Programming Podcast Key Takeaways
         </h2>
 
-        <ul className="mt-8 text-2xl ml-10">
+        <ul className="mt-4 text-2xl ml-10">
           {keyPoints.map((points) => (
             <li key={points.id}>🔥 {points.point}</li>
           ))}
