@@ -40,11 +40,11 @@ export default function Podcast1() {
   return (
     <>
       <section className="text-white flex flex-col justify-center items-center m-0 mb-20">
-        <h2 className="font-bold text-3xl font-mono">
+        <h2 className="font-bold text-lg md:text-3xl font-mono">
           The Programming Podcast Key Takeaways
         </h2>
 
-        <ul className="mt-4 text-2xl ml-10">
+        <ul className="mt-4 text-lg md:text-2xl ml-10">
           {keyPoints.map((points) => (
             <li key={points.id}>🔥 {points.point}</li>
           ))}
