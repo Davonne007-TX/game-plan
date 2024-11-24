@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function TopHeader() {
@@ -37,7 +37,7 @@ export default function TopHeader() {
           D's Game Plan
         </h1>
         <button
-          className=" lg:hidden text-xl hover:text-pink-400"
+          className="md:hidden lg:hidden text-xl hover:text-pink-400"
           onClick={toggleNavBar}
         >
           ☰
