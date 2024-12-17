@@ -37,7 +37,7 @@ export default function ToDo() {
         Brought to you by Danny Thompson and @ThisDotMedia
       </p>
 
-      <section className="mt-20 max-w-5xl text-xl">
+      <section className="max-w-5xl text-xl">
         <input
           className="rounded-full w-80 md:w-96 p-4 text-black outline-none border-4 border-pink-400"
           placeholder="Add items to, to do list..."
