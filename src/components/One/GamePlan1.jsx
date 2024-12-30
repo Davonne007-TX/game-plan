@@ -44,8 +44,6 @@ export default function Home() {
         </section>
       </section>
       <Gif />
-      <MoreExamples />
-      <hr />
       <footer className="my-12 text-center text-4xl font-mono mt-20">
         <Link to="/gamePlan2" className="hover:text-pink-400">
           Continue ...

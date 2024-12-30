@@ -16,10 +16,12 @@ export default function MoreExamples() {
   return (
     <>
       <hr />
-      <section className="flex flex-col font-lobster ml-20 mt-10">
-        <h2 className="text-3xl text-center mb-10">Side Projects</h2>
+      <section className="flex flex-col font-lobster ml-20 mt-10 text-white">
+        <h2 className="text-4xl text-center mb-10 text-pink-600">
+          Side Projects
+        </h2>
         {mySideProjects.map((project) => (
-          <li key={project.id} className="text-2xl mb-4 hover:text-pink-400">
+          <li key={project.id} className="text-2xl mb-4 hover:text-pink-600">
             <Link to={project.link}>{project.text}</Link>
           </li>
         ))}
