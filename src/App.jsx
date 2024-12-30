@@ -32,6 +32,7 @@ import GamePlan11 from "./components/Eleven/GamePlan11";
 import GamePlan12 from "./components/Twelve/GamePlan12";
 import GamePlan13 from "./components/Thirteen/GamePlan13";
 import GamePlan14 from "./components/Fourteen/GamePlan14";
+import LetsLearnHooks from "./components/Hooks/LetsLearnHooks";
 
 //Note to self; lazy load components and images
 
@@ -49,7 +50,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/gamePlan1" element={<GamePlan1 />} />
-        <Route path="hooks" element={<Hooks />} />
         <Route
           path="/hookUseState"
           element={<HookUseState backToHooks={backToHooks} />}
@@ -83,6 +83,8 @@ function App() {
         <Route path="/gamePlan12" element={<GamePlan12 />} />
         <Route path="/gamePlan13" element={<GamePlan13 />} />
         <Route path="/gamePlan14" element={<GamePlan14 />} />
+        <Route path="/letsLearnHooks" element={<LetsLearnHooks />} />
+        <Route path="hooks" element={<Hooks />} />
       </Routes>
     </>
   );

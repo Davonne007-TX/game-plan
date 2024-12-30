@@ -20,6 +20,7 @@ export default function TopHeader() {
     { id: 13, text: "#13", link: "/gamePlan13" },
     { id: 14, text: "#14", link: "/gamePlan14" },
     { id: 15, text: "Side Projects", link: "/sideProjects" },
+    { id: 16, text: "React Hooks", link: "/letsLearnHooks" },
   ];
 
   const navigate = useNavigate();
@@ -32,7 +33,7 @@ export default function TopHeader() {
   };
 
   return (
-    <header className="flex flex-col lg:flex-row m-10 md:justify-between lg:justify-between items-center lg:gap-20 font-sixty text-white">
+    <header className="flex flex-col lg:flex-row m-8 md:justify-between lg:justify-between items-center lg:gap-20 font-sixty text-white">
       <section className="flex gap-20 md:gap-96 lg:gap-96">
         <h1 className="text-sm md:text-lg lg:text-xl pink-hover" onClick={home}>
           D's Game Plan
@@ -46,14 +47,13 @@ export default function TopHeader() {
       </section>
 
       <nav
-        className={`flex flex-col font-bold md:ml-auto md:flex-col lg:flex-row bg-pink-200 p-3 md:p-4 lg:p-4 rounded-3xl gap-10 text-sm mt-10 md:mt-10 ${
+        className={`flex flex-col font-bold md:flex-col lg:flex-row bg-pink-200 p-2 rounded-3xl gap-8 text-sm mt-10 md:mt-10 ${
           isMobileNavOpen ? "flex" : "hidden"
         } lg:flex`}
       >
-        <p className="text-pink-400">Game Plans:</p>
         {gamePlan.map((plan, id) => (
           <li
-            className="list-none hover:text-pink-400 text-black"
+            className="list-none hover:text-pink-400 text-black mt-2"
             key={id}
             onClick={toggleNavBar}
           >
