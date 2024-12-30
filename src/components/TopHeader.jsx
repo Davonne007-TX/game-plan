@@ -19,6 +19,7 @@ export default function TopHeader() {
     { id: 12, text: "#12", link: "/gamePlan12" },
     { id: 13, text: "#13", link: "/gamePlan13" },
     { id: 14, text: "#14", link: "/gamePlan14" },
+    { id: 15, text: "Side Projects", link: "/sideProjects" },
   ];
 
   const navigate = useNavigate();

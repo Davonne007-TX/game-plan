@@ -8,6 +8,7 @@ import Hooks from "./components/One/Hooks";
 import HookUseState from "./components/One/HookUseState";
 import HookUseCallBack from "./components/One/HookUseCallBack";
 import MoreUseCallback from "./components/One/MoreUseCallback";
+import SideProjects from "./components/more-examples/SideProjects";
 import MoreUseState from "./components/One/MoreUseState";
 import Lists from "./components/more-examples/Lists";
 import Toggle from "./components/more-examples/Toggle";
@@ -59,6 +60,7 @@ function App() {
         />
         <Route path="/moreUseCallback" element={<MoreUseCallback />} />
         <Route path="/moreUseState" element={<MoreUseState />} />
+        <Route path="/sideProjects" element={<SideProjects />} />
         <Route path="/lists" element={<Lists />} />
         <Route path="/toggle" element={<Toggle />} />
         <Route path="/pizzaHut" element={<ForFun />} />s
