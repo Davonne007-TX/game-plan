@@ -39,7 +39,7 @@ export default function TopHeader() {
           D's Game Plan
         </h1>
         <button
-          className="md:hidden lg:hidden text-xl hover:text-pink-400"
+          className="lg:hidden text-xl hover:text-pink-400"
           onClick={toggleNavBar}
         >
           ☰

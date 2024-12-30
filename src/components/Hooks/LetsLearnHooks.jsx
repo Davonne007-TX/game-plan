@@ -1,5 +1,11 @@
-import React from "react";
+import Hooks from "./Hooks";
 
 export default function LetsLearnHooks() {
-  return <div className="text-white">LetsLearnHooks</div>;
+  return (
+    <>
+      <section>
+        <Hooks />
+      </section>
+    </>
+  );
 }

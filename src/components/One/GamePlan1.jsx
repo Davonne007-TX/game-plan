@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import Gif from "./Gif";
-import MoreExamples from "./MoreExamples";
 
 const gamePlan1 = [
   { task: "Review what is React ✔ ", id: 1 },

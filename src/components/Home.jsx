@@ -1,13 +1,15 @@
 export default function Home() {
   return (
     <main className="flex flex-col justify-center items-center">
-      <h1 className="text-white font-sixty mt-20">A Web Dev Journey</h1>
+      <h1 className="text-white font-sixty mt-20  text-center text-xs md:text-sm lg:text-md">
+        A Web Dev Journey Learning React and growing as a Dev
+      </h1>
       <iframe
         src="https://giphy.com/embed/RbDKaczqWovIugyJmW"
         width="700"
         height="700"
         frameBorder="0"
-        className="giphy-embed -mt-20"
+        className="giphy-embed -mt-28 "
         allowFullScreen
       ></iframe>
       <p>
