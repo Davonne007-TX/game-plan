@@ -1,20 +1,22 @@
-// import Header from "./Header";
 import { Link } from "react-router-dom";
 import Image from "../Image";
 
 export default function Hooks() {
+  const reactHooks = [
+    { hook: "useState()", link: "/hookUseState", id: 1 },
+    { hook: "useCallBack()", link: "/hookUseCallBack", id: 2 },
+  ];
+
   return (
     <>
-      {/* <Header children={"Hooks"} /> */}
-      <section className="flex flex-col justify-center items-center mt-20 gap-10 font-sans text-2xl text-white">
-        <li className=" hover:text-blue-300">
-          <Link to="/hookUseState">useState</Link>
-        </li>
-        <li className=" hover:text-blue-300">
-          <Link to="/hookUseCallBack">useCallBack</Link>
-        </li>
+      <section className="flex flex-col justify-center items-center mt-20 gap-4 font-sans text-2xl text-white">
+        {reactHooks.map((rh) => (
+          <Link to={rh.link} key={rh.id} className="hover:text-pink-400">
+            {rh.hook}
+          </Link>
+        ))}
 
-        <Image src="/images/react.jpg" alt="React Logo" />
+        <Image src="/images/pinkReact.jpg" alt="React Logo by Grok 2" />
       </section>
     </>
   );
