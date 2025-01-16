@@ -2,11 +2,10 @@ export default function HigherThinking() {
   const higherLevelThinking = [
     { task: "Designing application architecture", id: 1 },
     { task: "Designing Database Schema", id: 2 },
-    { task: "Authentication", id: 3 },
-    { task: "System Design", id: 4 },
-    { task: "Logging and handling errors", id: 5 },
-    { task: "Clean", id: 6 },
-    { task: "Object Oriented Programming (OOP)", id: 7 },
+    { task: "System Design", id: 3 },
+    { task: "Logging and handling errors", id: 4 },
+    { task: "Clean Code", id: 5 },
+    { task: "Object Oriented Programming (OOP)", id: 6 },
   ];
 
   return (

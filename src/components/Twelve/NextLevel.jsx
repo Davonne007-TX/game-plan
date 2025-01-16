@@ -1,14 +1,15 @@
 export default function NextLevel() {
   const whatYouNeedToDo = [
-    { task: "Node.js, Express.js, SQL, PostreSQL", id: 1 },
+    { task: "Node.js, Express.js, SQL, PostreSQL, Rest API", id: 1 },
     { task: "Integrate front end components with API's", id: 2 },
-    { task: "What is Next.js?, Redux", id: 1 },
+    { task: "What is Next.js?, Redux, Authentication", id: 1 },
     {
       task: "Quality Fullstack Project, I'm seeing Fullstack vibes",
       id: 2,
     },
     { task: "What is Java?", id: 3 },
     { task: "What is Angular? AWS", id: 4 },
+    { task: "Unit Testing", id: 5 },
   ];
 
   return (
