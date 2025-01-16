@@ -17,7 +17,7 @@ export default function GamePlan9() {
             decent with JavaScript to where I can understand React better and
             move onto TypeScript. It comes to a point where you say "Theres no
             more playing around", this has to work. So what is in your job
-            market? Java, .Net, C#, SQL. TypeScript, as mentioned.
+            market? Java, .Net, C#, SQL. What is Jira? TypeScript, as mentioned.
           </p>
           <p>
             {" "}

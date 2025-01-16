@@ -3,11 +3,12 @@ import HigherThinking from "./HigherThinking";
 
 export default function GamePlan12() {
   const toDo = [
-    { task: "JavaScript Problem Solving", id: 0 },
-    { task: "React Concepts, How it works", id: 1 },
-    { task: "React Hooks", id: 2 },
-    { task: "Bigger Picture", id: 3 },
-    { task: "More Javascript, / Typescript", id: 4 },
+    { task: "JavaScript Problem Solving", id: 1 },
+    { task: "React Concepts, How it works", id: 2 },
+    { task: "React Hooks", id: 3 },
+    { task: "Bigger Picture", id: 4 },
+    { task: "More Javascript, / Typescript", id: 5 },
+    { task: "Always UI/UX, users in mind, everything", id: 6 },
   ];
 
   return (

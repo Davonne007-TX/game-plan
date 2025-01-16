@@ -1,17 +1,21 @@
 export default function NextLevel() {
   const whatYouNeedToDo = [
-    { task: "Express.js, SQL, PostreSQL", id: 0 },
-    { task: "What is Next.js?", id: 1 },
-    { task: "Quality Fullstack Project", id: 2 },
+    { task: "Node.js, Express.js, SQL, PostreSQL", id: 1 },
+    { task: "Integrate front end components with API's", id: 2 },
+    { task: "What is Next.js?, Redux", id: 1 },
+    {
+      task: "Quality Fullstack Project, I'm seeing Fullstack vibes",
+      id: 2,
+    },
     { task: "What is Java?", id: 3 },
-    { task: "What is GraphQL?", id: 4 },
+    { task: "What is Angular? AWS", id: 4 },
   ];
 
   return (
     <>
       <section className="flex-time gap-4">
-        <p className="text-3xl font-lobster mt-10 md:mt-20 lg:mt-10">
-          What to do next.
+        <p className="text-2xl lg:text-3xl font-lobster mt-10 md:mt-20 lg:mt-10">
+          What to do next. What do you see in market?
         </p>
         {whatYouNeedToDo.map((doNext) => (
           <li
