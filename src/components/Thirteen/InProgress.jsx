@@ -3,7 +3,7 @@ export default function InProgress() {
     { inProgress: "Javascript Problem Solving", id: 1 },
     { inProgress: "Building Frontend Projects in React", id: 2 },
     { inProgress: "Typescript", id: 3 },
-    { inProgress: "What is Java?", id: 4 },
+    { inProgress: "React bigger Picture, fundamentals", id: 4 },
   ];
   return (
     <section className="mt-10">
