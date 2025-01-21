@@ -21,10 +21,7 @@ export default function GamePlan2() {
         <section className="flex flex-col ml-20 mt-10 text-2xl font-gloria">
           <li>Responsive Styles on Capstone - - almost done</li>
           <li>Post Capstone - ✔ done</li>
-          <li>What projects should be on Portfolio? ✔ done </li>
-          <li>Major Errors on Projects ✔ done</li>
           <li>Post Starwars ✔ done</li>
-          <li>Getting projects on Portfolio ✔ done</li>
           <li>Leetcode, codewars, and practice problems - always</li>
           <br />
         </section>
