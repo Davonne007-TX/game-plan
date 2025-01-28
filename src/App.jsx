@@ -58,7 +58,10 @@ function App() {
           path="/hookUseCallBack"
           element={<HookUseCallBack backToHooks={backToHooks} />}
         />
-        <Route path="/moreUseCallback" element={<MoreUseCallback />} />
+        <Route
+          path="/moreUseCallback"
+          element={<MoreUseCallback backToHooks={backToHooks} />}
+        />
         <Route path="/moreUseState" element={<MoreUseState />} />
         <Route path="/sideProjects" element={<SideProjects />} />
         <Route path="/lists" element={<Lists />} />

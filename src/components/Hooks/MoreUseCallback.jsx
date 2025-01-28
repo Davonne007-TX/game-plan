@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useCallback, useState } from "react";
 import ReuseableButton from "../ReuseableButton";
 
-export default function MoreUseCallback({ backTooHooks }) {
+export default function MoreUseCallback({ backToHooks }) {
   const [count, setCount] = useState(0);
 
   //set a useCallback hook to set the count to + 1
@@ -36,7 +36,7 @@ export default function MoreUseCallback({ backTooHooks }) {
         </button>
         <section className=" flex gap-4 mt-20 text-black text-2xl">
           <ReuseableButton onClick={goBackToUseCallback} label="Go Back" />
-          <ReuseableButton onClick={backTooHooks} label="Back To Hooks" />
+          <ReuseableButton onClick={backToHooks} label="Back To Hooks" />
         </section>
       </section>
     </>
