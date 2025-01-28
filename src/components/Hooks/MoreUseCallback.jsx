@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useCallback, useState } from "react";
 import ReuseableButton from "../ReuseableButton";
 
-export default function MoreUseCallback() {
+export default function MoreUseCallback({ backTooHooks }) {
   const [count, setCount] = useState(0);
 
   //set a useCallback hook to set the count to + 1
@@ -15,25 +15,28 @@ export default function MoreUseCallback() {
     setCount(0);
   };
 
-  //useNavigate
   const navigate = useNavigate();
 
-  const goBack = () => {
-    navigate("/hookTwo");
+  const goBackToUseCallback = () => {
+    navigate("/hookUseCallBack");
   };
 
   return (
     <>
-      <section className="flex flex-col h-screen justify-center items-center font-sixty text-white text-5xl">
+      <section className="flex flex-col mt-24 justify-center items-center font-sixty text-white text-5xl">
         <p>Count:{count}</p>
-        <button onClick={handleClick} className="bg-black p-4 rounded mt-10">
-          Click this button
+        <button
+          onClick={handleClick}
+          className="bg-green-400 p-4 rounded-full mt-10"
+        >
+          Click this big button
         </button>
         <button onClick={clearCount} className="mt-20">
-          Clear Count
+          Clear Count Here 👈
         </button>
-        <section className="mt-20">
-          <ReuseableButton onClick={goBack} label="Go Back"></ReuseableButton>
+        <section className=" flex gap-4 mt-20 text-black text-2xl">
+          <ReuseableButton onClick={goBackToUseCallback} label="Go Back" />
+          <ReuseableButton onClick={backTooHooks} label="Back To Hooks" />
         </section>
       </section>
     </>

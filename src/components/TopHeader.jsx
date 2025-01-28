@@ -36,7 +36,7 @@ export default function TopHeader() {
     <header className="flex flex-col lg:flex-row m-8 md:justify-between lg:justify-between items-center lg:gap-20 font-sixty text-white">
       <section className="flex gap-20 md:gap-96 lg:gap-96">
         <h1 className="text-sm md:text-lg lg:text-xl pink-hover" onClick={home}>
-          D's Game Plan
+          Ds Game Plan
         </h1>
         <button
           className="lg:hidden text-xl hover:text-pink-400"

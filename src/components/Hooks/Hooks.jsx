@@ -21,3 +21,17 @@ export default function Hooks() {
     </>
   );
 }
+
+/*
+  Resources - 
+
+  - https://react.dev/reference/rules/rules-of-hooks
+
+
+
+
+
+
+
+
+*/

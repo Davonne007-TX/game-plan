@@ -1,17 +1,4 @@
-import React from "react";
-import { useNavigate, Link } from "react-router-dom";
-import ReuseableButton from "./ReuseableButton";
-
 export default function GamePlan2() {
-  const navigate = useNavigate();
-  const gamePlan1 = () => {
-    navigate("/gamePlan1");
-  };
-
-  const gamePlan4 = () => {
-    navigate("/gamePlan4");
-  };
-
   return (
     <>
       <section className="mt-20 text-white">

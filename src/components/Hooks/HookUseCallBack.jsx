@@ -5,21 +5,16 @@ import ReuseableButton from "../ReuseableButton";
 export default function hookUseCallback({ backToHooks }) {
   const [inputValue, setInputValue] = useState(""); //set the state for the input, as an empty string
 
-  //a function that takes an event, that sets the states function to the target value
-  const handleChange = (e) => {
-    setInputValue(e.target.value);
-  };
-
   const handleClick = useCallback(() => {
     console.log("The button has been activated, and has been clicked");
   }, []);
 
+  const handleChange = (e) => {
+    setInputValue(e.target.value);
+  };
+
   // use navigate
   const navigate = useNavigate();
-
-  const goBack = () => {
-    navigate("/hookUseState");
-  };
 
   const more = () => {
     navigate("/moreUseCallback");
@@ -47,7 +42,7 @@ export default function hookUseCallback({ backToHooks }) {
         <section className="flex flex-col gap-10 mt-10">
           <ReuseableButton
             onClick={backToHooks}
-            label="Go Back"
+            label="Back To Hooks"
             className=" bg-pink-200 p-2 text-black rounded-full hover:text-pink-600 font-mono"
           />
           <ReuseableButton

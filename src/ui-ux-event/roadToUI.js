@@ -144,7 +144,7 @@ Product Design:
     - having skills you can draw from 
     - tap into hte skills, that is 
     - your soft skills, and transferable skills
-    - companies start to see them, see how their expereice goes to design 
+    - companies start to see them, see how their experience goes to design 
 
 Design Engineer : Love this role, not very common
 - not expected to code
