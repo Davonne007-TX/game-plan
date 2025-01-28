@@ -3,7 +3,7 @@ import Gif from "./Gif";
 
 const gamePlan1 = [
   { task: "Review what is React ✔ ", id: 1 },
-  { task: "Javascript Review ✔, id: 2 " },
+  { task: "Javascript Review ✔", id: 2 },
   { task: "Review other peoples code ✔ ", id: 3 },
   { task: "The Bigger Picture ✔ ", id: 4 },
   { task: "LinkedIn update ✔ ", id: 5 },

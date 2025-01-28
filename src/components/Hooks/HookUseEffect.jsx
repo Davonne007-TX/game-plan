@@ -6,9 +6,13 @@ export default function HookUseEffect({ backToHooks }) {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   //on every render
+  //   useEffect(() => {
+  //     console.log("I re-rendered");
+  //   }); //no dependency array, optional, this will log every time there is a change
+
   useEffect(() => {
-    console.log("I re-rendered");
-  }); //dependency array, optional, changes the behavior
+    console.log("The component mounted");
+  }, []); //with dependency array,
 
   return (
     <section className="flex-time min-h-screen">
