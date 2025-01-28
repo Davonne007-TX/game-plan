@@ -5,6 +5,7 @@ export default function Hooks() {
   const reactHooks = [
     { hook: "useState()", link: "/hookUseState", id: 1 },
     { hook: "useCallBack()", link: "/hookUseCallBack", id: 2 },
+    { hook: "useEffect()", link: "/hookUseEffect", id: 3 },
   ];
 
   return (
@@ -26,6 +27,7 @@ export default function Hooks() {
   Resources - 
 
   - https://react.dev/reference/rules/rules-of-hooks
+
 
 
 

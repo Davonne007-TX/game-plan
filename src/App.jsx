@@ -4,12 +4,14 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import TopHeader from "./components/TopHeader";
 import Home from "./components/Home";
 import GamePlan1 from "./components/One/GamePlan1";
+import LetsLearnHooks from "./components/Hooks/LetsLearnHooks";
 import Hooks from "./components/Hooks/Hooks";
 import HookUseState from "./components/Hooks/HookUseState";
+import MoreUseState from "./components/Hooks/MoreUseState";
 import HookUseCallBack from "./components/Hooks/HookUseCallBack";
 import MoreUseCallback from "./components/Hooks/MoreUseCallback";
+import HookUseEffect from "./components/Hooks/HookUseEffect";
 import SideProjects from "./components/more-examples/SideProjects";
-import MoreUseState from "./components/Hooks/MoreUseState";
 import Lists from "./components/more-examples/Lists";
 import Toggle from "./components/more-examples/Toggle";
 import ForFun from "./components/more-examples/ForFun";
@@ -32,7 +34,6 @@ import GamePlan11 from "./components/Eleven/GamePlan11";
 import GamePlan12 from "./components/Twelve/GamePlan12";
 import GamePlan13 from "./components/Thirteen/GamePlan13";
 import GamePlan14 from "./components/Fourteen/GamePlan14";
-import LetsLearnHooks from "./components/Hooks/LetsLearnHooks";
 
 //Note to self; lazy load components and images
 
@@ -50,10 +51,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/gamePlan1" element={<GamePlan1 />} />
+        <Route path="/letsLearnHooks" element={<LetsLearnHooks />} />
+        <Route path="hooks" element={<Hooks />} />
         <Route
           path="/hookUseState"
           element={<HookUseState backToHooks={backToHooks} />}
         />
+        <Route path="/moreUseState" element={<MoreUseState />} />
         <Route
           path="/hookUseCallBack"
           element={<HookUseCallBack backToHooks={backToHooks} />}
@@ -62,7 +66,10 @@ function App() {
           path="/moreUseCallback"
           element={<MoreUseCallback backToHooks={backToHooks} />}
         />
-        <Route path="/moreUseState" element={<MoreUseState />} />
+        <Route
+          path="/hookUseEffect"
+          element={<HookUseEffect backToHooks={backToHooks} />}
+        />
         <Route path="/sideProjects" element={<SideProjects />} />
         <Route path="/lists" element={<Lists />} />
         <Route path="/toggle" element={<Toggle />} />
@@ -86,8 +93,6 @@ function App() {
         <Route path="/gamePlan12" element={<GamePlan12 />} />
         <Route path="/gamePlan13" element={<GamePlan13 />} />
         <Route path="/gamePlan14" element={<GamePlan14 />} />
-        <Route path="/letsLearnHooks" element={<LetsLearnHooks />} />
-        <Route path="hooks" element={<Hooks />} />
       </Routes>
     </>
   );
