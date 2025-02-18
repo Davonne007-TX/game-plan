@@ -2,7 +2,7 @@ export default function InProgress() {
   const rightNow = [
     { inProgress: "Javascript Problem Solving", id: 1 },
     { inProgress: "Building Frontend Projects in React", id: 2 },
-    { inProgress: "Typescript", id: 3 },
+    { inProgress: "Typescript, Testing", id: 3 },
     { inProgress: "React bigger Picture, fundamentals", id: 4 },
   ];
   return (

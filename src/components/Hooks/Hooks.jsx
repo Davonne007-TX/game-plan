@@ -6,6 +6,9 @@ export default function Hooks() {
     { hook: "useState()", link: "/hookUseState", id: 1 },
     { hook: "useCallBack()", link: "/hookUseCallBack", id: 2 },
     { hook: "useEffect()", link: "/hookUseEffect", id: 3 },
+    { hook: "useContext()", link: "/hookUseContext", id: 4 },
+    { hook: "useReducer()", link: "/hookUseReducer", id: 5 },
+    { hook: "useRef()", link: "/hookUseRef", id: 6 },
   ];
 
   return (

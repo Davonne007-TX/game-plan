@@ -1,18 +1,21 @@
 import { useEffect, useState } from "react";
 import ReuseableButton from "../ReuseableButton";
+import { use } from "react";
 
 export default function HookUseEffect({ backToHooks }) {
   const [name, setName] = useState("");
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   //on every render
-  //   useEffect(() => {
-  //     console.log("I re-rendered");
-  //   }); //no dependency array, optional, this will log every time there is a change
-
+  //empty dependency array, will render everyt ime there is a change
   useEffect(() => {
-    console.log("The component mounted");
-  }, []); //with dependency array,
+    console.log("Component Mounted");
+  });
+
+  //with dependency array, it will log once when it rerenders
+  //   useEffect(() => {
+  //     console.log("The component mounted");
+  //   }, []);
 
   return (
     <section className="flex-time min-h-screen">
