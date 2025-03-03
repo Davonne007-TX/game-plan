@@ -16,7 +16,10 @@ export default function GamePlan13() {
               first section.
             </p>{" "}
             <br />
-            <p>With the emphasis on Typescript, JavaScript and React.js</p>
+            <p>
+              With the emphasis on Typescript, JavaScript and React.js. Start
+              backend.
+            </p>
             <InProgress />
           </section>
 
