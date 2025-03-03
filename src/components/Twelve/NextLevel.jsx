@@ -15,17 +15,17 @@ export default function NextLevel() {
   return (
     <>
       <section className="flex-time gap-4 text-center">
-        <p className="text-2xl lg:text-3xl font-lobster mt-10 md:mt-20 lg:mt-10">
+        <ul className="text-2xl lg:text-3xl font-lobster mt-10 md:mt-20 lg:mt-10">
           What to do next. What do you see in market?
-        </p>
-        {whatYouNeedToDo.map((doNext) => (
-          <li
-            key={doNext.id}
-            className="text-xl list-none font-bold text-pink-300"
-          >
-            {doNext.task}
-          </li>
-        ))}
+          {whatYouNeedToDo.map((doNext) => (
+            <li
+              key={doNext.id}
+              className="text-xl list-none font-sans p-2 font-bold text-pink-300"
+            >
+              {doNext.task}
+            </li>
+          ))}
+        </ul>
       </section>
     </>
   );

@@ -11,17 +11,17 @@ export default function HigherThinking() {
   return (
     <>
       <section className="flex-time gap-4 mb-10">
-        <p className="text-2xl lg:text-3xl l font-mono mt-10 md:mt-20 lg:mt-10">
+        <ul className="text-2xl lg:text-3xl font-lobster  text-center mt-10 md:mt-20 lg:mt-10">
           Higher Level Thinking
-        </p>
-        {higherLevelThinking.map((nextLevel) => (
-          <li
-            key={nextLevel.id}
-            className="text-xl list-none font-mono text-green-500"
-          >
-            {nextLevel.task}
-          </li>
-        ))}
+          {higherLevelThinking.map((nextLevel) => (
+            <li
+              key={nextLevel.id}
+              className="text-xl list-none font-sans p-2 font-bold text-pink-300"
+            >
+              {nextLevel.task}
+            </li>
+          ))}
+        </ul>
       </section>
     </>
   );
