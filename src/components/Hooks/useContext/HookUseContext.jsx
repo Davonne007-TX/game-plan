@@ -15,7 +15,11 @@ export default function HookUseContext() {
           </h1>
         </section>
 
-        <section className="max-w-xl mx-auto p-2 mt-20 bg-pink-600">
+        <section
+          className={`max-w-xl mx-auto p-2 mt-20  ${
+            theme === "dark" ? "bg-pink-600" : "bg-white text-black"
+          }`}
+        >
           <Form />
           <label>
             <input
