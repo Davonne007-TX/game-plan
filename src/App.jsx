@@ -11,7 +11,7 @@ import MoreUseState from "./components/Hooks/MoreUseState";
 import HookUseCallBack from "./components/Hooks/HookUseCallBack";
 import MoreUseCallback from "./components/Hooks/MoreUseCallback";
 import HookUseEffect from "./components/Hooks/HookUseEffect";
-import HookUseContext from "./components/Hooks/HookUseContext";
+import HookUseContext from "./components/Hooks/useContext/HookUseContext";
 import SideProjects from "./components/more-examples/SideProjects";
 import Lists from "./components/more-examples/Lists";
 import Toggle from "./components/more-examples/Toggle";
