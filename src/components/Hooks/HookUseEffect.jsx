@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import ReuseableButton from "../ReuseableButton";
-import { use } from "react";
 
 export default function HookUseEffect({ backToHooks }) {
   const [name, setName] = useState("");

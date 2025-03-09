@@ -1,9 +1,10 @@
 import { createContext, useContext, useState } from "react";
 import Form from "./Form";
+import ReuseableButton from "../../ReuseableButton";
 
 export const ThemeContext = createContext(null);
 
-export default function HookUseContext() {
+export default function HookUseContext({ backToHooks }) {
   const [theme, setTheme] = useState("light");
 
   return (
@@ -33,6 +34,10 @@ export default function HookUseContext() {
           </label>
         </section>
       </ThemeContext.Provider>
+
+      <section className=" mt-20 flex justify-center items-center">
+        <ReuseableButton label="Back To Hooks" onClick={backToHooks} />
+      </section>
     </>
   );
 }
