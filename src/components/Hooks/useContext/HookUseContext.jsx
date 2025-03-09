@@ -16,7 +16,7 @@ export default function HookUseContext() {
         </section>
 
         <section
-          className={`max-w-xl mx-auto p-8 mt-20 rounded-xl flex flex-col gap-4  ${
+          className={`max-w-xs md:max-w-xl mx-auto p-8 mt-20 rounded-xl flex flex-col gap-4  ${
             theme === "dark" ? "bg-pink-600 text-white" : "bg-white text-black"
           }`}
         >
