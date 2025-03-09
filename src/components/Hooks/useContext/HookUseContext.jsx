@@ -16,12 +16,12 @@ export default function HookUseContext() {
         </section>
 
         <section
-          className={`max-w-xl mx-auto p-2 mt-20  ${
-            theme === "dark" ? "bg-pink-600" : "bg-white text-black"
+          className={`max-w-xl mx-auto p-8 mt-20 rounded-xl flex flex-col gap-4  ${
+            theme === "dark" ? "bg-pink-600 text-white" : "bg-white text-black"
           }`}
         >
           <Form />
-          <label>
+          <label className="font-mono">
             <input
               type="checkbox"
               checked={theme === "dark"}

@@ -6,9 +6,11 @@ import { ThemeContext } from "./HookUseContext";
 export default function Form({ children }) {
   const theme = useContext(ThemeContext);
   return (
-    <Panel title={"Welcome"} theme={theme}>
-      <UseContextButton>Sign Up</UseContextButton>
-      <UseContextButton>Login</UseContextButton>
+    <Panel title={"Hello World, lets connect..!"} theme={theme}>
+      <div className="flex gap-8 mt-4">
+        <UseContextButton>Sign Up</UseContextButton>
+        <UseContextButton>Login</UseContextButton>
+      </div>
     </Panel>
   );
 }
