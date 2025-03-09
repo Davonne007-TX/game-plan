@@ -5,7 +5,11 @@ export default function UseContextButton({ children }) {
   const theme = useContext(ThemeContext);
   const className = "button-" + theme;
   return (
-    <button className={`bg-gray-300 font-sixty p-2 rounded ${className}`}>
+    <button
+      className={`font-sixty p-2 rounded text-sm ${className} ${
+        theme === "dark" ? "bg-black" : "bg-gray-300"
+      }`}
+    >
       {children}
     </button>
   );

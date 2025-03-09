@@ -7,7 +7,7 @@ export default function Panel({ title, children }) {
 
   return (
     <section className={className}>
-      <h3 className="font-sixty text-2xl md:text-3xl">{title}</h3>
+      <h3 className="font-sixty text-xl md:text-3xl">{title}</h3>
       {children}
     </section>
   );
