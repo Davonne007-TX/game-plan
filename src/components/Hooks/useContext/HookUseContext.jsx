@@ -1,7 +1,7 @@
 import { createContext, useContext, useState } from "react";
 import Form from "./Form";
 
-const ThemeContext = createContext(null);
+export const ThemeContext = createContext(null);
 
 export default function HookUseContext() {
   const [theme, setTheme] = useState("light");
