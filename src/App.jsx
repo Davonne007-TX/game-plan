@@ -12,6 +12,7 @@ import HookUseCallBack from "./components/Hooks/HookUseCallBack";
 import MoreUseCallback from "./components/Hooks/MoreUseCallback";
 import HookUseEffect from "./components/Hooks/HookUseEffect";
 import HookUseContext from "./components/Hooks/useContext/HookUseContext";
+import SecondExample from "./components/Hooks/useContext/SecondExample";
 import SideProjects from "./components/more-examples/SideProjects";
 import Lists from "./components/more-examples/Lists";
 import Toggle from "./components/more-examples/Toggle";
@@ -75,6 +76,7 @@ function App() {
           path="/hookUseContext"
           element={<HookUseContext backToHooks={backToHooks} />}
         />
+        <Route path="/nextExample" element={<SecondExample />} />
         <Route path="/sideProjects" element={<SideProjects />} />
         <Route path="/lists" element={<Lists />} />
         <Route path="/toggle" element={<Toggle />} />

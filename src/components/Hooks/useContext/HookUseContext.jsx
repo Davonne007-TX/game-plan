@@ -1,11 +1,18 @@
 import { createContext, useContext, useState } from "react";
 import Form from "./Form";
 import ReuseableButton from "../../ReuseableButton";
+import { useNavigate } from "react-router-dom";
 
 export const ThemeContext = createContext(null);
 
 export default function HookUseContext({ backToHooks }) {
   const [theme, setTheme] = useState("light");
+
+  const navigate = useNavigate();
+
+  const nextExample = () => {
+    navigate("/nextExample");
+  };
 
   return (
     <>
@@ -35,8 +42,9 @@ export default function HookUseContext({ backToHooks }) {
         </section>
       </ThemeContext.Provider>
 
-      <section className=" mt-20 flex justify-center items-center">
+      <section className=" mt-20 flex gap-8 justify-center items-center">
         <ReuseableButton label="Back To Hooks" onClick={backToHooks} />
+        <ReuseableButton label={"Next Example"} onClick={nextExample} />
       </section>
     </>
   );
