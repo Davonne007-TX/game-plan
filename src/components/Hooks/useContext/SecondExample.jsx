@@ -13,7 +13,7 @@ export default function SecondExample() {
       <CurrentUserContext.Provider value={{ currentUser, setCurrentUser }}>
         <WelcomePanel />
 
-        <label className="text-white font-mono flex justify-center items-center mt-4">
+        <label className="text-white font-mono flex gap-4 justify-center items-center mt-4">
           <input
             type="checkbox"
             checked={changeTheme === "dark"}

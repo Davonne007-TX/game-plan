@@ -42,6 +42,7 @@ export default function LoginForm() {
             name: firstName + "" + lastName,
           });
         }}
+        className={"hover:scale-110"}
       >
         Log in
       </SecondExampleButton>
