@@ -39,10 +39,9 @@ export default function LoginForm() {
         disabled={!canLogin}
         onClick={() => {
           setCurrentUser({
-            name: firstName + "" + lastName,
+            name: firstName + " " + lastName,
           });
         }}
-        className={"hover:scale-110"}
       >
         Log in
       </SecondExampleButton>

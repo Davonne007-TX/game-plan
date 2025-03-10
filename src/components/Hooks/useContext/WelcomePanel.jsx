@@ -15,7 +15,7 @@ export default function WelcomePanel({ children }) {
         changeTheme === "dark" ? "bg-pink-600" : "bg-white"
       } ${className}`}
     >
-      <SecondPanel title="Welcome">
+      <SecondPanel title="The Web Dev Journey">
         {currentUser !== null ? <Greeting /> : <LoginForm />}
       </SecondPanel>
     </section>
