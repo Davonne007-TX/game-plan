@@ -11,7 +11,7 @@ export default function WelcomePanel({ children }) {
 
   return (
     <section
-      className={`p-4 border-2 rounded-3xl max-w-xl mx-auto mt-40 ${
+      className={`p-4 border-2 rounded-3xl max-w-xl mx-auto mt-20 ${
         changeTheme === "dark" ? "bg-pink-600" : "bg-white"
       } ${className}`}
     >

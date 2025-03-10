@@ -76,7 +76,10 @@ function App() {
           path="/hookUseContext"
           element={<HookUseContext backToHooks={backToHooks} />}
         />
-        <Route path="/nextExample" element={<SecondExample />} />
+        <Route
+          path="/nextExample"
+          element={<SecondExample backToHooks={backToHooks} />}
+        />
         <Route path="/sideProjects" element={<SideProjects />} />
         <Route path="/lists" element={<Lists />} />
         <Route path="/toggle" element={<Toggle />} />
