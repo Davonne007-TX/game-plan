@@ -1,15 +1,19 @@
 import { useContext, useState } from "react";
 import SecondExampleButton from "./SecondExampleButton";
-import { CurrentUserContext } from "./SecondExample";
+import { ChangeThemeContext, CurrentUserContext } from "./SecondExample";
 
 export default function LoginForm() {
   const { setCurrentUser } = useContext(CurrentUserContext);
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const canLogin = firstName.trim() !== "" && lastName.trim();
+  const { changeTheme } = useContext(ChangeThemeContext);
+  const className = "background-" + changeTheme;
   return (
     <form
-      className={`flex flex-col rounded-2xl bg-purple-500 font-mono gap-4 p-4 justify-center items-center mt-4`}
+      className={`flex flex-col rounded-2xl font-mono gap-4 p-4 justify-center items-center mt-4 ${
+        changeTheme === "dark" ? "bg-pink-200" : "bg-purple-600"
+      } ${className}`}
     >
       <label className="text-xl">
         First Name:
