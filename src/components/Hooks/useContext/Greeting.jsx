@@ -14,7 +14,7 @@ export default function Greeting() {
             : "bg-purple-500 text-black"
         } `}
       >
-        <p>You are logged in as {currentUser.name}</p>;
+        <p>You are logged in as {currentUser.name}</p>
       </section>
     </>
   );
