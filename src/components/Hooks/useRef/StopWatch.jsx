@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import ReuseableButton from "../../ReuseableButton";
 import { useNavigate } from "react-router-dom";
 
@@ -8,6 +8,7 @@ export default function StopWatch({ backToHooks }) {
   const intervalRef = useRef(null);
 
   const startStopWatch = () => {
+    if (intervalRef.current) return;
     setStartTime(Date.now());
     setNow(Date.now());
 
@@ -25,6 +26,16 @@ export default function StopWatch({ backToHooks }) {
   if (startTime !== null && now != null) {
     secondsPassed = (now - startTime) / 1000;
   }
+  useEffect(() => {
+    return () => clearInterval(intervalRef.current);
+  }, []);
+
+  const resetStopWatch = () => {
+    clearInterval(intervalRef.current);
+    intervalRef.current = null;
+    setStartTime(null);
+    setNow(null);
+  };
 
   const navigate = useNavigate();
   const goBack = () => {
@@ -51,6 +62,12 @@ export default function StopWatch({ backToHooks }) {
               onClick={stopStopWatch}
             >
               Stop
+            </button>
+            <button
+              onClick={resetStopWatch}
+              className="bg-purple-600 p-2 rounded-xl text-xl md:text-3xl hover:scale-110"
+            >
+              Reset
             </button>
           </div>
         </div>
