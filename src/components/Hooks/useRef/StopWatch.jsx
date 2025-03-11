@@ -47,25 +47,25 @@ export default function StopWatch({ backToHooks }) {
         <h1 className="text-purple-600 text-2xl">useRef Stop Watch</h1>
 
         <div className="bg-purple-100 p-2 w-full mt-20">
-          <h2 className="text-2xl md:text-5xl md:ml-10">
+          <h2 className="text-2xl md:text-3xl md:ml-10">
             Time Has Passed: {secondsPassed.toFixed(3)}
           </h2>
           <div className="flex gap-8 mt-4 md:ml-10">
             <button
-              className="bg-purple-600 p-2 rounded-xl text-xl md:text-3xl hover:scale-110"
+              className="bg-purple-600 p-2 rounded-xl text-xl md:text-2xl hover:scale-110"
               onClick={startStopWatch}
             >
               Start
             </button>
             <button
-              className="bg-purple-600 p-2 rounded-xl text-xl md:text-3xl hover:scale-110"
+              className="bg-purple-600 p-2 rounded-xl text-xl md:text-2xl hover:scale-110"
               onClick={stopStopWatch}
             >
               Stop
             </button>
             <button
               onClick={resetStopWatch}
-              className="bg-purple-600 p-2 rounded-xl text-xl md:text-3xl hover:scale-110"
+              className="bg-purple-600 p-2 rounded-xl text-xl md:text-2xl hover:scale-110"
             >
               Reset
             </button>
