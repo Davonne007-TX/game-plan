@@ -8,8 +8,3 @@ export default function ReuseableButton({ onClick, label }) {
     </button>
   );
 }
-
-//creating a reuseable button that you can use on multiple components,
-//without repeating your self, DRY
-
-// bg-black p-2 text-white rounded-full hover:text-blue-600 font-serif"

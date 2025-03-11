@@ -5,6 +5,7 @@ import ReuseableButton from "../ReuseableButton";
 export default function hookUseCallback({ backToHooks }) {
   const [inputValue, setInputValue] = useState(""); //set the state for the input, as an empty string
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const handleClick = useCallback(() => {
     console.log("The button has been activated, and has been clicked");
   }, []);
@@ -14,6 +15,7 @@ export default function hookUseCallback({ backToHooks }) {
   };
 
   // use navigate
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const navigate = useNavigate();
 
   const more = () => {
