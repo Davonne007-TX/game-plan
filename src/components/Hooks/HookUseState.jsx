@@ -13,12 +13,7 @@ export default function HookUseState({ backToHooks }) {
     setCount((prevCount) => prevCount - 1);
   };
 
-  //use navigate
   const navigate = useNavigate();
-
-  const nextHook = () => {
-    navigate("/hookUseCallback");
-  };
 
   const moreUseState = () => {
     navigate("/moreUseState");
@@ -26,8 +21,9 @@ export default function HookUseState({ backToHooks }) {
 
   return (
     <>
-      <section className="flex justify-center items-center flex-col mt-10 font-lobster text-lg md:text-lg lg:text-2xl ">
-        <p className="text-pink-400 text-3xl">The count is {count}</p>
+      <section className="flex justify-center items-center flex-col mt-10 font-lobster text-lg md:text-lg lg:text-2xl">
+        <h1 className="text-pink-400 text-2xl md:text-3xl">useState Hook</h1>
+        <p className="text-pink-400 text-3xl mt-12">The count is {count}</p>
         <section className="flex gap-10 mt-10">
           <ReuseableButton onClick={increment} label="Increment Count" />
           <ReuseableButton onClick={decrement} label="Decrement Count" />
@@ -48,9 +44,8 @@ export default function HookUseState({ backToHooks }) {
             </a>
           </p>
         </section>
-        <section className="mt-10 flex gap-10">
+        <section className="mt-10 flex gap-8">
           <ReuseableButton label="More useState" onClick={moreUseState} />
-          <ReuseableButton onClick={nextHook} label="Next Hook" />
           <ReuseableButton onClick={backToHooks} label="Back To Hooks" />
         </section>
       </section>

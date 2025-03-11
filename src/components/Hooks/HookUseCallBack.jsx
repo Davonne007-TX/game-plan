@@ -25,23 +25,22 @@ export default function hookUseCallback({ backToHooks }) {
   return (
     <>
       <section className="flex flex-col justify-center items-center font-lobster mt-10">
+        <h1 className="text-pink-200 text-2xl md:text-3xl">useCallback Hook</h1>
         <input
           value={inputValue}
           onChange={handleChange}
           placeholder="Type Something..."
-          className="p-2 outline-none border-2 border-black"
+          className="p-2 outline-none border-2 text-2xl border-black mt-20"
         />
-
-        <p className="text-pink-300 mt-10">You typed: {inputValue}</p>
+        <p className="text-pink-300 mt-10 text-2xl">You typed: {inputValue}</p>
 
         <button
           onClick={handleClick}
-          className="bg-white mt-20 text-2xl lg:ext-4xl rounded-full font-lobster p-2"
+          className="bg-white mt-10 text-xl lg:text-2xl rounded-full font-lobster p-2"
         >
           Click and check console.log to see
         </button>
-
-        <section className="flex flex-col gap-10 mt-10">
+        <section className="flex gap-8 mt-10">
           <ReuseableButton
             onClick={backToHooks}
             label="Back To Hooks"
@@ -57,10 +56,3 @@ export default function hookUseCallback({ backToHooks }) {
     </>
   );
 }
-
-//useCallback hook
-//  The useCallback hook is used to memoize functions in functional components to
-// prevent unnecessary re-rendering.
-
-//The useCallback memorizes functions
-//  - optimize performance

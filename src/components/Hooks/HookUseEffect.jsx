@@ -38,11 +38,14 @@ export default function HookUseEffect({ backToHooks }) {
   };
 
   return (
-    <section className="flex-time min-h-screen">
-      <h1 className="text-white font-anton text-2xl md:text-4xl border-4 p-4 border-pink-400 ">
+    <section className="flex-time">
+      <h1 className="text-2xl md:text-3xl font-mono text-pink-400 mb-40">
+        useEffect Hook
+      </h1>
+      <h2 className="text-white font-anton text-2xl md:text-4xl border-4 p-4 border-pink-400 ">
         Life Cycle of a Component... <br />
         type and open console.log
-      </h1>
+      </h2>
 
       <p className="text-white mt-4 font-anton text-2xl md:text-3xl">
         The window width is: {windowWidth}
@@ -56,7 +59,7 @@ export default function HookUseEffect({ backToHooks }) {
         className="mt-8 p-2 rounded-xl text-pink-400 font-anton outline-none text-xl"
       />
 
-      <section className="mt-40">
+      <section className="mt-20">
         <ReuseableButton label="Back To Hooks" onClick={backToHooks} />
       </section>
     </section>

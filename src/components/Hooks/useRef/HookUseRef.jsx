@@ -16,7 +16,10 @@ export default function HookUseRef({ backToHooks }) {
   }
   return (
     <section className="flex-time">
-      <h2 className="font-pizza text-2xl text-white">Hook useRef</h2>;
+      <h2 className="font-pizza text-2xl md:text-3xl text-white">
+        Hook useRef
+      </h2>
+      ;
       <button
         onClick={handleClick}
         className="bg-green-500 rounded-full mt-40 p-2 text-xl md:text-3xl font-pizza hover:scale-110"
