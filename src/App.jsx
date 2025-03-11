@@ -37,6 +37,7 @@ import GamePlan11 from "./components/Eleven/GamePlan11";
 import GamePlan12 from "./components/Twelve/GamePlan12";
 import GamePlan13 from "./components/Thirteen/GamePlan13";
 import GamePlan14 from "./components/Fourteen/GamePlan14";
+import StopWatch from "./components/Hooks/useRef/StopWatch";
 
 //Note to self; lazy load components and images
 
@@ -81,7 +82,11 @@ function App() {
           path="/nextExample"
           element={<SecondExample backToHooks={backToHooks} />}
         />
-        <Route path="/hookUseRef" element={<HookUseRef backToHooks />} />
+        <Route
+          path="/hookUseRef"
+          element={<HookUseRef backToHooks={backToHooks} />}
+        />
+        <Route path="/useRefStopWatch" element={<StopWatch />} />
         <Route path="/sideProjects" element={<SideProjects />} />
         <Route path="/lists" element={<Lists />} />
         <Route path="/toggle" element={<Toggle />} />
