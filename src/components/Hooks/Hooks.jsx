@@ -7,13 +7,13 @@ export default function Hooks() {
     { hook: "useCallBack()", link: "/hookUseCallBack", id: 2 },
     { hook: "useEffect()", link: "/hookUseEffect", id: 3 },
     { hook: "useContext()", link: "/hookUseContext", id: 4 },
-    { hook: "useReducer()", link: "/hookUseReducer", id: 5 },
-    { hook: "useRef()", link: "/hookUseRef", id: 6 },
+    { hook: "useRef()", link: "/hookUseRef", id: 5 },
+    //   { hook: "useReducer()", link: "/hookUseReducer", id: 6 },
   ];
 
   return (
     <>
-      <section className="flex flex-col justify-center items-center mt-20 gap-4 font-sans text-2xl text-white">
+      <section className="flex flex-col justify-center items-center mt-20 gap-4 font-mono text-2xl text-white">
         {reactHooks.map((rh) => (
           <Link to={rh.link} key={rh.id} className="hover:text-pink-400">
             {rh.hook}
