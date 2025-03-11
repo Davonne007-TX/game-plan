@@ -86,7 +86,10 @@ function App() {
           path="/hookUseRef"
           element={<HookUseRef backToHooks={backToHooks} />}
         />
-        <Route path="/useRefStopWatch" element={<StopWatch />} />
+        <Route
+          path="/useRefStopWatch"
+          element={<StopWatch backToHooks={backToHooks} />}
+        />
         <Route path="/sideProjects" element={<SideProjects />} />
         <Route path="/lists" element={<Lists />} />
         <Route path="/toggle" element={<Toggle />} />
