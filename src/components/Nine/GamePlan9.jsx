@@ -15,7 +15,7 @@ export default function GamePlan9() {
 
   const jobMarket = [
     `So what is in your job market? Java, .Net, C#, SQL. What is
-     Jira? TypeScript, as mentioned. I really don't know about these these languages/tech so I defitinely
+     Jira? TypeScript, as mentioned. I really don't know about these these languages/tech so I definitely
      need to do some more research. `,
   ];
 

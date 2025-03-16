@@ -31,7 +31,7 @@ export default function GamePlan12() {
         </ul>
         <NextLevel />
         <HigherThinking />
-      </section>
+      </section>ß
     </>
   );
 }

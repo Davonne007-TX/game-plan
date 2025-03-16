@@ -6,6 +6,7 @@ export default function HigherThinking() {
     { task: "Logging and handling errors", id: 4 },
     { task: "Clean Code", id: 5 },
     { task: "Object Oriented Programming (OOP)", id: 6 },
+    { task: "DSA", id: 7 },
   ];
 
   return (
