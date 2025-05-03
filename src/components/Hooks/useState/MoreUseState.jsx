@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Clock from "./Clock";
-import ReuseableButton from "../ReuseableButton";
+import Clock from "../Clock";
+import ReuseableButton from "../../ReuseableButton";
 import { useNavigate } from "react-router-dom";
 
 function useTime() {
@@ -22,6 +22,10 @@ export default function MoreUseState() {
   const navigate = useNavigate();
   function goBack() {
     navigate("/hookUseState");
+  }
+
+  function moreUseState3() {
+    navigate("/thirdExampleUseState");
   }
 
   //one way to do a handel change through a function or you can do a callback function within the onChange event
@@ -50,6 +54,7 @@ export default function MoreUseState() {
         </p>
         <Clock color={color} time={time.toLocaleTimeString()} />
         <ReuseableButton label="Go Back" onClick={goBack} />
+        <ReuseableButton label="More useState" onClick={moreUseState3} />
       </section>
     </>
   );

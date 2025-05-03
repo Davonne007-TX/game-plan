@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import ReuseableButton from "../ReuseableButton";
+import ReuseableButton from "../../ReuseableButton";
 
 export default function HookUseState({ backToHooks }) {
   const [count, setCount] = useState(0);
@@ -24,10 +24,10 @@ export default function HookUseState({ backToHooks }) {
       <section className="flex justify-center items-center flex-col mt-10 font-lobster text-lg md:text-lg lg:text-2xl">
         <h1 className="text-pink-400 text-2xl md:text-3xl">useState Hook</h1>
         <p className="text-pink-400 text-3xl mt-12">The count is {count}</p>
-        <section className="flex gap-10 mt-10">
+        <div className="flex gap-10 mt-10">
           <ReuseableButton onClick={increment} label="Increment Count" />
           <ReuseableButton onClick={decrement} label="Decrement Count" />
-        </section>
+        </div>
 
         <section className="mt-10">
           <iframe
@@ -44,10 +44,11 @@ export default function HookUseState({ backToHooks }) {
             </a>
           </p>
         </section>
-        <section className="mt-10 flex gap-8">
-          <ReuseableButton label="More useState" onClick={moreUseState} />
+        <div className="mt-10 flex gap-8">
+          l
           <ReuseableButton onClick={backToHooks} label="Back To Hooks" />
-        </section>
+          <ReuseableButton label="More useState" onClick={moreUseState} />
+        </div>
       </section>
     </>
   );
