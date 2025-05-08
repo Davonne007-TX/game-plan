@@ -5,33 +5,33 @@ import TopHeader from "./components/TopHeader";
 
 // Lazy-loaded components
 const Home = lazy(() => import("./components/Home"));
-const GamePlan1 = lazy(() => import("./components/One/GamePlan1"));
-const LetsLearnHooks = lazy(() => import("./components/Hooks/LetsLearnHooks"));
-const Hooks = lazy(() => import("./components/Hooks/Hooks"));
+const GamePlan1 = lazy(() => import("./components/one/GamePlan1"));
+const LetsLearnHooks = lazy(() => import("./components/hooks/LetsLearnHooks"));
+const Hooks = lazy(() => import("./components/hooks/Hooks"));
 const HookUseState = lazy(() =>
-  import("./components/Hooks/useState/HookUseState")
+  import("./components/hooks/useState/HookUseState")
 );
 const MoreUseState = lazy(() =>
-  import("./components/Hooks/useState/MoreUseState")
+  import("./components/hooks/useState/MoreUseState")
 );
 const ThirdExampleUseState = lazy(() =>
-  import("./components/Hooks/useState/ThirdExampleUseState")
+  import("./components/hooks/useState/ThirdExampleUseState")
 );
 const HookUseCallBack = lazy(() =>
-  import("./components/Hooks/HookUseCallBack")
+  import("./components/hooks/HookUseCallBack")
 );
 const MoreUseCallback = lazy(() =>
-  import("./components/Hooks/MoreUseCallback")
+  import("./components/hooks/MoreUseCallback")
 );
-const HookUseEffect = lazy(() => import("./components/Hooks/HookUseEffect"));
+const HookUseEffect = lazy(() => import("./components/hooks/HookUseEffect"));
 const HookUseContext = lazy(() =>
-  import("./components/Hooks/useContext/HookUseContext")
+  import("./components/hooks/useContext/HookUseContext")
 );
 const SecondExample = lazy(() =>
-  import("./components/Hooks/useContext/SecondExample")
+  import("./components/hooks/useContext/SecondExample")
 );
-const HookUseRef = lazy(() => import("./components/Hooks/useRef/HookUseRef"));
-const StopWatch = lazy(() => import("./components/Hooks/useRef/StopWatch"));
+const HookUseRef = lazy(() => import("./components/hooks/useRef/HookUseRef"));
+const StopWatch = lazy(() => import("./components/hooks/useRef/StopWatch"));
 const SideProjects = lazy(() =>
   import("./components/more-examples/SideProjects")
 );
@@ -51,16 +51,16 @@ const WebCard = lazy(() =>
 const GamePlan2 = lazy(() => import("./components/GamePlan2"));
 const GamePlan3 = lazy(() => import("./components/GamePlan3"));
 const GamePlan4 = lazy(() => import("./components/GamePlan4"));
-const GamePlan5 = lazy(() => import("./components/Five/GamePlan5"));
+const GamePlan5 = lazy(() => import("./components/five/GamePlan5"));
 const GamePlan6 = lazy(() => import("./components/GamePlan6"));
 const GamePlan7 = lazy(() => import("./components/GamePlan7"));
-const GamePlan8 = lazy(() => import("./components/Eight/GamePlan8"));
-const GamePlan9 = lazy(() => import("./components/Nine/GamePlan9"));
+const GamePlan8 = lazy(() => import("./components/eight/GamePlan8"));
+const GamePlan9 = lazy(() => import("./components/nine/GamePlan9"));
 const GamePlan10 = lazy(() => import("./components/GamePlan10"));
-const GamePlan11 = lazy(() => import("./components/Eleven/GamePlan11"));
-const GamePlan12 = lazy(() => import("./components/Twelve/GamePlan12"));
-const GamePlan13 = lazy(() => import("./components/Thirteen/GamePlan13"));
-const GamePlan14 = lazy(() => import("./components/Fourteen/GamePlan14"));
+const GamePlan11 = lazy(() => import("./components/eleven/GamePlan11"));
+const GamePlan12 = lazy(() => import("./components/twelve/GamePlan12"));
+const GamePlan13 = lazy(() => import("./components/thirteen/GamePlan13"));
+const GamePlan14 = lazy(() => import("./components/fourteen/GamePlan14"));
 
 function App() {
   const navigate = useNavigate();
