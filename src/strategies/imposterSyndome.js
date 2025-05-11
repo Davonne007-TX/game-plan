@@ -27,12 +27,6 @@
    customer service, being able to connect with customers making relationships. I was a manager at a Waxing Salon and we had a lot returning customers so I start building relationships with them
    frontend design - being able to see a design and then turn it into functional code 
 
-
--- Hi Florian,
-
-  I attended the webinar today Unraveling UX/UI/Product Design. I do have a question. Do you see the role Design Engineers 
-
-
   STAR METHOD: 
    - situation, task, action, result
    - When I was a manager at a waxing salon, there was a customer who got

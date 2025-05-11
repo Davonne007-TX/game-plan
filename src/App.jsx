@@ -48,6 +48,9 @@ const Timer = lazy(() => import("./components/more-examples/CountDown/Timer"));
 const WebCard = lazy(() =>
   import("./components/more-examples/Web-Card/WebCard")
 );
+const MyCarousel = lazy(() =>
+  import("./components/more-examples/carousel/MyCarousel")
+);
 const GamePlan2 = lazy(() => import("./components/GamePlan2"));
 const GamePlan3 = lazy(() => import("./components/GamePlan3"));
 const GamePlan4 = lazy(() => import("./components/GamePlan4"));
@@ -125,6 +128,7 @@ function App() {
           <Route path="/toDo" element={<ToDo />} />
           <Route path="/countDown" element={<Timer />} />
           <Route path="/webCard" element={<WebCard />} />
+          <Route path="/myCarousel" element={<MyCarousel />} />
           <Route path="/gamePlan2" element={<GamePlan2 />} />
           <Route path="/gamePlan3" element={<GamePlan3 />} />
           <Route path="/gamePlan4" element={<GamePlan4 />} />

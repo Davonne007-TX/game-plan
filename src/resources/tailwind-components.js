@@ -8,4 +8,6 @@
   
  🔗 DaisyUI : https://daisyui.com/docs/customize/
 
+  Shadcn UI: https://ui.shadcn.com/docs/components/alert-dialog
+
 */
