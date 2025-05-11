@@ -86,6 +86,23 @@ const ControlButtons = ({ activeIndex, setIndex, total }) => {
   );
 };
 
+//indicators
+const Indicators = ({ dogPhotos, activeIndex, setIndex }) => {
+  return (
+    <div className="flex justify-center gap-2 mt-4">
+      {dogPhotos.map((_, i) => (
+        <button
+          key={i}
+          onClick={() => setIndex(i)}
+          className={`w-4 h-4 mt-14 rounded-full ${
+            i === activeIndex ? "bg-pink-400" : "bg-white"
+          }`}
+        />
+      ))}
+    </div>
+  );
+};
+
 export default function MyCarousel() {
   const [index, setIndex] = useState(0);
   return (
@@ -104,6 +121,11 @@ export default function MyCarousel() {
             activeIndex={index}
             setIndex={setIndex}
             total={dogPhotos.length}
+          />
+          <Indicators
+            dogPhotos={dogPhotos}
+            activeIndex={index}
+            setIndex={setIndex}
           />
         </section>
       </div>
