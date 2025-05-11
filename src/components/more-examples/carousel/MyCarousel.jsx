@@ -42,9 +42,9 @@ const ControlButtons = () => {
   const handleIncrement = () => {};
 
   return (
-    <div>
-      <button onClick={handleDecrement}>➡️</button>
-      <button onClick={handleIncrement}>⬅️</button>
+    <div className="text-4xl flex justify-center items-center gap-96 -mt-28">
+      <button onClick={handleDecrement}>⬅️</button>
+      <button onClick={handleIncrement}>➡️</button>
     </div>
   );
 };
@@ -63,6 +63,7 @@ export default function MyCarousel() {
 
         <section>
           <Slide image={dogPhotos[index]} />
+          <ControlButtons />
         </section>
       </div>
     </section>
