@@ -1,4 +1,4 @@
-import { act, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 const dogPhotos = [
   {
@@ -11,7 +11,6 @@ const dogPhotos = [
     alt: "Dogs are sleeping",
     id: 2,
   },
-
   {
     image: "/images/wolfPack.jpg",
     alt: "All 5 dogs, Cane Corso and Pitbull Mix",
@@ -56,26 +55,17 @@ const Slide = ({ image }) => {
   );
 };
 
-//controls
 const ControlButtons = ({ activeIndex, setIndex, total }) => {
   const handleDecrement = () => {
-    if (activeIndex === 0) {
-      setIndex(total - 1);
-      return;
-    }
-    setIndex(activeIndex - 1);
+    setIndex((prevIndex) => (prevIndex === 0 ? total - 1 : prevIndex - 1));
   };
 
   const handleIncrement = () => {
-    if (activeIndex === total - 1) {
-      setIndex(0);
-      return;
-    }
-    setIndex(activeIndex + 1);
+    setIndex((prevIndex) => (prevIndex === total - 1 ? 0 : prevIndex + 1));
   };
 
   return (
-    <div className="flex justify-center items-center gap-x-96  text-5xl -mt-36">
+    <div className="flex justify-center items-center gap-x-96 text-5xl -mt-36">
       <button onClick={handleDecrement} className="mr-4 md:mr-20">
         ⬅️
       </button>
@@ -86,7 +76,6 @@ const ControlButtons = ({ activeIndex, setIndex, total }) => {
   );
 };
 
-//indicators
 const Indicators = ({ dogPhotos, activeIndex, setIndex }) => {
   return (
     <div className="flex justify-center gap-2 mt-4">
@@ -105,12 +94,11 @@ const Indicators = ({ dogPhotos, activeIndex, setIndex }) => {
 
 export default function MyCarousel() {
   const [index, setIndex] = useState(0);
+
   return (
-    <section className="text-center flex flex-col  min-h-screen bg-gradient-to-r from-pink-500 to-yellow-500">
-      <div className="mt-10 flex flex-col gap-4 ">
-        <h1 className="text-4xl font-bold">
-          Prepare for the Interview: React{" "}
-        </h1>
+    <section className="text-center flex flex-col min-h-screen bg-gradient-to-r from-pink-500 to-yellow-500">
+      <div className="mt-10 flex flex-col gap-4">
+        <h1 className="text-4xl font-bold">Prepare for the Interview: React</h1>
         <p className="text-2xl font-thin">
           Implemented from Shruti Kapoor's Youtube
         </p>
