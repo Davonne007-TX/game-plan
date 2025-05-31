@@ -12,6 +12,11 @@ export default function MoreExamples() {
     { id: 8, text: "Count Down Time: Free Code Camp", link: "/countDown" },
     { id: 9, text: "UI Horizontal Web Card", link: "/webCard" },
     { id: 10, text: "My Doggies Carousel", link: "/myCarousel" },
+    {
+      id: 11,
+      text: "Tutorial, React Best Practices",
+      link: "/reactBestPractices",
+    },
   ];
 
   return (

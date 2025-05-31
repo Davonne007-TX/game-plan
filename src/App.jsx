@@ -41,15 +41,20 @@ const ForFun = lazy(() => import("./components/more-examples/ForFun"));
 const Random = lazy(() => import("./components/more-examples/Random"));
 const WeDidIt = lazy(() => import("./components/more-examples/WeDidIt"));
 const ThinkingInReact = lazy(() =>
-  import("./components/more-examples/Product-Search/ThinkingInReact")
+  import("./components/more-examples/product-search/ThinkingInReact")
 );
-const ToDo = lazy(() => import("./components/more-examples/To-Do-List/toDo"));
-const Timer = lazy(() => import("./components/more-examples/CountDown/Timer"));
+const ToDo = lazy(() => import("./components/more-examples/to-do-list/toDo"));
+const Timer = lazy(() => import("./components/more-examples/countdown/Timer"));
 const WebCard = lazy(() =>
-  import("./components/more-examples/Web-Card/WebCard")
+  import("./components/more-examples/web-card/WebCard")
 );
 const MyCarousel = lazy(() =>
   import("./components/more-examples/carousel/MyCarousel")
+);
+const MangeDependenciesGranularly = lazy(() =>
+  import(
+    "./components/more-examples/stateManagement/MangeDependenciesGranularly"
+  )
 );
 const GamePlan2 = lazy(() => import("./components/GamePlan2"));
 const GamePlan3 = lazy(() => import("./components/GamePlan3"));
@@ -129,6 +134,10 @@ function App() {
           <Route path="/countDown" element={<Timer />} />
           <Route path="/webCard" element={<WebCard />} />
           <Route path="/myCarousel" element={<MyCarousel />} />
+          <Route
+            path="/reactBestPractices"
+            element={<MangeDependenciesGranularly />}
+          />
           <Route path="/gamePlan2" element={<GamePlan2 />} />
           <Route path="/gamePlan3" element={<GamePlan3 />} />
           <Route path="/gamePlan4" element={<GamePlan4 />} />
