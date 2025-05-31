@@ -1,9 +1,11 @@
 import { useState } from "react";
+import Gif from "./Gif";
+import Button from "../../Button";
 
 export default function MangeDependenciesGranularly() {
   const [userProfile, setUserProfile] = useState({
-    name: "Davonne",
-    age: 31,
+    name: "Octavia Blake",
+    age: 159,
     lastLogin: new Date().toLocaleTimeString(),
   }); //state for user profile
 
@@ -12,19 +14,32 @@ export default function MangeDependenciesGranularly() {
   return (
     <section className="flex flex-col justify-center items-center text-center">
       <h1 className="text-red-600 font-lobster text-3xl md:text-4xl">
-        Tutorial React Best Practices
+        Lets Do a Tutorial: React Best Practices
         <span
           className="
         text-2xl text-white block "
         >
-          Created By Youtube Content Creator Shruti Kapoor{" "}
+          Tutorial Created By: Youtube Content Creator Shruti Kapoor{" "}
         </span>
       </h1>
 
-      <div className="max-w-6xl flex flex-col md:flex-row gap-2 md:gap-10 font-mono bg-white px-4 rounded-2xl mt-10 text-3xl ">
+      <div className="max-w-xs md:max-w-6xl flex flex-col gap-4 font-mono bg-white py-4 px-4 rounded-2xl mt-10 text-3xl ">
+        <Gif />
         <p>Name:{userProfile.name}</p>
         <p>Age:{userProfile.age}</p>
         <p>Last Login: {userProfile.lastLogin}</p>
+
+        <div className="flex flex-col gap-8 py-4">
+          <Button
+            buttonText="Update Age"
+            className="font-mono px-3 py-1 text-lg md:text-2xl cursor-pointer bg-black text-red-600"
+          />
+
+          <Button
+            buttonText="Update Last Login "
+            className="font-mono text-lg md:text-2xl px-3 py-1 cursor-pointer bg-black text-red-600"
+          />
+        </div>
       </div>
     </section>
   );
