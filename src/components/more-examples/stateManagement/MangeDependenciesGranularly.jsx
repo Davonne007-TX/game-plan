@@ -17,27 +17,27 @@ export default function MangeDependenciesGranularly() {
         Lets Do a Tutorial: React Best Practices
         <span
           className="
-        text-2xl text-white block "
+        text-2xl text-white block mt-2 "
         >
           Tutorial Created By: Youtube Content Creator Shruti Kapoor{" "}
         </span>
       </h1>
 
-      <div className="max-w-xs md:max-w-6xl flex flex-col gap-4 font-mono bg-white py-4 px-4 rounded-2xl mt-10 text-3xl ">
+      <div className="w-96 flex flex-col gap-4 font-pizza bg-white py-4 px-4 rounded-2xl mt-10 text-2xl mb-10 ">
         <Gif />
-        <p>Name:{userProfile.name}</p>
-        <p>Age:{userProfile.age}</p>
+        <p>Name: {userProfile.name}</p>
+        <p>Age: {userProfile.age}</p>
         <p>Last Login: {userProfile.lastLogin}</p>
 
         <div className="flex flex-col gap-8 py-4">
           <Button
             buttonText="Update Age"
-            className="font-mono px-3 py-1 text-lg md:text-2xl cursor-pointer bg-black text-red-600"
+            className="px-3 py-1 rounded-full text-lg md:text-2xl cursor-pointer bg-red-600 text-white transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-700 hover:shadow-lg"
           />
 
           <Button
             buttonText="Update Last Login "
-            className="font-mono text-lg md:text-2xl px-3 py-1 cursor-pointer bg-black text-red-600"
+            className="px-3 py-1 rounded-full text-lg md:text-2xl cursor-pointer bg-red-600 text-white transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-700 hover:shadow-lg"
           />
         </div>
       </div>
