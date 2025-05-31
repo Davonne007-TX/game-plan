@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Gif from "./Gif";
 import Button from "../../Button";
 
@@ -7,9 +7,32 @@ export default function MangeDependenciesGranularly() {
     name: "Octavia Blake",
     age: 159,
     lastLogin: new Date().toLocaleTimeString(),
-  }); //state for user profile
+  });
 
   const [effectCount, setEffectCount] = useState(0);
+
+  useEffect(() => {
+    setEffectCount((prev) => prev + 1);
+    console.log(
+      "Less Granular Example: Effect re-runs! Count:",
+      effectCount + 1,
+      "Name:",
+      userProfile.name,
+      "Age:",
+      userProfile.age
+    );
+  }, [userProfile.name, userProfile.age]); //see questions, dependency was on the entire object, thats why its re-running when update login is clicked. so only use the one you need
+
+  const updateAge = () => {
+    setUserProfile((prev) => ({ ...prev, age: prev.age + 1 }));
+  };
+
+  const updateLastLogin = () => {
+    setUserProfile((prev) => ({
+      ...prev,
+      lastLogin: new Date().toLocaleTimeString(),
+    }));
+  };
 
   return (
     <section className="flex flex-col justify-center items-center text-center">
@@ -33,12 +56,16 @@ export default function MangeDependenciesGranularly() {
           <Button
             buttonText="Update Age"
             className="px-3 py-1 rounded-full text-lg md:text-2xl cursor-pointer bg-red-600 text-white transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-700 hover:shadow-lg"
+            onClick={updateAge}
           />
 
           <Button
             buttonText="Update Last Login "
             className="px-3 py-1 rounded-full text-lg md:text-2xl cursor-pointer bg-red-600 text-white transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-700 hover:shadow-lg"
+            onClick={updateLastLogin}
           />
+
+          <p>Effect Count: {effectCount}</p>
         </div>
       </div>
     </section>
@@ -56,11 +83,21 @@ React Best Practices:
    - useState
    - useReducer
  
-   or when becomes bigger...
-   - Redux
+   or when becomes more complex..
    - Zustand
+   - Jotai
+
+   or even bigger... 
+    - Redux
   
 2.Locate state close to the component that needs it
 3.Manage dependencies granularly 
+
+
+
+Questions:
+
+- On the dependency array, React lightbulb said I needed 
+to include effectCount in the dependency in the userEffect?
 
 */
