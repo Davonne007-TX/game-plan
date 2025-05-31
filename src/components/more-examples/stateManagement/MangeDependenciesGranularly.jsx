@@ -5,6 +5,8 @@ import Button from "../../Button";
 export default function MangeDependenciesGranularly() {
   const [userProfile, setUserProfile] = useState({
     name: "Octavia Blake",
+    nameGiven: "Skairipa",
+    reputation: "Bloodreina",
     age: 159,
     lastLogin: new Date().toLocaleTimeString(),
   });
@@ -21,7 +23,12 @@ export default function MangeDependenciesGranularly() {
       "Age:",
       userProfile.age
     );
-  }, [userProfile.name, userProfile.age]); //see questions, dependency was on the entire object, thats why its re-running when update login is clicked. so only use the one you need
+  }, [
+    userProfile.name,
+    userProfile.age,
+    userProfile.nameGiven,
+    userProfile.reputation,
+  ]); //see questions, dependency was on the entire object, thats why its re-running when update login is clicked. so only use the one you need
 
   const updateAge = () => {
     setUserProfile((prev) => ({ ...prev, age: prev.age + 1 }));
@@ -49,7 +56,10 @@ export default function MangeDependenciesGranularly() {
       <div className="w-96 flex flex-col gap-4 font-pizza bg-white py-4 px-4 rounded-2xl mt-10 text-2xl mb-10 ">
         <Gif />
         <p>Name: {userProfile.name}</p>
+        <p>Given Name: {userProfile.nameGiven}</p>
+        <p>Reputation: {userProfile.reputation}</p>
         <p>Age: {userProfile.age}</p>
+
         <p>Last Login: {userProfile.lastLogin}</p>
 
         <div className="flex flex-col gap-8 py-4">
