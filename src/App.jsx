@@ -32,6 +32,7 @@ const SecondExample = lazy(() =>
 );
 const HookUseRef = lazy(() => import("./components/hooks/useRef/HookUseRef"));
 const StopWatch = lazy(() => import("./components/hooks/useRef/StopWatch"));
+const LearnRefs = lazy(() => import("./components/hooks/useRef/LearnRefs"));
 const SideProjects = lazy(() =>
   import("./components/more-examples/SideProjects")
 );
@@ -123,6 +124,7 @@ function App() {
             path="/useRefStopWatch"
             element={<StopWatch backToHooks={backToHooks} />}
           />
+          <Route path="/understandingUseRef" element={<LearnRefs />} />
           <Route path="/sideProjects" element={<SideProjects />} />
           <Route path="/lists" element={<Lists />} />
           <Route path="/toggle" element={<Toggle />} />

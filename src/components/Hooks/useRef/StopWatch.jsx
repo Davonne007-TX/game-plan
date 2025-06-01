@@ -37,9 +37,14 @@ export default function StopWatch({ backToHooks }) {
     setNow(null);
   };
 
+  //useNavigate
   const navigate = useNavigate();
   const goBack = () => {
     navigate("/hookUseRef");
+  };
+
+  const nextUseRefExample = () => {
+    navigate("/understandingUseRef");
   };
   return (
     <>
@@ -82,6 +87,12 @@ export default function StopWatch({ backToHooks }) {
         <ReuseableButton
           onClick={backToHooks}
           label="Back To Hooks"
+          className=" bg-pink-200 p-2 text-black rounded-full hover:text-pink-600 font-mono"
+        />
+
+        <ReuseableButton
+          onClick={nextUseRefExample}
+          label="Next Example"
           className=" bg-pink-200 p-2 text-black rounded-full hover:text-pink-600 font-mono"
         />
       </section>
