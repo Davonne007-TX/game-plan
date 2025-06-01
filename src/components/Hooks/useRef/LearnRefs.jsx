@@ -65,3 +65,10 @@ export default function LearnRefs({ backToHooks }) {
 }
 
 //useState vs useRef updates
+
+//Questions :
+//When you click on update state button first, the ref doesn't update anymore, just the state
+
+//But it does update both useRef and useState when you click update ref and then update state
+
+//why?
