@@ -101,13 +101,14 @@ React Best Practices:
     - Redux
   
 2.Locate state close to the component that needs it
-3.Manage dependencies granularly 
+3. Manage dependencies granularly, only use the dependency you need
 
 
 
 Questions:
 
 - On the dependency array, React lightbulb said I needed 
-to include effectCount in the dependency in the userEffect?
+to include effectCount in the dependency in the userEffect 
+but then it glitches all crazy?
 
 */
