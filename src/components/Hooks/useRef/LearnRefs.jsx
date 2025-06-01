@@ -1,7 +1,8 @@
 import { useRef, useState } from "react";
 import Button from "../../Button";
+import { useNavigate } from "react-router-dom";
 
-export default function LearnRefs() {
+export default function LearnRefs({ backToHooks }) {
   const ref = useRef("Hola amiga!");
   const [text, setText] = useState("Hola amiga");
 
@@ -11,6 +12,11 @@ export default function LearnRefs() {
 
   const handleStateUpdate = () => {
     setText("Hola como estas");
+  };
+
+  const navigate = useNavigate();
+  const goBackToPreviousUseRef = () => {
+    navigate("/useRefStopWatch");
   };
 
   return (
@@ -40,6 +46,19 @@ export default function LearnRefs() {
             className="p-2 bg-white hover:scale-105 transition-all duration-300 transform ease-out hover:bg-gray-200 text-pink-500"
           />{" "}
         </div>
+      </div>
+
+      <div className="mt-20 flex flex-col md:flex-row gap-8 font-anton">
+        <Button
+          buttonText="Back To Previous Example"
+          className="p-2 bg-white hover:scale-105 transition-all duration-300 transform ease-out hover:bg-gray-200 text-pink-500"
+          onClick={goBackToPreviousUseRef}
+        />
+        <Button
+          onClick={backToHooks}
+          buttonText="Back To Hooks"
+          className="p-2 bg-white hover:scale-105 transition-all duration-300 transform ease-out hover:bg-gray-200 text-pink-500"
+        />
       </div>
     </section>
   );
