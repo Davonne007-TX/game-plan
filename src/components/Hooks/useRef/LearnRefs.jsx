@@ -1,8 +1,8 @@
 import { useRef, useState } from "react";
 
 export default function LearnRefs() {
-  const ref = useRef("Greetings!");
-  const [text, setText] = useState("Greetings");
+  const ref = useRef("Hola amiga!");
+  const [text, setText] = useState("Hola amiga");
 
   return (
     <section className="flex flex-col justify-center items-center">
@@ -15,6 +15,11 @@ export default function LearnRefs() {
           Tutorial by: YouTube Content Creator Shruti Kapoor
         </a>
       </h1>
+
+      <div className="bg-pink-500 rounded text-2xl mt-8 font-anton max-w-5xl px-4">
+        <p>Ref: {ref.current}</p>
+        <p>State: {text}</p>
+      </div>
     </section>
   );
 }
