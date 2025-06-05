@@ -19,6 +19,10 @@ export default function LearnRefs({ backToHooks }) {
     navigate("/useRefStopWatch");
   };
 
+  const nextUseRefExample = () => {
+    navigate("/nextUseRefExample");
+  };
+
   return (
     <section className="flex flex-col justify-center items-center">
       <h1 className="text-pink-500 font-lobster text-2xl md:text-4xl lg:text-4xl text-center">
@@ -57,6 +61,12 @@ export default function LearnRefs({ backToHooks }) {
         <Button
           onClick={backToHooks}
           buttonText="Back To Hooks"
+          className="p-2 bg-white hover:scale-105 transition-all duration-300 transform ease-out hover:bg-gray-200 text-pink-500"
+        />
+
+        <Button
+          onClick={nextUseRefExample}
+          buttonText="Next useRef Example"
           className="p-2 bg-white hover:scale-105 transition-all duration-300 transform ease-out hover:bg-gray-200 text-pink-500"
         />
       </div>
