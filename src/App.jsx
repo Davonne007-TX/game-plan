@@ -34,6 +34,7 @@ const HookUseRef = lazy(() => import("./components/hooks/useRef/HookUseRef"));
 const StopWatch = lazy(() => import("./components/hooks/useRef/StopWatch"));
 const LearnRefs = lazy(() => import("./components/hooks/useRef/LearnRefs"));
 const VideoPlayer = lazy(() => import("./components/hooks/useRef/VideoPlayer"));
+const Challenge = lazy(() => import("./components/hooks/useRef/Challenge"));
 const SideProjects = lazy(() =>
   import("./components/more-examples/SideProjects")
 );
@@ -132,6 +133,10 @@ function App() {
           <Route
             path="/nextUseRefExample"
             element={<VideoPlayer backToHooks={backToHooks} />}
+          />
+          <Route
+            path="/challenge"
+            element={<Challenge backToHooks={backToHooks} />}
           />
           <Route path="/sideProjects" element={<SideProjects />} />
           <Route path="/lists" element={<Lists />} />
