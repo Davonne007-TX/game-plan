@@ -8,7 +8,7 @@ export default function Hooks() {
     { hook: "useEffect()", link: "/hookUseEffect", id: 3 },
     { hook: "useContext()", link: "/hookUseContext", id: 4 },
     { hook: "useRef()", link: "/hookUseRef", id: 5 },
-    //   { hook: "useReducer()", link: "/hookUseReducer", id: 6 },
+    { hook: "useReducer()", link: "/useReducerHook", id: 6 },
   ];
 
   return (

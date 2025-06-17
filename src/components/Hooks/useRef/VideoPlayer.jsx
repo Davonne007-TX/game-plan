@@ -23,7 +23,8 @@ export default function VideoPlayer({ backToHooks }) {
 
   const navigate = useNavigate();
   const perviousUseRef = () => navigate("/understandingUseRef");
-  const goTochallenge = () => navigate("/challenge");
+  const goToChallenge = () => navigate("/challenge");
+
   return (
     <section className="flex flex-col justify-center items-center">
       <h1 className="font-lobster text-2xl md:text-4xl lg:text-4xl  text-purple-600 ">
@@ -63,7 +64,7 @@ export default function VideoPlayer({ backToHooks }) {
         />
 
         <Button
-          onClick={goTochallenge}
+          onClick={goToChallenge}
           buttonText="Next useRef Example"
           className="p-2 bg-white hover:scale-105 transition-all duration-300 transform ease-out hover:bg-gray-200"
         />
