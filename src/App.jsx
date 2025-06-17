@@ -38,6 +38,7 @@ const Challenge = lazy(() => import("./components/hooks/useRef/Challenge"));
 const HookUseReducer = lazy(() =>
   import("./components/hooks/useReducer/HookUseReducer")
 );
+const Count = lazy(() => import("./components/hooks/useReducer/Count"));
 const SideProjects = lazy(() =>
   import("./components/more-examples/SideProjects")
 );
@@ -144,6 +145,10 @@ function App() {
           <Route
             path="/useReducerHook"
             element={<HookUseReducer backToHooks={backToHooks} />}
+          />
+          <Route
+            path="useReducerCount"
+            element={<Count backToHooks={backToHooks} />}
           />
           <Route path="/sideProjects" element={<SideProjects />} />
           <Route path="/lists" element={<Lists />} />

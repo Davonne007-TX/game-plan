@@ -1,5 +1,7 @@
 import { useReducer } from "react";
+
 import Button from "../../Button";
+import { useNavigate } from "react-router-dom";
 function reducer(state, action) {
   if (action.type === "increment_age") {
     return {
@@ -10,6 +12,12 @@ function reducer(state, action) {
 
 export default function HookUseReducer({ backToHooks }) {
   const [state, dispatch] = useReducer(reducer, { age: 31 });
+
+  const navigate = useNavigate();
+
+  const goToCountExample = () => {
+    navigate("/useReducerCount");
+  };
   return (
     <section className="flex flex-col gap-2 justify-center items-center">
       <h1 className="text-pink-600 font-gloria text-3xl text-center">
@@ -43,7 +51,7 @@ export default function HookUseReducer({ backToHooks }) {
           className="p-2 bg-pink-600 text-2xl text-white hover:scale-105 transition-all duration-300 transform ease-ou font-gloria"
         />
         <Button
-          onClick={""}
+          onClick={goToCountExample}
           buttonText="Next Example"
           className="p-2 bg-pink-600 text-2xl text-white hover:scale-105 transition-all duration-300 transform ease-ou font-gloria"
         />
