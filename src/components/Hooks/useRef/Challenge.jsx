@@ -1,6 +1,7 @@
 import { useState } from "react";
+import Button from "../../Button";
 
-export default function Challenge() {
+export default function Challenge({ backToHooks }) {
   const [text, setText] = useState("");
 
   const handleSend = () => {
@@ -45,7 +46,7 @@ export default function Challenge() {
           />
           <button
             onClick={handleSend}
-            className="bg-green-600  text-2xl p-2 px-4 rounded font-bold hover:bg-green-700 transition"
+            className="bg-green-600 text-2xl p-2 px-4 rounded font-bold hover:bg-green-700 transition"
           >
             Send Ahora
           </button>
@@ -60,6 +61,11 @@ export default function Challenge() {
           <p className="font-thin text-2xl">{theChallenge}</p>
         </div>
       </div>
+      <Button
+        buttonText={"Back To Hooks"}
+        className="bg-green-400 text-black text-2xl my-20 font-bold p-2 hover:scale-105"
+        onClick={backToHooks}
+      />
     </section>
   );
 }

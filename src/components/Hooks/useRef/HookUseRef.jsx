@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import ReuseableButton from "../../ReuseableButton";
+import Button from "../../Button";
 import { useNavigate } from "react-router-dom";
 
 export default function HookUseRef({ backToHooks }) {
@@ -16,20 +16,26 @@ export default function HookUseRef({ backToHooks }) {
   }
   return (
     <section className="flex-time">
-      <h2 className="font-pizza text-2xl md:text-3xl text-white">
-        Hook useRef
-      </h2>
+      <h2 className="font-bold text-3xl md:text-3xl text-white">useRef Hook</h2>
       ;
       <button
         onClick={handleClick}
-        className="bg-green-500 rounded-full mt-40 p-2 text-xl md:text-3xl font-pizza hover:scale-110"
+        className="bg-yellow-300 rounded-full mt-40 p-2 text-xl md:text-3xl font-mono hover:scale-110"
       >
         Click me and see what happens..!
       </button>
-      <section className="mt-20 flex gap-8">
-        <ReuseableButton label={"Back To Hooks"} onClick={backToHooks} />
-        <ReuseableButton label={"Next Example"} onClick={goToStopWatch} />
-      </section>
+      <div className="mt-20 flex gap-8 font-mono">
+        <Button
+          buttonText={"Back To Hooks"}
+          className="bg-yellow-300 p-2 hover:scale-105"
+          onClick={backToHooks}
+        />
+        <Button
+          buttonText={"Next Example"}
+          className="bg-yellow-300 p-2 hover:scale-105"
+          onClick={goToStopWatch}
+        />
+      </div>
     </section>
   );
 }
