@@ -12,14 +12,14 @@ function reducer(state, action) {
   }
 }
 
-export default function Count() {
+export default function Count({ backToHooks }) {
   const [state, dispatch] = useReducer(reducer, { count: 0 });
   return (
     <section className="flex flex-col justify-center items-center">
       <h1 className="text-white font-extrabold text-3xl text-center">
         useReducer Similar Example{" "}
       </h1>
-      <p className="text-purple-600 font-bold mt-2 text-2xl">
+      <p className="text-purple-600 font-gloria mt-2 text-2xl">
         with Switch Statement
       </p>
 
@@ -38,6 +38,12 @@ export default function Count() {
           />
         </div>
       </div>
+
+      <Button
+        onClick={backToHooks}
+        buttonText="Back To Hooks"
+        className="p-2 bg-purple-600 mt-10 text-2xl text-white hover:scale-105 transition-all duration-300 transform ease-ou font-gloria"
+      />
     </section>
   );
 }
