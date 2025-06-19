@@ -9,6 +9,7 @@ export default function Hooks() {
     { hook: "useContext()", link: "/hookUseContext", id: 4 },
     { hook: "useRef()", link: "/hookUseRef", id: 5 },
     { hook: "useReducer()", link: "/useReducerHook", id: 6 },
+    { hook: "useMemo()", link: "/useMemoHookFilterToDos", id: 6 },
   ];
 
   return (
