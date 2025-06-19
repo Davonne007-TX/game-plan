@@ -2,7 +2,7 @@ import "./App.css";
 import { useCallback, lazy, Suspense } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import TopHeader from "./components/TopHeader";
-import FilterToDos from "./components/hooks/useMemo/UseMemoFilterToDos";
+import FilterToDos from "./components/hooks/useMemo/UseMemoFilterFruit";
 
 // Lazy-loaded components
 const Home = lazy(() => import("./components/Home"));
@@ -40,8 +40,8 @@ const HookUseReducer = lazy(() =>
   import("./components/hooks/useReducer/HookUseReducer")
 );
 const Count = lazy(() => import("./components/hooks/useReducer/Count"));
-const UseMemoFilterToDos = lazy(() =>
-  import("./components/hooks/useMemo/UseMemoFilterToDos")
+const UseMemoFilterFruit = lazy(() =>
+  import("./components/hooks/useMemo/UseMemoFilterFruit")
 );
 const SideProjects = lazy(() =>
   import("./components/more-examples/SideProjects")
@@ -156,7 +156,7 @@ function App() {
           />
           <Route
             path="/useMemoHookFilterToDos"
-            element={<UseMemoFilterToDos />}
+            element={<UseMemoFilterFruit />}
           />
           <Route path="/sideProjects" element={<SideProjects />} />
           <Route path="/lists" element={<Lists />} />
