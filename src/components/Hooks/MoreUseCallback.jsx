@@ -23,28 +23,23 @@ export default function MoreUseCallback({ backToHooks }) {
 
   return (
     <>
-      <section className="flex flex-col mt-24 justify-center items-center font-sixty text-white text-5xl">
-        <p>Count:{count}</p>
+      <section className="flex flex-col mt-24 justify-center items-center font-sixty text-white">
+        <p className="text-4xl md:text-5xl">Count:{count}</p>
         <button
           onClick={handleClick}
-          className="bg-green-400 p-4 rounded-full mt-10"
+          className="bg-green-400 text-3xl md:text-4xl p-4 rounded-full mt-10"
         >
           Click this big button
         </button>
         <button onClick={clearCount} className="mt-20">
           Clear Count Here 👈
         </button>
-        <section className=" flex gap-4 mt-20 text-black text-2xl">
+
+        <div className=" flex gap-4 mt-20 text-black text-3xl md:text-4xl">
           <ReuseableButton onClick={goBackToUseCallback} label="Go Back" />
           <ReuseableButton onClick={backToHooks} label="Back To Hooks" />
-        </section>
+        </div>
       </section>
     </>
   );
 }
-
-//a useCallback hook is used to memorize functions
-//preventing unnecessary re-creation of functions on each render
-
-//this can be useful in scenarios where you want to pass a callback function as a prop
-//to child components but don't want them to re-render unnecessarily

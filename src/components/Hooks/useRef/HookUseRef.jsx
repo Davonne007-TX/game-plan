@@ -20,7 +20,7 @@ export default function HookUseRef({ backToHooks }) {
       ;
       <button
         onClick={handleClick}
-        className="bg-yellow-300 rounded-full mt-40 p-2 text-xl md:text-3xl font-mono hover:scale-110"
+        className="bg-yellow-300 rounded-full mt-40 p-2 text-xl md:text-3xl font-mono hover:scale-105"
       >
         Click me and see what happens..!
       </button>

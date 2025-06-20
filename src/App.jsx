@@ -2,13 +2,12 @@ import "./App.css";
 import { useCallback, lazy, Suspense } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import TopHeader from "./components/TopHeader";
-import FilterToDos from "./components/hooks/useMemo/UseMemoFilterWings";
 
 // Lazy-loaded components
 const Home = lazy(() => import("./components/Home"));
 const GamePlan1 = lazy(() => import("./components/one/GamePlan1"));
 const LetsLearnHooks = lazy(() => import("./components/hooks/LetsLearnHooks"));
-const Hooks = lazy(() => import("./components/hooks/Hooks"));
+const LetsDoThis = lazy(() => import("./components/hooks/LetsDoThis"));
 const HookUseState = lazy(() =>
   import("./components/hooks/useState/HookUseState")
 );
@@ -96,7 +95,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/gamePlan1" element={<GamePlan1 />} />
           <Route path="/letsLearnHooks" element={<LetsLearnHooks />} />
-          <Route path="/hooks" element={<Hooks />} />
+          <Route path="/hooks" element={<LetsDoThis />} />
           <Route
             path="/hookUseState"
             element={<HookUseState backToHooks={backToHooks} />}
