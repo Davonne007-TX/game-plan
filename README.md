@@ -9,3 +9,13 @@ Lets Go..!
 ## Built in
 
 - React.js and Tailwind CSS
+
+## Resources
+
+- React.dev: https://react.dev/reference/react/hooks
+
+- Shruti Kapoor Youtube: https://www.youtube.com/@shrutikapoor08/videos
+
+- ThisDotMedia Youtube Short: https://youtube.com/shorts/FbuaXA4Z6Ko?si=_OwfS8SKfSXUlkx2
+
+- Github Copoilot
