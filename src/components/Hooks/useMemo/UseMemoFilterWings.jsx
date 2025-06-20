@@ -1,15 +1,19 @@
 import { useState, useMemo } from "react";
+import Button from "../../Button";
 
-export default function UseMemoFilterFruit() {
+export default function UseMemoFilterWings({ backToHooks }) {
   const [query, setQuery] = useState("");
-  const wingFlavors = [
-    "Lemon Pepper",
-    "Spicy Garlic",
-    "Spicy Lemon Pepper",
-    "Mango Habenero",
-    "Hot",
-    "Mild",
-  ];
+  const wingFlavors = useMemo(
+    () => [
+      "Lemon Pepper",
+      "Spicy Garlic",
+      "Spicy Lemon Pepper",
+      "Mango Habenero",
+      "Hot",
+      "Mild",
+    ],
+    []
+  );
 
   const filteredWings = useMemo(() => {
     return wingFlavors.filter((wing) => wing.includes(query));
@@ -34,7 +38,7 @@ export default function UseMemoFilterFruit() {
 
         <ul>
           {filteredWings.length === 0 ? (
-            <p className="text-white mt-4 text-xl font-sans">
+            <p className="text-white mt-4 text-lg md:text-2xl font-sans">
               Wing Flavor is not listed
             </p>
           ) : (
@@ -51,6 +55,12 @@ export default function UseMemoFilterFruit() {
           )}
         </ul>
       </div>
+
+      <Button
+        onClick={backToHooks}
+        buttonText="Back To Hooks"
+        className="p-2 bg-white text-red-600 mt-10 text-xl md:text-2xl hover:scale-105 mb-8 transition-all duration-300 transform ease-ou font-capri"
+      />
     </section>
   );
 }

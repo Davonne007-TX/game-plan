@@ -2,7 +2,7 @@ import "./App.css";
 import { useCallback, lazy, Suspense } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import TopHeader from "./components/TopHeader";
-import FilterToDos from "./components/hooks/useMemo/UseMemoFilterFruit";
+import FilterToDos from "./components/hooks/useMemo/UseMemoFilterWings";
 
 // Lazy-loaded components
 const Home = lazy(() => import("./components/Home"));
@@ -40,8 +40,8 @@ const HookUseReducer = lazy(() =>
   import("./components/hooks/useReducer/HookUseReducer")
 );
 const Count = lazy(() => import("./components/hooks/useReducer/Count"));
-const UseMemoFilterFruit = lazy(() =>
-  import("./components/hooks/useMemo/UseMemoFilterFruit")
+const UseMemoFilterWings = lazy(() =>
+  import("./components/hooks/useMemo/UseMemoFilterWings")
 );
 const SideProjects = lazy(() =>
   import("./components/more-examples/SideProjects")
@@ -155,8 +155,8 @@ function App() {
             element={<Count backToHooks={backToHooks} />}
           />
           <Route
-            path="/useMemoHookFilterToDos"
-            element={<UseMemoFilterFruit />}
+            path="/useMemoHookFilterWings"
+            element={<UseMemoFilterWings backToHooks={backToHooks} />}
           />
           <Route path="/sideProjects" element={<SideProjects />} />
           <Route path="/lists" element={<Lists />} />
