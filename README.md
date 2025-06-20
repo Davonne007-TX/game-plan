@@ -1,10 +1,8 @@
 ## Game Plan
 
-- This is my game plan. My journey as a Frontend Developer making my way into the tech industry. My own way to keep track of my progress as I learn React.js and the necessary skills to land a role as a web developer.
+- This is my game plan. My journey as a Frontend Developer making my way into the tech industry. My own way to keep track of my progress as I learn React.js and my goals and plan to level up as a developer and land a role.
 
-- Its fun, its creative, and although its repetitive, I am having a lot of fun building it. I also make side projects based off what I learn.
-
-Lets Go..!
+- Its fun, its creative, and I am having a lot of fun building it. I also make side projects based off what I learn.
 
 ## Built in
 
@@ -12,10 +10,8 @@ Lets Go..!
 
 ## Resources
 
-- React.dev: https://react.dev/reference/react/hooks
+- React.dev: https://react.dev/learn
 
-- Shruti Kapoor Youtube: https://www.youtube.com/@shrutikapoor08/videos
-
-- ThisDotMedia Youtube Short: https://youtube.com/shorts/FbuaXA4Z6Ko?si=_OwfS8SKfSXUlkx2
+- Featured tutorials from Shruti Kapoor, ThisDotMedia and more.
 
 - Github Copoilot
