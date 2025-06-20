@@ -21,7 +21,7 @@ export default function UseMemoFilterFruit() {
         useMemo Hook
       </h2>
       <p className="text-white font-thin text-2xl">
-        Example from Githubs Copilot
+        Coded with Githubs Copilot
       </p>
 
       <div className=" bg-red-600 p-4 md:p-8 mt-10 rounded-3xl">
@@ -33,14 +33,22 @@ export default function UseMemoFilterFruit() {
         />
 
         <ul>
-          {filteredWings.map((wings) => (
-            <li
-              key={wings}
-              className="text-white mt-8 text-lg md:text-2xl font-sans"
-            >
-              {wings}
-            </li>
-          ))}
+          {filteredWings.length === 0 ? (
+            <p className="text-white mt-4 text-xl font-sans">
+              Wing Flavor is not listed
+            </p>
+          ) : (
+            <ul>
+              {filteredWings.map((wing) => (
+                <li
+                  key={wing}
+                  className="text-white mt-8 text-lg md:text-2xl font-sans"
+                >
+                  {wing}
+                </li>
+              ))}
+            </ul>
+          )}
         </ul>
       </div>
     </section>
