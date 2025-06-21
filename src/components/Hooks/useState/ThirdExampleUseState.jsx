@@ -1,6 +1,7 @@
 import { useState } from "react";
+import Button from "../../Button";
 
-export default function ThirdExampleUseState() {
+export default function ThirdExampleUseState({ backToHooks }) {
   const [color, setColor] = useState("");
 
   const handleChange = (e) => {
@@ -26,6 +27,12 @@ export default function ThirdExampleUseState() {
             className="rounded-2xl outline outline-4 outline-pink-500 p-4 w-80 shadow-md text-xl md:text-2xl"
           />
         </label>
+
+        <Button
+          onClick={backToHooks}
+          buttonText="Back To Hooks"
+          className="p-2 bg-white text-pink-400 mt-10 text-xl md:text-2xl hover:scale-105 mb-8 transition-all duration-300 transform ease-ou font-capri"
+        />
       </div>
     </section>
   );

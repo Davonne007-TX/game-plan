@@ -42,6 +42,10 @@ const Count = lazy(() => import("./components/hooks/useReducer/Count"));
 const UseMemoFilterWings = lazy(() =>
   import("./components/hooks/useMemo/UseMemoFilterWings")
 );
+
+const DisplayFormErrors = lazy(() =>
+  import("./components/hooks/useActionState/DisplayFormErrors")
+);
 const SideProjects = lazy(() =>
   import("./components/more-examples/SideProjects")
 );
@@ -156,6 +160,10 @@ function App() {
           <Route
             path="/useMemoHookFilterWings"
             element={<UseMemoFilterWings backToHooks={backToHooks} />}
+          />
+          <Route
+            path="displayErrorsUseActionState"
+            element={<DisplayFormErrors backToHooks={backToHooks} />}
           />
           <Route path="/sideProjects" element={<SideProjects />} />
           <Route path="/lists" element={<Lists />} />

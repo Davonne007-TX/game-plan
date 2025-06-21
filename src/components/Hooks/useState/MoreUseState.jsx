@@ -36,12 +36,12 @@ export default function MoreUseState() {
   return (
     <>
       <section className="flex flex-col gap-10 justify-center items-center mt-20 font-lobster text-3xl">
-        <p className="text-black">
+        <p className="text-white text-center text-4xl">
           Pick a Color:
           <select
             value={color}
             onChange={(e) => setColor(e.target.value)}
-            className="rounded-full w-full mt-5 border-4 border-pink-400 outline-none"
+            className="rounded-full w-full mt-5 border-4 text-black border-pink-400 outline-none"
           >
             <option value="black">Select</option>
             <option value="blue">Blue</option>
