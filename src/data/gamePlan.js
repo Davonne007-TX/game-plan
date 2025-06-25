@@ -1,0 +1,18 @@
+export const gamePlan = [
+  { id: 1, text: "#1", link: "/gamePlan1" },
+  { id: 2, text: "#2", link: "/gamePlan2" },
+  { id: 3, text: "#3", link: "/gamePlan3" },
+  { id: 4, text: "#4", link: "/gamePlan4" },
+  { id: 5, text: "#5", link: "/gamePlan5" },
+  { id: 6, text: "#6", link: "/gamePlan6" },
+  { id: 7, text: "#7", link: "/gamePlan7" },
+  { id: 8, text: "#8", link: "/gamePlan8" },
+  { id: 9, text: "#9", link: "/gamePlan9" },
+  { id: 10, text: "#10", link: "/gamePlan10" },
+  { id: 11, text: "#11", link: "/gamePlan11" },
+  { id: 12, text: "#12", link: "/gamePlan12" },
+  { id: 13, text: "#13", link: "/gamePlan13" },
+  { id: 14, text: "#14", link: "/gamePlan14" },
+  { id: 15, text: "Side Projects", link: "/sideProjects" },
+  { id: 16, text: "React Hooks", link: "/letsLearnHooks" },
+];
