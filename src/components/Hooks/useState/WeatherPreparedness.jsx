@@ -1,7 +1,9 @@
 export default function WeatherPreparedness() {
   return (
-    <div>
-      <h className="text-white">testing 123</h>
-    </div>
+    <section className="flex flex-col justify-center items-center">
+      <h className="text-2xl md:text-4xl font-anton text-blue-600">
+        Weather Preparedness Guide
+      </h>
+    </section>
   );
 }
