@@ -8,7 +8,7 @@ export const whatToDoWeatherEvent = [
          closet. Stay as far away from windows. Stay alert of weather alerts on your phone. Shoes ready. Head down.
          You can also have an helment, a matress, anything to protect your self. Put as many walls between you and the
          outside.`,
-    img: "..../images/torando.jpg",
+    img: "./images/tornado.jpg",
     alt: "Huge Tornado in the field, image by Greg Johnson on Unsplash",
   },
 
@@ -20,7 +20,7 @@ export const whatToDoWeatherEvent = [
          away from windows, watch for local news and alerts, avoid water, and try your best to not use wired electronics. If you are
          outside. Try your best to get indoors, stay away from fields, aviod water, find a car, crouch low like a ball, and stay away 
          from metal.`,
-    img: ".../images/thunderStorm.jpg",
+    // img: "/public/images/thunderStorm.jpg",
     alt: "Big Clouds in Thunderstorm with lightning, image by noaa on Unsplash",
   },
 ];
