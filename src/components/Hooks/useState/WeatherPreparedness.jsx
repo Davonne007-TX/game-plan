@@ -1,8 +1,7 @@
 import { useState } from "react";
-import Button from "../../Button";
 import { whatToDoWeatherEvent } from "./whatToDoWeatherEvent ";
 
-export default function WeatherPreparedness() {
+export default function WeatherPreparedness({ backToHooks }) {
   const [index, setIndex] = useState(0);
   const [showMore, setShowMore] = useState(false);
   const next = index < whatToDoWeatherEvent.length - 1;
@@ -54,10 +53,17 @@ export default function WeatherPreparedness() {
           className="max-w-lg mt-10 rounded-xl"
         />
         <button
-          className="bg-white mt-8 text-2xl w-40 font-anton tracking-widest text-black p-2 rounded font-bold"
+          className="bg-white mt-8 text-2xl w-60 font-anton text-black p-2 rounded font-bold  hover:scale-105 mb-8 transition-all duration-300 transform ease-out"
           onClick={handleClick}
         >
-          Next
+          Next Type of Storm
+        </button>
+
+        <button
+          onClick={backToHooks}
+          className="p-2 bg-white text-blue-600 mt-10 text-xl md:text-2xl hover:scale-105 mb-8 transition-all duration-300 transform ease-out font-capri"
+        >
+          Back To Hooks
         </button>
       </div>
     </section>

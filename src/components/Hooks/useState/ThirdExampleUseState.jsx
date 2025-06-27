@@ -20,7 +20,7 @@ export default function ThirdExampleUseState({ backToHooks }) {
       style={{ backgroundColor: color }}
     >
       <div className="flex flex-col p-4 justify-center items-center gap-4">
-        <h1 className="text-white  text-2xl md:text-4xl">
+        <h1 className="text-white text-2xl md:text-4xl">
           Change The Background Color
         </h1>
 
@@ -37,7 +37,7 @@ export default function ThirdExampleUseState({ backToHooks }) {
         <Button
           onClick={backToHooks}
           buttonText="Back To Hooks"
-          className="p-2 bg-white text-pink-400 mt-10 text-xl md:text-2xl hover:scale-105 mb-8 transition-all duration-300 transform ease-ou font-capri"
+          className="p-2 bg-white text-pink-400 mt-10 text-xl md:text-2xl hover:scale-105 mb-8 transition-all duration-300 transform ease-out font-capri"
         />
 
         <Button
