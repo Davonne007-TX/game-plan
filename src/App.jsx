@@ -17,6 +17,10 @@ const MoreUseState = lazy(() =>
 const ThirdExampleUseState = lazy(() =>
   import("./components/hooks/useState/ThirdExampleUseState")
 );
+const WeatherPreparedness = lazy(() =>
+  import("./components/hooks/useState/WeatherPreparedness")
+);
+
 const HookUseCallBack = lazy(() =>
   import("./components/hooks/HookUseCallBack")
 );
@@ -105,6 +109,10 @@ function App() {
           <Route
             path="/thirdExampleUseState"
             element={<ThirdExampleUseState backToHooks={backToHooks} />}
+          />
+          <Route
+            path="/weatherAware"
+            element={<WeatherPreparedness backToHooks={backToHooks} />}
           />
           <Route
             path="/hookUseCallBack"
