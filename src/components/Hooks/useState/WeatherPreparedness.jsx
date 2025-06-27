@@ -26,17 +26,32 @@ export default function WeatherPreparedness() {
         Weather Preparedness Guide
       </h1>
 
-      <div className="max-w-xs md:max-w-4xl p-2 my-20 flex flex-col justify-center items-center gap-4">
+      <div className="max-w-xs md:max-w-4xl p-2 my-10 flex flex-col justify-center items-center gap-4">
         <h2 className="font-sixty text-2xl">{storm.name}</h2>
-        <p className="font-serif text-center text-lg md:text-xl">
-          {storm.description}
-        </p>
-        <img src={storm.img} alt={storm.alt} className="max-w-lg rounded-xl" />
-        <Button
-          buttonText="Next"
+
+        <span className="font-sixty">
+          ({index + 1} of {whatToDoWeatherEvent.length})
+        </span>
+
+        <button onClick={handleMoreWeatherPrep} className="text-2xl">
+          {showMore ? "Hide" : "Show"} Details
+        </button>
+
+        {showMore && (
+          <p className="text-center text-lg md:text-2xl">{storm.description}</p>
+        )}
+
+        <img
+          src={storm.img}
+          alt={storm.alt}
+          className="max-w-lg mt-10 rounded-xl"
+        />
+        <button
           className="bg-white mt-8 text-2xl w-40 font-anton tracking-widest text-black p-2 rounded font-bold"
           onClick={handleClick}
-        />
+        >
+          Next
+        </button>
       </div>
     </section>
   );

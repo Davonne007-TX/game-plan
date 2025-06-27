@@ -20,7 +20,7 @@ export const whatToDoWeatherEvent = [
          away from windows, watch for local news and alerts, avoid water, and try your best to not use wired electronics. If you are
          outside. Try your best to get indoors, stay away from fields, aviod water, find a car, crouch low like a ball, and stay away 
          from metal.`,
-    // img: "/public/images/thunderStorm.jpg",
+    img: "./images/thunderStorm.jpg",
     alt: "Big Clouds in Thunderstorm with lightning, image by noaa on Unsplash",
   },
 ];
