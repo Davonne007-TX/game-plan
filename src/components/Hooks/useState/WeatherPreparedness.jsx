@@ -38,7 +38,14 @@ export default function WeatherPreparedness() {
         </button>
 
         {showMore && (
-          <p className="text-center text-lg md:text-2xl">{storm.description}</p>
+          <div className="flex flex-col gap-8">
+            <p className="text-center text-lg md:text-2xl">
+              {storm.description}
+            </p>
+            <p className="text-center text-lg md:text-2xl">
+              {storm.moreDescription}
+            </p>
+          </div>
         )}
 
         <img
