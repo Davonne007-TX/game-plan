@@ -22,7 +22,7 @@ export default function WeatherPreparedness({ backToHooks }) {
   return (
     <section className="flex flex-col justify-center  text-white items-center">
       <h1 className="text-2xl md:text-4xl font-anton text-blue-600">
-        Weather Preparedness Guide
+        Weather Prepardness Guide
       </h1>
 
       <div className="max-w-xs md:max-w-4xl p-2 my-10 flex flex-col justify-center items-center gap-4">
@@ -32,7 +32,10 @@ export default function WeatherPreparedness({ backToHooks }) {
           ({index + 1} of {whatToDoWeatherEvent.length})
         </span>
 
-        <button onClick={handleMoreWeatherPrep} className="text-2xl">
+        <button
+          onClick={handleMoreWeatherPrep}
+          className="text-2xl hover:text-blue-600"
+        >
           {showMore ? "Hide" : "Show"} Details
         </button>
 
