@@ -17,6 +17,11 @@ export default function MoreExamples() {
       text: "Tutorial, React Best Practices",
       link: "/reactBestPractices",
     },
+    {
+      id: 12,
+      text: "Conditional Rendering",
+      link: "/dogSupplies",
+    },
   ];
 
   return (

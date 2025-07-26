@@ -1,10 +1,11 @@
 import "./App.css";
+import React from "react";
 import { useCallback, lazy, Suspense } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
-import TopHeader from "./components/TopHeader";
 
 // Lazy-loaded components
 const Home = lazy(() => import("./components/Home"));
+const TopHeader = lazy(() => import("./components/TopHeader"));
 const GamePlan1 = lazy(() => import("./components/one/GamePlan1"));
 const LetsLearnHooks = lazy(() => import("./components/hooks/LetsLearnHooks"));
 const LetsDoThis = lazy(() => import("./components/hooks/LetsDoThis"));
@@ -70,6 +71,9 @@ const MangeDependenciesGranularly = lazy(() =>
   import(
     "./components/more-examples/stateManagement/MangeDependenciesGranularly"
   )
+);
+const DogSupplies = React.lazy(() =>
+  import("./components/more-examples/dog-essentials/DogSupplies")
 );
 const GamePlan2 = lazy(() => import("./components/GamePlan2"));
 const GamePlan3 = lazy(() => import("./components/GamePlan3"));
@@ -182,6 +186,7 @@ function App() {
             path="/reactBestPractices"
             element={<MangeDependenciesGranularly />}
           />
+          <Route path="dogSupplies" element={<DogSupplies />} />
           <Route path="/gamePlan2" element={<GamePlan2 />} />
           <Route path="/gamePlan3" element={<GamePlan3 />} />
           <Route path="/gamePlan4" element={<GamePlan4 />} />
