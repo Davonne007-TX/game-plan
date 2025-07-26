@@ -1,7 +1,11 @@
 import Image from "../../Image";
 
 function Ingredigent({ name, inStock }) {
-  return <li>{inStock ? name + " ✅ " : name}</li>;
+  let ingredigentItem = name;
+  if (inStock) {
+    ingredigentItem = <del>{name + "✅"}</del>;
+  }
+  return <li>{ingredigentItem}</li>;
 }
 
 export default function Ceviche() {
@@ -11,6 +15,7 @@ export default function Ceviche() {
         <h2 className="text-2xl md:text-3xl font-bold font-lobster text-blue-500">
           Ceviche Ingredigent List
         </h2>
+        <p>✅ means got my item!</p>
 
         <ul className="flex flex-col mr-auto gap-10 text-2xl mt-10 font-thin">
           <Ingredigent inStock={true} name="Shrimp 🍤" />
