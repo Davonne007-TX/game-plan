@@ -72,8 +72,8 @@ const MangeDependenciesGranularly = lazy(() =>
     "./components/more-examples/stateManagement/MangeDependenciesGranularly"
   )
 );
-const DogSupplies = React.lazy(() =>
-  import("./components/more-examples/dog-essentials/DogSupplies")
+const Ceviche = React.lazy(() =>
+  import("./components/more-examples/seafood-reciepe/Ceviche")
 );
 const GamePlan2 = lazy(() => import("./components/GamePlan2"));
 const GamePlan3 = lazy(() => import("./components/GamePlan3"));
@@ -186,7 +186,7 @@ function App() {
             path="/reactBestPractices"
             element={<MangeDependenciesGranularly />}
           />
-          <Route path="dogSupplies" element={<DogSupplies />} />
+          <Route path="ceviche" element={<Ceviche />} />
           <Route path="/gamePlan2" element={<GamePlan2 />} />
           <Route path="/gamePlan3" element={<GamePlan3 />} />
           <Route path="/gamePlan4" element={<GamePlan4 />} />

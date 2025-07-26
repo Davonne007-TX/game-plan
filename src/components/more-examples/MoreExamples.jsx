@@ -20,7 +20,7 @@ export default function MoreExamples() {
     {
       id: 12,
       text: "Conditional Rendering",
-      link: "/dogSupplies",
+      link: "/ceviche",
     },
   ];
 
