@@ -11,7 +11,7 @@ function Ingredigent({ name, inStock }) {
 export default function Ceviche() {
   return (
     <section className="flex flex-col justify-center items-center">
-      <div className="max-w-4xl my-10 bg-white rounded-3xl p-4 flex flex-col justify-center items-center">
+      <div className="max-w-4xl my-2 bg-white rounded-3xl p-4 flex flex-col justify-center items-center">
         <h2 className="text-2xl md:text-4xl font-bold font-lobster text-blue-500">
           Aguachile Ingredigent Check List
         </h2>
