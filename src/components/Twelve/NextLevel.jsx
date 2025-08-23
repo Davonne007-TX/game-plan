@@ -3,13 +3,14 @@ export default function NextLevel() {
     { task: "Node.js, Express.js, SQL, PostreSQL, Rest API", id: 1 },
     { task: "Integrate front end components with API's", id: 2 },
     { task: "What is Next.js?, Redux, Authentication", id: 3 },
+    { task: "Unit Testing", id: 4 },
     {
       task: "Quality Fullstack Project, I'm seeing Fullstack vibes",
-      id: 4,
+      id: 5,
     },
-    { task: "What is Java?", id: 5 },
-    { task: "What is Angular? AWS", id: 6 },
-    { task: "Unit Testing", id: 7 },
+    { task: "What is Java? What is PHP? What is  ", id: 6 },
+    { task: "What is Angular? AWS? Azure? What is GraphQL?", id: 7 },
+    { task: "AI", id: 8 },
   ];
 
   return (
