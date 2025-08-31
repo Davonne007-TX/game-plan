@@ -36,6 +36,7 @@ const SecondExample = lazy(() =>
   import("./components/hooks/useContext/SecondExample")
 );
 const HookUseRef = lazy(() => import("./components/hooks/useRef/HookUseRef"));
+
 const StopWatch = lazy(() => import("./components/hooks/useRef/StopWatch"));
 const LearnRefs = lazy(() => import("./components/hooks/useRef/LearnRefs"));
 const VideoPlayer = lazy(() => import("./components/hooks/useRef/VideoPlayer"));
@@ -46,6 +47,9 @@ const HookUseReducer = lazy(() =>
 const Count = lazy(() => import("./components/hooks/useReducer/Count"));
 const UseMemoFilterWings = lazy(() =>
   import("./components/hooks/useMemo/UseMemoFilterWings")
+);
+const IncrementThis = lazy(() =>
+  import("./components/hooks/useActionState/IncrementThis")
 );
 
 const SideProjects = lazy(() =>
@@ -169,6 +173,10 @@ function App() {
           <Route
             path="/useMemoHookFilterWings"
             element={<UseMemoFilterWings backToHooks={backToHooks} />}
+          />
+          <Route
+            path="/useActionState"
+            element={<IncrementThis backToHooks={backToHooks} />}
           />
 
           <Route path="/sideProjects" element={<SideProjects />} />
