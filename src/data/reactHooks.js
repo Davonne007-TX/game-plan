@@ -7,4 +7,5 @@ export const reactHooks = [
   { hook: "useReducer()", link: "/useReducerHook", id: 6 },
   { hook: "useMemo()", link: "/useMemoHookFilterWings", id: 7 },
   { hook: "useId()", link: "/useId" },
+  { hook: "useDebugValue()", link: "/useDebugValue" },
 ];

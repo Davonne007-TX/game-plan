@@ -49,7 +49,7 @@ const UseMemoFilterWings = lazy(() =>
   import("./components/hooks/useMemo/UseMemoFilterWings")
 );
 const Password = lazy(() => import("./components/hooks/useId/Password"));
-
+const Online = lazy(() => import("./components/hooks/useDebugValue/Online"));
 const SideProjects = lazy(() =>
   import("./components/more-examples/SideProjects")
 );
@@ -176,6 +176,7 @@ function App() {
             path="/useId"
             element={<Password backToHooks={backToHooks} />}
           />
+          <Route path="useDebugValue" element={<Online />} />
 
           <Route path="/sideProjects" element={<SideProjects />} />
           <Route path="/lists" element={<Lists />} />
