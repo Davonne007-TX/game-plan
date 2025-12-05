@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <main className="flex flex-col justify-center items-center">
       <h1 className="text-white font-sixty mt-20  text-center text-xs md:text-sm lg:text-lg">
-        A Web Dev Journey Learning React and growing as a Dev
+        A Web Dev Journey Learning React and growing as a Developer
       </h1>
       <iframe
         src="https://giphy.com/embed/RbDKaczqWovIugyJmW"
